@@ -1,0 +1,91 @@
+name: Make Release
+on:
+  push:
+    tags:
+    - '*'
+
+env:
+  LANG_ASSET_NAME: >
+    (
+      ['English']='English'
+      ['简体中文']='Simplified_Chinese'
+    )
+  # Map from displayed language names to file-name-safe names.
+  # Only limited class of characters are allowed for Asset files
+  # in GitHub Releases, or automatically renamed otherwise.
+
+  TIME_ZONE: Asia/Tokyo
+  # Time zone for the timestamp when releasing.
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    name: Create Release
+    if: github.event_name == 'push' && github.ref_type == 'tag'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v6
+      with:
+        submodules: recursive
+
+    - name: Pack into single file
+      run: |
+        mkdir pack
+        declare -A LANG_ASSET_NAME=${{ env.LANG_ASSET_NAME }}
+        for lang in ${!LANG_ASSET_NAME[@]}; do
+          mkdir "pack/$lang"
+          OUT_FILE="pack/$lang/$lang.sigma-axis.aul2"
+          echo "# $lang.sigma-axis.aul2 ${{ github.ref_name }} ($(TZ='${{ env.TIME_ZONE }}' date +'%Y-%m-%d'))" >> $OUT_FILE
+          for file in $lang/*.aul2; do
+            echo "" >> $OUT_FILE
+            echo "#--------------------------------------------------------------#" >> $OUT_FILE
+            echo "# $lang.${file/*\//}" >> $OUT_FILE
+            echo "#--------------------------------------------------------------#" >> $OUT_FILE
+            cat "$file" >> $OUT_FILE
+          done
+        done
+
+    - name: Pack other files and Compress
+      run: |
+        cd pack
+        declare -A LANG_ASSET_NAME=${{ env.LANG_ASSET_NAME }}
+        for lang in ${!LANG_ASSET_NAME[@]}; do
+          cp ../README.md "$lang/README.md"
+          cp ../LICENSE "$lang/LICENSE"
+          if [ -f "../$lang/README.md" ]; then
+            cp "../$lang/README.md" "$lang/$lang.README.md"
+          fi
+          cd "$lang"
+          zip -r "../../aviutl2-${LANG_ASSET_NAME[$lang]}-sigma-axis-${{ github.ref_name }}.zip" *
+          cd ..
+        done
+
+    - name: Prepare release notes
+      id: release-notes
+      run: |
+        echo "name=${{ github.ref_name }} ($(TZ='${{ env.TIME_ZONE }}' date +'%Y-%m-%d'))" >> $GITHUB_OUTPUT
+        echo "### Updates" >> ReleaseNotes.txt
+        phase=0
+        IFS=$'\n'
+        cat pack/README.md | while read line; do
+          if [[ $phase == 0 ]]; then
+            if [[ $line =~ ^##*[[:space:]]{1,}'Update History'[[:space:]]*$ ]]; then phase=1; fi
+          elif [[ $phase == 1 ]]; then
+            if [[ $line =~ ^-[[:space:]] ]]; then phase=2; fi
+          elif [[ $line =~ ^(-|##*)[[:space:]] ]]; then break
+          else
+            echo ${line:2} >> ReleaseNotes.txt
+          fi
+        done
+
+    - name: Release
+      uses: softprops/action-gh-release@v2
+      with:
+        name: ${{ steps.release-notes.outputs.name }}
+        files: '*.zip'
+        body_path: ReleaseNotes.txt

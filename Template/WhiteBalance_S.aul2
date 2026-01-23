@@ -1,0 +1,35 @@
+################################################################
+# Target: WhiteBalance_S (https://github.com/sigma-axis/aviutl2_script_WhiteBalance_S)
+# Target Version: v1.00 (for beta 29)
+# Language: <Language Name>
+# Translator(s):
+#   <Name1>
+#   <Name2> (<Optional URL>)
+
+[ホワイトバランスσ@WhiteBalance_S]
+ホワイトバランスσ@White Balance S=WhiteBalance_S@WhiteBalance_S
+強さ=Intensity
+変換元=Base
+変換先=Destination
+正規化=Normalize
+成分個別指定=Individual Channels
+成分を個別に指定=Control Channels Individually
+倍率X/R=Multiplier X/R
+倍率Y/G=Multiplier Y/G
+倍率Z/B=Multiplier Z/B
+色空間=Color Space
+その他=Others
+
+[色温度σ@WhiteBalance_S]
+色温度σ@WhiteBalance_S=Color Temperature S@WhiteBalance_S
+変換元K=Base Kelvin
+変換先K=Destination Kelvin
+色空間=Color Space
+その他=Others
+
+[色温度σ(Mired)@WhiteBalance_S]
+色温度σ(Mired)@WhiteBalance_S=Color Temperature S (Mired)@WhiteBalance_S
+変換元M=Base Mired
+変換先M=Destination Mired
+色空間=Color Space
+その他=Others
