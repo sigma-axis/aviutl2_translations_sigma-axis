@@ -41,7 +41,7 @@ Currently this repository contains files for the following languages. Note that 
 
 ##  Update History
 
-- **r1** (2026-??-??)
+- **r1** (2026-01-24)
 
   - First release.
   - Currently contains English and Simplified Chinese translations.
