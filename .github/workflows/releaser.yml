@@ -5,6 +5,9 @@ on:
     - '*'
 
 env:
+  OWNER_NAME: sigma-axis
+  # Used as a part of file names.
+
   LANG_ASSET_NAME: >
     (
       ['English']='English'
@@ -39,12 +42,12 @@ jobs:
         declare -A LANG_ASSET_NAME=${{ env.LANG_ASSET_NAME }}
         for lang in ${!LANG_ASSET_NAME[@]}; do
           mkdir "pack/$lang"
-          OUT_FILE="pack/$lang/$lang.sigma-axis.aul2"
-          echo "# $lang.sigma-axis.aul2 ${{ github.ref_name }} ($(TZ='${{ env.TIME_ZONE }}' date +'%Y-%m-%d'))" >> $OUT_FILE
+          OUT_FILE="pack/$lang/$lang.${{ env.OWNER_NAME }}.aul2"
+          echo "# $lang.${{ env.OWNER_NAME }}.aul2 ${{ github.ref_name }} ($(TZ='${{ env.TIME_ZONE }}' date +'%Y-%m-%d'))" >> $OUT_FILE
           for file in $lang/*.aul2; do
             echo "" >> $OUT_FILE
             echo "#--------------------------------------------------------------#" >> $OUT_FILE
-            echo "# $lang.${file/*\//}" >> $OUT_FILE
+            echo "# $lang/${file/*\//}" >> $OUT_FILE
             echo "#--------------------------------------------------------------#" >> $OUT_FILE
             cat "$file" >> $OUT_FILE
           done
@@ -61,7 +64,7 @@ jobs:
             cp "../$lang/README.md" "$lang/$lang.README.md"
           fi
           cd "$lang"
-          zip -r "../../aviutl2-${LANG_ASSET_NAME[$lang]}-sigma-axis-${{ github.ref_name }}.zip" *
+          zip -r "../../aviutl2-${LANG_ASSET_NAME[$lang]}-${{ env.OWNER_NAME }}-${{ github.ref_name }}.zip" *
           cd ..
         done
 
