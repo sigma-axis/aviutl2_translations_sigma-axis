@@ -75,7 +75,7 @@ jobs:
         echo "### Updates" >> ReleaseNotes.txt
         phase=0
         IFS=$'\n'
-        cat pack/README.md | while read line; do
+        cat README.md | while read line; do
           if [[ $phase == 0 ]]; then
             if [[ $line =~ ^##*[[:space:]]{1,}'Update History'[[:space:]]*$ ]]; then phase=1; fi
           elif [[ $phase == 1 ]]; then
