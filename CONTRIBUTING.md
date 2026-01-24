@@ -17,7 +17,7 @@ Optionally, each language folder can contain a file named `README.md`, which wil
 ##  Adding a New Language
 
 1.  Duplicate the `Template` folder as the name of the language you add (such as `简体中文`).
-1.  [Edit the contained `.aul2` files](#editing-translation-files).
+1.  [Edit the `.aul2` files](#editing-translation-files) contained in that folder.
 1.  Optionally you can add `README.md` to that folder.
 
 Each template `.aul2` file is translated into English. Your work will be to translate them into the new language.
@@ -30,11 +30,11 @@ It is *NOT* necessary to translate *ALL* files and entries --- you can leave som
 
     - Each line is of the form `Japanese Parameter Name=Translated Parameter Name`.
     - Do not modify the line of the form `[Japanese Script Name]`.
-    - A comment line starts with `#`.
+    - A comment line starts with `#` or `;`.
 
-1.  Add your name to the `Translator(s)` at the head of each file.
+1.  Add your name to the `Translator(s)` at the head of each file you edited.
 
-    - You can also contain an URL to your account or website.
+    - You can also contain a URL to your account or website.
 
 # Thank You
 
