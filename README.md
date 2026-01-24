@@ -1,4 +1,4 @@
-# AviUtl ExEdit2 Language Files for Filters by sigma-axis
+# AviUtl ExEdit2 Language Files for Scripts and Filters by sigma-axis
 
 This repository contains language translation files for AviUtl ExEdit2, which enable names and parameters of scripts I publish on GitHub to be displayed in other languages than Japanese.
 
