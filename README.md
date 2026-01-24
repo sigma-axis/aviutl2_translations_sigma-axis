@@ -41,6 +41,10 @@ Currently this repository contains files for the following languages. Note that 
 
 ##  Update History
 
+- **r2** (2026-01-24)
+
+  - \[English\] Fixed translation for WhiteBalance_S.
+
 - **r1** (2026-01-24)
 
   - First release.
