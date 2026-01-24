@@ -4,7 +4,7 @@ You can contribute to this repository by [adding a new language](#adding-a-new-l
 
 1.  Fork this repository.
 1.  Add or modify the files.
-1.  Submit a Pull Request so I can marge the changes.
+1.  Submit a Pull Request so I can merge the changes.
 
 After that, I will do the rest of works to maintain the repository.
 
