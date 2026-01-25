@@ -41,6 +41,10 @@ Currently this repository contains files for the following languages. Note that 
 
 ##  Update History
 
+- **r4** (2026-01-25)
+
+  - \[English\] Fixed missing translation.
+
 - **r3** (2026-01-25)
 
   - \[English\] Followed the update Basic_S v1.80 (for beta29).

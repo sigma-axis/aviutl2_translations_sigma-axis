@@ -145,6 +145,7 @@ HSL(双円錐)=HSL(Biconic)
 その他=Others
 
 [色チャンネル入れ替え@Basic_S]
+色チャンネル入れ替え@Basic_S=Swap Color Channels@Basic_S
 赤適用元=Source Red
 緑適用元=Source Green
 青適用元=Source Blur
@@ -161,7 +162,6 @@ HSL(双円錐)=HSL(Biconic)
 1固定=Constant Opaque
 その他=Others
 乗算済みα=Premultiplied Alpha
-
 
 [回転中心@Basic_S]
 回転中心@Basic_S=Rotation Center@Basic_S
