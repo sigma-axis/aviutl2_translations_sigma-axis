@@ -2,7 +2,7 @@
 
 This repository contains language translation files for AviUtl ExEdit2, which enable names and parameters of scripts I publish on GitHub to be displayed in other languages than Japanese.
 
-They take effects only to the scripts I wrote, so it is unlikely to conflict with the translations from other language files.
+They take effects only to the scripts I wrote, so it is unlikely to conflict with translations from other language files.
 
 私が GitHub で公開している AviUtl ExEdit2 用のスクリプトの名前やパラメタを，日本語以外の言語で表示する言語ファイルのリポジトリです．
 
@@ -40,6 +40,10 @@ Currently this repository contains files for the following languages. Note that 
 1.  Select that language in the language setting menu.
 
 ##  Update History
+
+- **r5** (2026-01-26)
+
+  - \[简体中文\] Updated translations to follow Basic_S v1.80 and WhiteBalance_S.
 
 - **r4** (2026-01-25)
 
