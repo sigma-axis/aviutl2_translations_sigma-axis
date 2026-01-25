@@ -1,0 +1,31 @@
+################################################################
+# Target: WhiteBalance_S (https://github.com/sigma-axis/aviutl2_script_WhiteBalance_S)
+# Target Version: v1.00 (for beta 29)
+# Language: 简体中文
+# Translator(s):
+#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+
+[ホワイトバランスσ@WhiteBalance_S]
+ホワイトバランスσ@WhiteBalance_S=白平衡σ@WhiteBalance_S
+強さ=强度
+変換元=变换源
+変換先=变换目标
+正規化=归一化
+成分個別指定=成分单独指定
+成分を個別に指定=单独指定成分
+色空間=色彩空间
+その他=其他
+
+[色温度σ@WhiteBalance_S]
+色温度σ@WhiteBalance_S=色温σ@WhiteBalance_S
+変換元K=变换源K
+変換先K=变换目标K
+色空間=色彩空间
+その他=其他
+
+[色温度σ(Mired)@WhiteBalance_S]
+色温度σ(Mired)@WhiteBalance_S=色温σ(微倒度)@WhiteBalance_S
+変換元M=变换源M
+変換先M=变换目标M
+色空間=色彩空间
+その他=其他
