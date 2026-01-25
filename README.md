@@ -41,6 +41,10 @@ Currently this repository contains files for the following languages. Note that 
 
 ##  Update History
 
+- **r3** (2026-01-25)
+
+  - \[English\] Followed the update Basic_S v1.80 (for beta29).
+
 - **r2** (2026-01-24)
 
   - \[English\] Fixed translation for WhiteBalance_S.

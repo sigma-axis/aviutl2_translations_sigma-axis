@@ -1,6 +1,6 @@
 ################################################################
 # Target: Basic_S (https://github.com/sigma-axis/aviutl2_script_Basic_S)
-# Target Version: v1.76 (for beta 28a)
+# Target Version: v1.80 (for beta 29)
 # Language: English
 # Translator(s):
 #   sigma-axis (https://github.com/sigma-axis)
@@ -142,6 +142,25 @@ HSV(円錐)=HSV(Conic)
 HSL(円柱)=HSL(Cylindrical)
 HSL(双円錐)=HSL(Biconic)
 その他=Others
+
+[色チャンネル入れ替え@Basic_S]
+赤適用元=Source Red
+緑適用元=Source Green
+青適用元=Source Blur
+アルファ適用元=Source Alpha
+0固定=Constant Zero
+赤=Red
+緑=Green
+青=Blue
+アルファ=Alpha
+赤反転=Red Inverted
+緑反転=Green Inverted
+青反転=Blur Inverted
+アルファ反転=Alpha Inverted
+1固定=Constant Opaque
+その他=Others
+乗算済みα=Premultiplied Alpha
+
 
 [回転中心@Basic_S]
 回転中心@Basic_S=Rotation Center@Basic_S
@@ -351,7 +370,9 @@ Y長さ変更=Stretch Along Y
 合成=Composition
 モード=Mode
 前方から合成=Composite from the Front
+前方から合成(クリッピング)=Composite from the Front (Clip)
 後方から合成=Composite from the Back
+後方から合成(クリッピング)=Composite from the Back (Clip)
 アルファ値を乗算=Multiply Alpha
 色情報を上書き=Overwrite color 
 輝度をアルファ値として上書き=Overwrite Luminance as Alpha
@@ -394,7 +415,9 @@ Y長さ変更=Stretch Along Y
 合成=Composition
 モード=Mode
 前方から合成=Composite from the Front
+前方から合成(クリッピング)=Composite from the Front (Clip)
 後方から合成=Composite from the Back
+後方から合成(クリッピング)=Composite from the Back (Clip)
 アルファ値を乗算=Multiply Alpha
 色情報を上書き=Overwrite color 
 輝度をアルファ値として上書き=Overwrite Luminance as Alpha
