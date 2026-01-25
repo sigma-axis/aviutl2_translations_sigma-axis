@@ -1,9 +1,9 @@
 ################################################################
 # Target: Basic_S (https://github.com/sigma-axis/aviutl2_script_Basic_S)
-# Target Version: v1.76 (for beta 28a)
+# Target Version: v1.80 (for beta 29)
 # Language: 简体中文
 # Translator(s):
-#   正电子海(Nsyw) (https://github.com/nsYW)
+#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
 
 ################################
 # 滤镜(.anm2)
@@ -112,6 +112,25 @@ HSV(円錐)=HSV(圆锥)
 HSL(円柱)=HSL(圆柱)
 HSL(双円錐)=HSL(双圆锥)
 その他=其他
+
+[色チャンネル入れ替え@Basic_S]
+色チャンネル入れ替え@Basic_S=颜色通道切换@Basic_S
+赤適用元=红色源
+緑適用元=绿色源
+青適用元=蓝色源
+アルファ適用元=Alpha源
+0固定=固定为0
+赤=红
+緑=绿
+青=蓝
+アルファ=Alpha
+赤反転=红反转
+緑反転=绿反转
+青反転=蓝反转
+アルファ反転=Alpha反转
+1固定=固定为1
+その他=其他
+乗算済みα=乘以Alpha
 
 [回転中心@Basic_S]
 回転中心@Basic_S=旋转中心@Basic_S
@@ -298,7 +317,9 @@ Y長さ変更=更改Y长度
 縦横=四方
 モード=模式
 前方から合成=从正面合成
+前方から合成(クリッピング)=从正面合成(裁剪)
 後方から合成=从背面合成
+後方から合成(クリッピング)=从背面合成(裁剪)
 アルファ値を乗算=乘以Alpha值
 色情報を上書き=覆盖颜色信息
 輝度をアルファ値として上書き=将亮度作为Alpha值覆盖
@@ -339,7 +360,9 @@ Y長さ変更=更改Y长度
 縦横=四方
 モード=模式
 前方から合成=从正面合成
+前方から合成(クリッピング)=从正面合成(裁剪)
 後方から合成=从背面合成
+後方から合成(クリッピング)=从背面合成(裁剪)
 アルファ値を乗算=乘以Alpha值
 色情報を上書き=覆盖色彩信息
 輝度をアルファ値として上書き=将亮度作为Alpha值覆盖
@@ -582,3 +605,26 @@ N次式@Basic_S=N次方@Basic_S
 バネ振動(全体時間制御)@Basic_S=弹性振动(整体时间控制)@Basic_S
 振動回数=振动次数
 減衰率=衰减率
+
+################################
+# Labels
+################################
+[Effect]
+
+# .anm2
+Basic_S\クリッピング=Basic_S\裁剪
+Basic_S\装飾=Basic_S\装饰
+Basic_S\加工=Basic_S\处理
+Basic_S\色調整=Basic_S\颜色调整
+Basic_S\配置=Basic_S\分布
+Basic_S\変形=Basic_S\变形
+Basic_S\ぼかし=Basic_S\模糊
+
+# .obj2
+Basic_S\図形=Basic_S\图形
+
+# .tra2
+Basic_S\基本緩急=Basic_S\通用缓动
+Basic_S\コマ落ち=Basic_S\丢帧
+Basic_S\繰り返し=Basic_S\重复
+Basic_S\特殊補間=Basic_S\特殊差值
