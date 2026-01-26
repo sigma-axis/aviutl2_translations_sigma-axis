@@ -1,0 +1,133 @@
+################################################################
+# Target: Tile_S (https://github.com/sigma-axis/aviutl2_script_Tile_S)
+# Target Version: v1.03 (for beta25)
+# Language: English
+# Translator(s):
+#   sigma-axis (https://github.com/sigma-axis)
+
+[四角タイルσ@Tile_S]
+四角タイルσ@Tile_S=Rectangle Tile S@Tile_S
+幅=Width
+高さ=Height
+背景サイズ=Screen Size
+色設定=Color Settings
+色1=Color 1
+内部色1=Inner Color 1
+色2=Color 2
+内部色2=Inner Color 2
+色3=Color 3
+内部色3=Inner Color 3
+色4=Color 4
+内部色4=Inner Color 4
+余白色=Padding Color
+透明度1=Transparency 1
+透明度2=Transparency 2
+透明度3=Transparency 3
+透明度4=Transparency 4
+余白透明度=Padding Transparency
+タイル設定=Tile Settings
+マス幅=Tile Width
+マス高さ=Tile Height
+マス正方形(幅のみで指定)=Square Tile (Width only)
+ライン幅=Line Width
+角半径=Corner Radius
+余白幅=Padding Width
+余白高さ=Padding Height
+タイル配置=Tile Placement
+回転=Rotate
+その他=Others
+アンチエイリアス=Antialias
+
+[三角タイルσ@Tile_S]
+三角タイルσ@Tile_S=Triangle Tile S@Tile_S
+幅=Width
+高さ=Height
+背景サイズ=Screen Size
+色設定=Color Settings
+色1=Color 1
+内部色1=Inner Color 1
+色2=Color 2
+内部色2=Inner Color 2
+色3=Color 3
+内部色3=Inner Color 3
+色4=Color 4
+内部色4=Inner Color 4
+色5=Color 5
+内部色5=Inner Color 5
+色6=Color 6
+内部色6=Inner Color 6
+余白色=Padding Color
+透明度1=Transparency 1
+透明度2=Transparency 2
+透明度3=Transparency 3
+透明度4=Transparency 4
+透明度5=Transparency 5
+透明度6=Transparency 6
+余白透明度=Padding Transparency
+タイル設定=Tile Settings
+マス幅=Tile Size
+ライン幅=Line Width
+角半径=Corner Radius
+余白幅=Padding Size
+タイル配置=Tile Placement
+回転=Rotate
+その他=Others
+アンチエイリアス=Antialias
+
+[六角タイルσ@Tile_S]
+六角タイルσ@Tile_S=Hexagon Tile S@Tile_S
+幅=Width
+高さ=Height
+背景サイズ=Screen Size
+色設定=Color Settings
+色1=Color 1
+内部色1=Inner Color 1
+色2=Color 2
+内部色2=Inner Color 2
+色3=Color 3
+内部色3=Inner Color 3
+余白色=Padding Color
+透明度1=Transparency 1
+透明度2=Transparency 2
+透明度3=Transparency 3
+余白透明度=Padding Transparency
+タイル設定=Tile Settings
+マス幅=Tile Size
+ライン幅=Line Width
+角半径=Corner Radius
+余白幅=Padding Size
+タイル配置=Tile Placement
+回転=Rotate
+その他=Others
+アンチエイリアス=Antialias
+
+[菱形タイルσ@Tile_S]
+菱形タイルσ@Tile_S=Rhombus Tile S@Tile_S
+幅=Width
+高さ=Height
+背景サイズ=Screen Size
+色設定=Color Settings
+色1=Color 1
+内部色1=Inner Color 1
+色2=Color 2
+内部色2=Inner Color 2
+色3=Color 3
+内部色3=Inner Color 3
+色4=Color 4
+内部色4=Inner Color 4
+余白色=Padding Color
+透明度1=Transparency 1
+透明度2=Transparency 2
+透明度3=Transparency 3
+透明度4=Transparency 4
+余白透明度=Padding Transparency
+タイル設定=Tile Settings
+マス幅=Tile Width
+マス高さ=Tile Height
+ライン幅=Line Width
+角半径=Corner Radius
+余白幅=Padding Size
+タイル配置=Tile Placement
+回転=Rotate
+その他=Others
+アンチエイリアス=Antialias

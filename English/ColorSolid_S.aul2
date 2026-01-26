@@ -1,0 +1,82 @@
+################################################################
+# Target: ColorSolid_S (https://github.com/sigma-axis/aviutl2_script_ColorSolid_S)
+# Target Version: v1.00 (for beta 22a)
+# Language: English
+# Translator(s):
+#   sigma-axis (https://github.com/sigma-axis)
+
+[XYZ色立体@ColorSolid_S]
+XYZ色立体@ColorSolid_S=Color Solid XYZ@ColorSolid_S
+サイズ=Size
+断面角度=Cutting Angle
+明るさ=Brightness
+回転=Rotate
+RGB限定=Limit to RGB
+
+[RGB色立体@ColorSolid_S]
+RGB色立体@ColorSolid_S=Color Solid RGB@ColorSolid_S
+サイズ=Size
+明るさ=Brightness
+断面角度=Cutting Angle
+回転=Rotate
+色空間=Color Space
+RGB限定=Limit to RGB
+
+[OKLCh色立体@ColorSolid_S]
+OKLCh色立体@ColorSolid_S=Color Solid OKLCh@ColorSolid_S
+サイズ=Size
+明るさ=Brightness
+断面角度=Cutting Angle
+回転=Rotate
+RGB限定=Limit to RGB
+
+[YUV色立体@ColorSolid_S]
+YUV色立体@ColorSolid_S=Color Solid YUV@ColorSolid_S
+サイズ=Size
+明るさ=Brightness
+断面角度=Cutting Angle
+回転=Rotate
+色空間=Color Space
+RGB限定=Limit to RGB
+
+[HSV色立体@ColorSolid_S]
+HSV色立体@ColorSolid_S=Color Solid HSV@ColorSolid_S
+サイズ=Size
+明るさ=Brightness
+断面角度=Cutting Angle
+色相ずれ=Hue Offset
+モデル=Model
+円柱=Cylindrical
+円錐=Conic
+六角柱=Hexagonal Prism
+六角錐=Hexagonal Pyramid
+RGB限定=Limit to RGB
+
+[HSL色立体@ColorSolid_S]
+HSL色立体@ColorSolid_S=Color Solid HSL@ColorSolid_S
+サイズ=Size
+明るさ=Brightness
+断面角度=Cutting Angle
+色相ずれ=Hue Offset
+モデル=Model
+円柱=Cylindrical
+双円錐=Biconic
+六角柱=Hexagonal Prism
+双六角錐=Hexagonal Bipyramid
+RGB限定=Limit to RGB
+
+[色ピッカー@ColorSolid_S]
+色ピッカー@ColorSolid_S=Color Picker@ColorSolid_S
+サイズ=Size
+明るさ=Brightness
+断面角度=Cutting Angle
+純色幅=Pure Color Size
+無彩色幅=Gray Size
+色相ずれ=Hue Offset
+モデル=Model
+円=Circular
+六角形=Hexagonal
+
+# Disabled to avoid potential conflicts with other translation files.
+# [Effect]
+# 編集補助\色調整=Edit Assist\Color

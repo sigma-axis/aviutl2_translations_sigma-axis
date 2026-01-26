@@ -1,0 +1,316 @@
+################################################################
+# Target: Path_S (https://github.com/sigma-axis/aviutl2_script_Path_S)
+# Target Version: v1.12 (for beta25)
+# Language: <Language Name>
+# Translator(s):
+#   <Name1>
+#   <Name2> (<Optional URL>)
+
+################################
+# Filters (.anm2)
+################################
+[パスマスクσ@Path_S]
+パスマスクσ@Path_S=Path Mask S@Path_S
+強さ=Intensity
+反転=Invert
+パス設定=Path Settings
+頂点数=Vertices Count
+線タイプ=Line Type
+折れ線=Polyline
+補間移動=Interpolation
+2次ベジェ曲線=Quadratic Bezier
+3次ベジェ曲線=Cubic Bezier
+点リスト=Points
+曲線精度=Curve Precision
+塗り設定=Fill Settings
+追加幅=Inflation
+範囲=Fill Mode
+内側=Inner
+奇偶=Even Odd
+内側反転=Inner Inverted
+奇偶反転=Even Odd Inverted
+配置=Placement
+移動X=Offset X
+移動Y=Offset Y
+拡大率=Zoom
+回転=Rotate
+アンカー切り替え=Toggle Anchors
+その他=Others
+ぼかし幅=Edge Blur
+
+[パスマスク(ライン)σ@Path_S]
+パスマスク(ライン)σ@Path_S=Math Mask S (Line)σ@Path_S
+強さ=Intensity
+反転=Invert
+ライン幅=Line Width
+パス設定=Path Settings
+頂点数=Vertices Count
+線タイプ=Line Type
+折れ線=Polyline
+補間移動=Interpolation
+2次ベジェ曲線=Quadratic Bezier
+3次ベジェ曲線=Cubic Bezier
+点リスト=Points
+ループ=Loop
+曲線精度=Curve Precision
+ライン設定=Line Settings
+開始位置=Line Start
+終了位置=Line Finish
+端の形状=Line End Cap
+円=Round
+四角=Square
+破線パターン=Dash Pattern
+破線周期補正=Adjust Dash Period
+破線位置=Dash Offset
+配置=Placement
+移動X=Offset X
+移動Y=Offset Y
+拡大率=Zoom
+回転=Rotate
+アンカー切り替え=Toggle Anchors
+その他=Others
+ぼかし幅=Edge Blur
+
+[パス部分フィルタσ@Path_S]
+パス部分フィルタσ@Path_S=Path Partial Filter S@Path_S
+反転=Invert
+パス設定=Path Settings
+頂点数=Vertices Count
+線タイプ=Line Type
+折れ線=Polyline
+補間移動=Interpolation
+2次ベジェ曲線=Quadratic Bezier
+3次ベジェ曲線=Cubic Bezier
+点リスト=Points
+曲線精度=Curve Precision
+塗り設定=Fill Settings
+追加幅=Inflation
+範囲=Fill Mode
+内側=Inner
+奇偶=Even Odd
+内側反転=Inner Inverted
+奇偶反転=Even Odd Inverted
+配置=Placement
+移動X=Offset X
+移動Y=Offset Y
+拡大率=Zoom
+回転=Rotate
+アンカー切り替え=Toggle Anchors
+その他=Others
+ぼかし幅=Edge Blur
+
+[パスに沿って配置σ@Path_S]
+パスに沿って配置σ@Path_S=Place Along Path S@Path_S
+位置=Position
+回転=Rotate
+パスに沿って回転=Rotate Along Path
+個別位置ズレ=Individual Offset
+範囲外=When Out of Range
+非表示=Hide
+始点のみ表示=Show at Start
+終点のみ表示=Show at Finish
+表示=Show
+パス設定=Path Settings
+頂点数=Vertices Count
+線タイプ=Line Type
+折れ線=Polyline
+補間移動=Interpolation
+2次ベジェ曲線=Quadratic Bezier
+3次ベジェ曲線=Cubic Bezier
+点リスト=Points
+ループ=Loop
+曲線精度=Curve Precision
+パスの表示=Display Path
+その他=Others
+
+################################
+# Objects (.obj2)
+################################
+[パス図形σ@Path_S]
+パス図形σ@Path_S=Path Figure S@Path_S
+ライン幅=Line Width
+ライン色=Line Color
+塗り色=Fill Color
+パス設定=Path Settings
+頂点数=Vertices Count
+線タイプ=Line Type
+折れ線=Polyline
+補間移動=Interpolation
+2次ベジェ曲線=Quadratic Bezier
+3次ベジェ曲線=Cubic Bezier
+点リスト=Points
+ループ=Loop
+曲線精度=Curve Precision
+ライン設定=Line Settings
+ライン透明度=Line Transparency
+開始位置=Line Start
+終了位置=Line Finish
+端の形状=Line End Cap
+円=Round
+四角=Square
+破線パターン=Dash Pattern
+破線周期補正=Adjust Dash Period
+破線位置=Dash Offset
+塗り設定=Fill Settings
+塗り追加幅=Fill Inflation
+塗り透明度=Fill Transparency
+塗り範囲=Fill Mode
+内側=Inner
+奇偶=Even Odd
+ランダム変化=Random Deformation
+ランダム周期=Random Period
+ランダム振幅=Random Offset
+ランダム固定端=Disable Random at Ends
+ランダムシード=Random Seed
+その他=Others
+ぼかし幅=Edge Blur
+
+[ラインσ@Path_S]
+ラインσ@Path_S=Line S@Path_S
+終点X=Line Finish X
+終点Y=Line Finish Y
+ライン幅=Line Width
+色=Color
+曲線設定=Curve Settings
+形状=Curve
+直線=Straight Line
+正弦波=Sine Wave
+三角波=Triangular Wave
+矩形波=Square Wave
+のこぎり波=Saw Wave
+周期=Period
+周期位置=Phase
+振幅=Amplitude
+ライン設定=Line Settings
+端の形状=Line End Cap
+円=Round
+四角=Square
+破線パターン=Dash Pattern
+破線位置=Dash Offset
+ランダム変化=Random Deformation
+ランダム周期=Random Period
+ランダム振幅=Random Offset
+ランダム固定端=Disable Random at Ends
+ランダムシード=Random Seed
+その他=Others
+ぼかし幅=Edge Blur
+
+[スパイラルσ@Path_S]
+スパイラルσ@Path_S=Spiral S@Path_S
+開始半径=Start Radius
+終了半径=Finish Radius
+ライン幅=Line Width
+色=Color
+螺旋設定=Spiral Settings
+形状=Spiral
+アルキメデス螺旋=Archimedean Spiral
+対数螺旋=Logarithmic Spiral
+傾き=Slope
+回転=Rotate
+ずれX=Tilt X
+ずれY=Tilt Y
+ライン設定=Line Settings
+端の形状=Line End Cap
+曲線精度=Curve Precision
+円=Round
+四角=Square
+破線パターン=Dash Pattern
+破線位置=Dash Offset
+ランダム変化=Random Deformation
+ランダム周期=Random Period
+ランダム振幅=Random Offset
+ランダム固定端=Disable Random at Ends
+ランダムシード=Random Seed
+その他=Others
+ぼかし幅=Edge Blur
+
+[アローσ@Path_S]
+アローσ@Path_S=Arrow S@Path_S
+ライン幅=Line Width
+矢じりサイズ=Head Size
+色=Color
+パス設定=Path Settings
+頂点数=Vertices Count
+線タイプ=Line Type
+折れ線=Polyline
+補間移動=Interpolation
+2次ベジェ曲線=Quadratic Bezier
+3次ベジェ曲線=Cubic Bezier
+点リスト=Points
+曲線精度=Curve Precision
+ライン設定=Line Settings
+開始位置=Line Start
+終了位置=Line Finish
+端の形状=Line End Cap
+円=Round
+四角=Square
+破線パターン=Dash Pattern
+破線位置=Dash Offset
+矢じり設定=Arrowhead Settings
+矢じり配置=Head Arrangement
+なし=None
+終点=Finish
+両方=Both Ends
+双方向=Both Ends Opposite
+矢じり図形=Head Figure
+矢じり幅=Head Width
+矢じり中心=Head Center
+矢じり角度=Head Angle
+矢じり位置=Head Position
+ランダム変化=Random Deformation
+ランダム周期=Random Period
+ランダム振幅=Random Offset
+ランダム固定端=Disable Random at Ends
+ランダムシード=Random Seed
+その他=Others
+ぼかし幅=Edge Blur
+
+[スクウェアσ@Path_S]
+スクウェアσ@Path_S=Square S@Path_S
+幅=Width
+高さ=Height
+ライン幅=Line Width
+ライン色=Line Color
+塗り色=Fill Color
+角半径=Corner Radius
+整列=Alignment
+水平揃え=Horizontal Alignment
+垂直揃え=Vertical Alignment
+丸角設定=Corner Settings
+半径均一=Uniform Radius
+右上半径=Top Right Radius
+右下半径=Bottom Right Radius
+左下半径=Bottom Left Radius
+丸角縦横比=Round Corner Aspect
+丸角縦横比固定=Fixed Aspect
+ライン設定=Line Settings
+ライン透明度=Line Transparency
+開始位置=Line Start
+終了位置=Line Finish
+端の形状=Line End Cap
+円=Round
+四角=Square
+破線パターン=Dash Pattern
+破線位置=Dash Offset
+塗り設定=Fill Settings
+塗り追加幅=Fill Inflation
+塗り透明度=Fill Transparency
+ランダム変化=Random Deformation
+ランダム周期=Random Period
+ランダム振幅=Random Offset
+ランダムシード=Random Seed
+その他=Others
+ぼかし幅=Edge Blur
+
+################################
+# Labels
+################################
+[Effect]
+
+# .anm2
+Path_S\クリッピング=Path_S\Clipping
+Path_S\加工=Path_S\Modify
+Path_S\配置=Path_S\Placement
+
+# .obj2
+Path_S\図形=Path_S\Figures

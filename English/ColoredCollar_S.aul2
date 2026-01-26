@@ -1,0 +1,14 @@
+################################################################
+# Target: ColoredCollar_S (https://github.com/sigma-axis/aviutl2_script_ColoredCollar_S)
+# Target Version: v1.00 (for beta5)
+# Language: English
+# Translator(s):
+#   sigma-axis (https://github.com/sigma-axis)
+
+[ColoredCollar_S]
+サイズ=Size
+ぼかし=Blur
+透明度=Transparency
+縁色=Color
+色の濃さ=Color Opacity
+前景透明度=Foreground Transparency

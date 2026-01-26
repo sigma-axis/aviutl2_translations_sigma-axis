@@ -1,0 +1,43 @@
+################################################################
+# Target: Histogram_S (https://github.com/sigma-axis/aviutl2_script_Histogram_S)
+# Target Version: v1.10 (for beta 30a)
+# Language: English
+# Translator(s):
+#   sigma-axis (https://github.com/sigma-axis)
+
+[Histogram_S]
+幅=Width
+高さ=Height
+対象=Source
+フレームバッファ(アルファ値なし)=Frame Buffer (without Alpha)
+フレームバッファ(アルファ値あり)=Frame Buffer (with Alpha)
+レイヤー(絶対指定)=Layer (Relative Index)
+レイヤー(相対指定)=Layer (Absolute Index)
+レイヤー指定=Layer Index
+グラフ設定=Graph Settings
+色空間=Color Space
+HSV(円柱)=HSV (Cylindrical)
+HSV(円錐)=HSV (Conic)
+HSL(円柱)=HSL (Cylindrical)
+HSL(双円錐)=HSL (Biconic)
+色相を彩度で重み付け=Hue Weighted with Saturation
+アルファ値=Alpha
+拡大率=Zoom
+スケール=Scaling
+線形スケール=Linear Scale
+対数スケール=Logarithmic Scale
+平滑化=Smoothing
+表示設定=Visual Settings
+描画色=Stroke Color
+背景色=Background Color
+背景透明度=Background Transparency
+色を付ける=Tint Graph
+罫線=Grid Lines
+ラベル位置=Label Position
+表示モード=Display Mode
+常に表示=Always
+動画出力中は非表示=Hide During Output
+
+# Disabled to avoid potential conflicts with other translation files.
+# [Effect]
+# 編集補助\色調整=Edit Assist\Color

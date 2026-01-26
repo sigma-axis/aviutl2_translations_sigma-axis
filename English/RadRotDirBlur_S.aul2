@@ -1,0 +1,27 @@
+################################################################
+# Target: RadRotDirBlur_S (https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S)
+# Target Version: v1.05 (for beta25)
+# Language: English
+# Translator(s):
+#   sigma-axis (https://github.com/sigma-axis)
+
+[RadRotDirBlur_S]
+移動X=Move X
+移動Y=Move Y
+拡大率=Zoom
+回転角=Rotate
+中心=Center
+強さ=Intensity
+相対位置=Relative Position
+色収差設定=Chromatic Aberration Settings
+色収差=Chromatic Aberration
+赤青A=Red-Blue A
+赤緑A=Red-Green A
+緑青A=Green-Blue A
+赤青B=Red-Blue B
+赤緑B=Red-Green B
+緑青B=Green-Blue B
+色収差強さ=Aberration Intensity
+サイズ固定=Fixed Size
+その他=Others
+精度=Precision
