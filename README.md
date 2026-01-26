@@ -25,7 +25,7 @@ Currently this repository contains files for the following languages. Note that 
 
   http://spring-fragrance.mints.ne.jp/aviutl
 
-  - Confirmed to work on: `beta29`
+  - Confirmed to work on: `beta30a`
 
 ##  Installation
 
@@ -40,6 +40,17 @@ Currently this repository contains files for the following languages. Note that 
 1.  Select that language in the language setting menu.
 
 ##  Update History
+
+- **r6** (2026-01-26)
+  - \[English\] Added support for the following scripts:
+    - [ColoredCollar_S](https://github.com/sigma-axis/aviutl2_script_ColoredCollar_S)
+    - [ColorSolid_S](https://github.com/sigma-axis/aviutl2_script_ColorSolid_S)
+    - [Histogram_S](https://github.com/sigma-axis/aviutl2_script_Histogram_S)
+    - [Layback (Place Background)](https://github.com/sigma-axis/aviutl2_script_Layback)
+    - [Path_S](https://github.com/sigma-axis/aviutl2_script_Path_S)
+    - [RadRotDirBlur_S](https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S)
+    - [Tile_S](https://github.com/sigma-axis/aviutl2_script_Tile_S)
+
 
 - **r5** (2026-01-26)
 
