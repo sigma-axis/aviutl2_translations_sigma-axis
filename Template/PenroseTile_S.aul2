@@ -1,0 +1,157 @@
+################################################################
+# Target: PenroseTile_S (https://github.com/sigma-axis/aviutl2_script_PenroseTile_S)
+# Target Version: v1.23 (for beta25)
+# Language: <Language Name>
+# Translator(s):
+#   <Name1>
+#   <Name2> (<Optional URL>)
+
+################################
+# Filters (.anm2)
+################################
+[ペンローズタイル モザイクσ@PenroseTile_S]
+ペンローズタイル モザイクσ@PenroseTile_S=Penrose Tile Mosaic S@PenroseTile_S
+タイル分類=Tiling Type
+種類=Type
+P2(Kite+Dart)=P2(Kite+Dart)
+P3(菱形2種)=P3(Rhombuses)
+中心の形状=Center Shape
+Sun=Sun
+Star=Star
+タイル設定=Tile Settings
+サイズ=Size
+再分割=Deflation
+タイル配置=Tile Arrangement
+回転=Rotate
+その他=Others
+単点サンプル=Single Sampling
+境界処理=Boundary Process
+なし=None
+アンチエイリアス=Antialias
+タイル風=Convex
+
+[ペンローズタイル ぼかしσ@PenroseTile_S]
+ペンローズタイル ぼかしσ@PenroseTile_S=Penrose Tile Blur S@PenroseTile_S
+範囲=Range
+タイル分類=Tiling Type
+種類=Type
+P2(Kite+Dart)=P2(Kite+Dart)
+P3(菱形2種)=P3(Rhombuses)
+中心の形状=Center Shape
+Sun=Sun
+Star=Star
+タイル設定=Tile Settings
+サイズ=Size
+再分割=Deflation
+タイル配置=Tile Arrangement
+回転=Rotate
+その他=Others
+境界処理=Boundary Process
+なし=None
+アンチエイリアス=Antialias
+タイル風=Convex
+
+[ペンローズタイル レンズσ@PenroseTile_S]
+ペンローズタイル レンズσ@PenroseTile_S=Penrose Tile Lens S@PenroseTile_S
+レンズ設定1=Lens Settings 1
+移動X1=X Offset 1
+移動Y1=Y Offset 1
+回転1=Rotate 1
+拡大率1=Zoom 1
+拡大縦横比1=Aspect Ratio 1
+丸み1=Roundness 1
+ハイライト1=Highlight 1
+レンズ設定2=Lens Settings 2
+移動X2=X Offset 2
+移動Y2=Y Offset 2
+回転2=Rotate 2
+拡大率2=Zoom 2
+拡大縦横比2=Aspect Ratio 2
+丸み2=Roundness 2
+ハイライト2=Highlight 2
+光源角度=Light Angle
+余白幅=Padding
+タイル分類=Tiling Type
+種類=Type
+P2(Kite+Dart)=P2(Kite+Dart)
+P3(菱形2種)=P3(Rhombuses)
+中心の形状=Center Shape
+Sun=Sun
+Star=Star
+タイル設定=Tile Settings
+サイズ=Size
+再分割=Deflation
+タイル配置=Tile Arrangement
+回転=Rotate
+その他=Others
+境界処理=Boundary Process
+なし=None
+アンチエイリアス=Antialias
+タイル風=Convex
+
+################################
+# Objects (.obj2)
+################################
+[ペンローズタイルσ]
+ペンローズタイルσ=Penrose Tile S
+幅=Width
+高さ=Height
+背景サイズ=Screen Size
+タイル分類=Tiling Type
+種類=Type
+P2(Kite+Dart)=P2(Kite+Dart)
+P3(菱形2種)=P3(Rhombuses)
+中心の形状=Center Shape
+Sun=Sun
+Star=Star
+色設定=Color Settings
+色1=Color 1
+内部色1=Inner Color 1
+色2=Color 2
+内部色2=Inner Color 2
+余白色=Padding Color
+透明度1=Transparency 1
+透明度2=Transparency 2
+余白透明度=Padding Transparency
+タイル設定=Tile Settings
+サイズ=Size
+ライン幅=Line Width
+ラインぼかし=Line Blur
+余白幅=Padding Width
+タイル配置=Tile Arrangement
+回転=Rotate
+その他=Others
+アンチエイリアス=Antialias
+
+################################
+# Transitions (.scn2)
+################################
+[ペンローズタイル モザイクフェードσ]
+ペンローズタイル モザイクフェードσ=Penrose Tile Mosaic Fade S
+変化幅=Transition Part
+フェード割合=Fade Part
+反転=Invert
+形状=Transition Shape
+円=Circle
+四角=Square
+時計=Clock
+ライン=Linear
+ダブルライン=Two-Way Linear
+クロス=Cross
+形状回転=Rotate Shape
+縦横比固定=Fixed Aspect Ratio
+遷移画像ファイル=Transition Image
+タイル分類=Tiling Type
+種類=Type
+P2(Kite+Dart)=P2(Kite+Dart)
+P3(菱形2種)=P3(Rhombuses)
+中心の形状=Center Shape
+Sun=Sun
+Star=Star
+タイル設定=Tile Settings
+最大サイズ=Maximum Size
+分割回数=Deflation Steps
+タイル配置=Tile Arrangement
+回転=Rotate
+その他=Others
+アンチエイリアス=Antialias

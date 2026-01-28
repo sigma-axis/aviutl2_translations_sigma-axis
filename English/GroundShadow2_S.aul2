@@ -1,0 +1,32 @@
+################################################################
+# Target: GroundShadow2_S (https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S)
+# Target Version: v1.05 (for beta25)
+# Language: English
+# Translator(s):
+#   sigma-axis (https://github.com/sigma-axis)
+#   voidA1C (https://github.com/voidA1C)
+
+[GroundShadow2_S]
+地面角度=Ground Angle
+光源角度=Vertical Light Angle
+光源傾斜=Horizontal Light Angle
+回転=Rotate
+配置=Arrangement
+地面位置=Ground Offset
+カメラ位置=Camera Position
+視野幅=Field of View
+影位置移動=Shadow Offset
+色/透明度=Color/Transparency
+影色=Shadow Color
+影色強さ=Color Intensity
+影の濃さ=Shadow Intensity
+前景透明度=Foreground Transparency
+ぼかし設定=Blur Settings
+光分散=Light Spread
+境界ぼかし=Shadow Blur
+影の範囲=Shadow Range
+先端ぼかし=Range Edge Blur
+その他=Others
+精度=Precision
+画像最大幅=Maximum Width
+画像最大高さ=Maximum Height

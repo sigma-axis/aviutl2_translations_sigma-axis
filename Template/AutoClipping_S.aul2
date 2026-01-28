@@ -1,0 +1,22 @@
+################################################################
+# Target: AutoClipping_S (https://github.com/sigma-axis/aviutl2_script_AutoClipping_S)
+# Target Version: v1.13 (for beta22)
+# Language: <Language Name>
+# Translator(s):
+#   <Name1>
+#   <Name2> (<Optional URL>)
+
+[AutoClipping_S]
+αしきい値=Threshold (α)
+中心の位置を変更=Change Center Position
+余白=Margin
+上余白=Top Margin
+下余白=Bottom Margin
+左余白=Left Margin
+右余白=Right Margin
+有効無効=Enable/Disable
+上除去=Remove Top
+下除去=Remove Bottom
+左除去=Remove Left
+右除去=Remove Right
+その他=Others

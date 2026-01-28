@@ -1,0 +1,55 @@
+################################################################
+# Target: PageRoll_S (https://github.com/sigma-axis/aviutl2_script_PageRoll_S)
+# Target Version: v1.12 (for beta25)
+# Language: <Language Name>
+# Translator(s):
+#   <Name1>
+#   <Name2> (<Optional URL>)
+
+################################
+# Filters (.anm2)
+################################
+[PageRoll_S]
+距離=Length
+角度=Angle
+太さ=Thickness
+カメラ設定=Camera Settings
+視点X=X-Viewpoint
+視点Y=Y-Viewpoint
+視野角=Field of View
+陰影=Shadow Intensity
+領域外も描画=Extend Drawing Area
+裏地設定=Lining Settings
+裏地画像=Lining Image
+裏地向き=Lining Orientation
+通常=Normal
+左右反転=Flip Horizontally
+上下反転=Flip Vertically
+180°反転=180° Flip
+その他=Others
+
+################################
+# Transitions (.scn2)
+################################
+[PageRoll_S(シーンチェンジ)]
+PageRoll_S(シーンチェンジ)=PageRoll_S (Transition)
+角度=Angle
+太さ=Thickness
+カメラ設定=Camera Settings
+視点X=X-Viewpoint
+視点Y=Y-Viewpoint
+視野角=Field of View
+陰影=Shadow Intensity
+裏地設定=Lining Settings
+裏地=Lining
+上側=Over
+下側=Underneath
+指定画像=Specified Image
+裏地画像=Lining Image
+裏地向き=Lining Orientation
+通常=Normal
+左右反転=Flip Horizontally
+上下反転=Flip Vertically
+180°反転=180° Flip
+反転=Invert
+その他=Others

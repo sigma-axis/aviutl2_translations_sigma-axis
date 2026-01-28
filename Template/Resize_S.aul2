@@ -1,0 +1,52 @@
+################################################################
+# Target: Resize_S (https://github.com/sigma-axis/aviutl2_script_Resize_S)
+# Target Version: v1.11 (for beta25)
+# Language: <Language Name>
+# Translator(s):
+#   <Name1>
+#   <Name2> (<Optional URL>)
+
+[リサイズσ@Resize_S]
+リサイズσ@Resize_S=Resize S@Resize_S
+拡大率=Zoom
+ピクセル数でサイズ指定=Specify Size in Pixels
+アルゴリズム=Methods
+拡大方法=Magnify Method
+最近傍法=Nearest Neighbour
+単純平均=Simple Average
+双線形=Bilinear
+Mitchell-Netravali=Mitchell-Netravali
+Catmull-Rom=Catmull-Rom
+Lanczos2=Lanczos 2
+Lanczos3=Lanczos 3
+縮小方法=Reduction Method
+Hamming=Hamming
+中心の位置を変更=Change Center Position
+その他=Others
+
+[ボックスリサイズσ@Resize_S]
+ボックスリサイズσ@Resize_S=Box Resize S@Resize_S
+モード=Mode
+内接最大=Max Inscription
+外接最小=Min Circumscription
+拡大縮小=Zoom Type
+拡縮両方=Zoom In/Out
+拡大のみ=Zoom In
+縮小のみ=Zoom Out
+アルゴリズム=Methods
+拡大方法=Magnify Method
+最近傍法=Nearest Neighbour
+単純平均=Simple Average
+双線形=Bilinear
+Mitchell-Netravali=Mitchell-Netravali
+Catmull-Rom=Catmull-Rom
+Lanczos2=Lanczos 2
+Lanczos3=Lanczos 3
+縮小方法=Reduction Method
+Hamming=Hamming
+整列=Alignment
+水平揃え=Horizontal Alignment
+垂直揃え=Vertical Alignment
+中心の位置を変更=Change Center Position
+余白/クリッピング=Margin/Clipping
+その他=Others
