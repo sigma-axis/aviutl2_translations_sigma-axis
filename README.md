@@ -41,6 +41,14 @@ Currently this repository contains files for the following languages. Note that 
 
 ##  Update History
 
+- **r7** (2026-01-28)
+  - \[English\] Added support for the following scripts:
+    - [AutoClipping_S](https://github.com/sigma-axis/aviutl2_script_AutoClipping_S)
+    - [GroundShadow2_S](https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S)
+    - [PageRoll_S](https://github.com/sigma-axis/aviutl2_script_PageRoll_S)
+    - [PenroseTile_S](https://github.com/sigma-axis/aviutl2_script_PenroseTile_S)
+    - [Resize_S](https://github.com/sigma-axis/aviutl2_script_Resize_S)
+
 - **r6** (2026-01-26)
   - \[English\] Added support for the following scripts:
     - [ColoredCollar_S](https://github.com/sigma-axis/aviutl2_script_ColoredCollar_S)
@@ -50,7 +58,6 @@ Currently this repository contains files for the following languages. Note that 
     - [Path_S](https://github.com/sigma-axis/aviutl2_script_Path_S)
     - [RadRotDirBlur_S](https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S)
     - [Tile_S](https://github.com/sigma-axis/aviutl2_script_Tile_S)
-
 
 - **r5** (2026-01-26)
 
