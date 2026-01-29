@@ -43,7 +43,6 @@
 六角錐=六棱锥
 
 [HSL色立体@ColorSolid_S]
-HSL色立体@ColorSolid_S=Color Solid HSL@ColorSolid_S
 サイズ=尺寸
 明るさ=亮度
 断面角度=切面角度
@@ -55,7 +54,7 @@ HSL色立体@ColorSolid_S=Color Solid HSL@ColorSolid_S
 六角錐=六棱锥
 
 [色ピッカー@ColorSolid_S]
-色ピッカー@ColorSolid_S=Color Picker@ColorSolid_S
+色ピッカー@ColorSolid_S=吸色器@ColorSolid_S
 サイズ=尺寸
 明るさ=亮度
 断面角度=切面角度
