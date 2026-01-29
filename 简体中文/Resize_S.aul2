@@ -1,0 +1,51 @@
+################################################################
+# Target: Resize_S (https://github.com/sigma-axis/aviutl2_script_Resize_S)
+# Target Version: v1.11 (for beta25)
+# Language: 简体中文
+# Translator(s):
+#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+
+[リサイズσ@Resize_S]
+リサイズσ@Resize_S=尺寸调整σ@Resize_S
+拡大率=缩放率
+ピクセル数でサイズ指定=按像素数量指定尺寸
+アルゴリズム=算法
+拡大方法=放大方法
+最近傍法=最近邻法
+単純平均=简单平均
+双線形=双线性
+Mitchell-Netravali=米切尔-内特拉瓦利滤波
+Catmull-Rom=卡特姆-罗姆插值
+Lanczos2=兰佐斯 2
+Lanczos3=兰佐斯 3
+縮小方法=缩小方法
+Hamming=汉明滤波
+中心の位置を変更=中心点同步变化
+その他=其他
+
+[ボックスリサイズσ@Resize_S]
+ボックスリサイズσ@Resize_S=方框尺寸调整σ@Resize_S
+モード=模式
+内接最大=最大内接
+外接最小=最大外接
+拡大縮小=类型
+拡縮両方=缩放
+拡大のみ=仅放大
+縮小のみ=仅缩小
+アルゴリズム=算法
+拡大方法=缩放方法
+最近傍法=最近邻法
+単純平均=简单平均
+双線形=双线性
+Mitchell-Netravali=米切尔-内特拉瓦利滤波
+Catmull-Rom=卡特姆-罗姆插值
+Lanczos2=兰佐斯 2
+Lanczos3=兰佐斯 3
+縮小方法=缩小方法
+Hamming=汉明滤波
+整列=对齐
+水平揃え=水平对齐
+垂直揃え=垂直对齐
+中心の位置を変更=中心点同步变化
+余白/クリッピング=余白/裁剪
+その他=其他

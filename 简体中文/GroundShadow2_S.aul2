@@ -1,0 +1,27 @@
+################################################################
+# Target: GroundShadow2_S (https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S)
+# Target Version: v1.05 (for beta25)
+# Language: 简体中文
+# Translator(s):
+#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+
+[GroundShadow2_S]
+GroundShadow2_S=地面阴影σ
+光源傾斜=光源倾斜
+回転=旋转
+配置=分布
+カメラ位置=摄像机位置
+視野幅=视野宽度
+影位置移動=阴影位置移动
+色/透明度=颜色/透明度
+影色=阴影颜色
+影色強さ=颜色强度
+影の濃さ=阴影浓度
+ぼかし設定=模糊设置
+光分散=光源分散
+境界ぼかし=边缘模糊
+影の範囲=阴影范围
+先端ぼかし=前端模糊
+その他=其他
+画像最大幅=图像最大宽度
+画像最大高さ=图像最大高度

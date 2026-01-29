@@ -1,0 +1,14 @@
+################################################################
+# Target: AutoClipping_S (https://github.com/sigma-axis/aviutl2_script_AutoClipping_S)
+# Target Version: v1.13 (for beta22)
+# Language: 简体中文
+# Translator(s):
+#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+
+[AutoClipping_S]
+AutoClipping_S=自动裁剪σ
+αしきい値=α阈值
+中心の位置を変更=中心点同步变化
+
+有効無効=启用/禁用
+その他=其他
