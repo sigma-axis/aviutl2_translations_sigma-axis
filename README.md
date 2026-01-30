@@ -19,6 +19,23 @@ Currently this repository contains files for the following languages. Note that 
 
 ***If the language you speak is not available or lacking translations, your [contribution](https://github.com/sigma-axis/aviutl2_translations_sigma-axis/blob/main/CONTRIBUTING.md) is always welcome!***
 
+## Supported Scripts
+
+1.  [AutoClipping_S](https://github.com/sigma-axis/aviutl2_script_AutoClipping_S)
+1.  [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S)
+1.  [ColoredCollar_S](https://github.com/sigma-axis/aviutl2_script_ColoredCollar_S)
+1.  [ColorSolid_S](https://github.com/sigma-axis/aviutl2_script_ColorSolid_S)
+1.  [GroundShadow2_S](https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S)
+1.  [Histogram_S](https://github.com/sigma-axis/aviutl2_script_Histogram_S)
+1.  [Layback](https://github.com/sigma-axis/aviutl2_script_Layback)
+1.  [PageRoll_S](https://github.com/sigma-axis/aviutl2_script_PageRoll_S)
+1.  [Path_S](https://github.com/sigma-axis/aviutl2_script_Path_S)
+1.  [PenroseTile_S](https://github.com/sigma-axis/aviutl2_script_PenroseTile_S)
+1.  [RadRotDirBlur_S](https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S)
+1.  [Resize_S](https://github.com/sigma-axis/aviutl2_script_Resize_S)
+1.  [Tile_S](https://github.com/sigma-axis/aviutl2_script_Tile_S)
+1.  [WhiteBalance_S](https://github.com/sigma-axis/aviutl2_script_WhiteBalance_S)
+
 ##  Requirements
 
 - AviUtl ExEdit2
@@ -40,6 +57,10 @@ Currently this repository contains files for the following languages. Note that 
 1.  Select that language in the language setting menu.
 
 ##  Update History
+
+- **r8** (2026-01-30)
+  - \[English\] Corrected some translations. Thanks to @nsYW. (#2)
+  - \[简体中文\] Updated translations to cover all other scripts. Thanks to @nsYW. (#2)
 
 - **r7** (2026-01-28)
   - \[English\] Added support for the following scripts:
