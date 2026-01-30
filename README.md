@@ -58,6 +58,9 @@ Currently this repository contains files for the following languages. Note that 
 
 ##  Update History
 
+- **r9** (2026-01-30)
+  - \[English\] Fixed typo.
+
 - **r8** (2026-01-30)
   - \[English\] Corrected some translations. Thanks to @nsYW. (#2)
   - \[简体中文\] Updated translations to cover all other scripts. Thanks to @nsYW. (#2)

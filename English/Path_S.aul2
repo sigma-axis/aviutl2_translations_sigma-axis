@@ -38,7 +38,7 @@
 ぼかし幅=Edge Blur
 
 [パスマスク(ライン)σ@Path_S]
-パスマスク(ライン)σ@Path_S=Math Mask S (Line)σ@Path_S
+パスマスク(ライン)σ@Path_S=Path Mask S (Line)σ@Path_S
 強さ=Intensity
 反転=Invert
 ライン幅=Line Width
