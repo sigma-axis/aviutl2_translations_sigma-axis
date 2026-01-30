@@ -12,8 +12,8 @@
 対象=Source
 フレームバッファ(アルファ値なし)=Frame Buffer (without Alpha)
 フレームバッファ(アルファ値あり)=Frame Buffer (with Alpha)
-レイヤー(絶対指定)=Layer (Relative Index)
-レイヤー(相対指定)=Layer (Absolute Index)
+レイヤー(絶対指定)=Layer (Absolute Index)
+レイヤー(相対指定)=Layer (Relative Index)
 レイヤー指定=Layer Index
 グラフ設定=Graph Settings
 色空間=Color Space
