@@ -1,0 +1,42 @@
+################################################################
+# Target: Histogram_S (https://github.com/sigma-axis/aviutl2_script_Histogram_S)
+# Target Version: v1.10 (for beta 30a)
+# Language: 简体中文
+# Translator(s):
+#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+
+[Histogram_S]
+Histogram_S=直方图σ
+幅=宽度
+高さ=高度
+対象=目标
+フレームバッファ(アルファ値なし)=帧缓存(无Alpha)
+フレームバッファ(アルファ値あり)=帧缓存(有Alpha)
+レイヤー(絶対指定)=图层(绝对指定)
+レイヤー(相対指定)=图层(相对指定)
+レイヤー指定=图层指定
+グラフ設定=图标设置
+色空間=色彩空间
+HSV(円柱)=HSV(圆柱)
+HSV(円錐)=HSV(圆锥)
+HSL(円柱)=HSL(圆柱)
+HSL(双円錐)=HSL(双圆锥)
+色相を彩度で重み付け=用饱和度加权色相
+アルファ値=Alpha
+拡大率=缩放率
+スケール=刻度
+線形スケール线性刻度
+対数スケール=对数刻度
+表示設定=显示设置
+描画色=渲染颜色
+背景色=背景颜色
+色を付ける=上色
+罫線=卦线
+ラベル位置=标签位置
+表示モード=显示模式
+常に表示=一直显示
+動画出力中は非表示=视频导出时隐藏
+
+# Disabled to avoid potential conflicts with other translation files.
+# [Effect]
+# 編集補助\色調整=编辑辅助\颜色调整

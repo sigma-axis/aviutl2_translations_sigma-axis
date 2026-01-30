@@ -1,0 +1,13 @@
+################################################################
+# Target: ColoredCollar_S (https://github.com/sigma-axis/aviutl2_script_ColoredCollar_S)
+# Target Version: v1.00 (for beta5)
+# Language: 简体中文
+# Translator(s):
+#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+
+[ColoredCollar_S]
+ColoredCollar_S=上色描边σ
+サイズ=尺寸
+ぼかし=模糊
+縁色=描边颜色
+色の濃さ=颜色浓度

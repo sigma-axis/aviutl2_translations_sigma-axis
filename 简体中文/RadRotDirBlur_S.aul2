@@ -1,0 +1,27 @@
+################################################################
+# Target: RadRotDirBlur_S (https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S)
+# Target Version: v1.05 (for beta25)
+# Language: 简体中文
+# Translator(s):
+#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+
+[RadRotDirBlur_S]
+RadRotDirBlur_S=放射/旋转/直接模糊σ
+移動X=移动X
+移動Y=移动Y
+拡大率=缩放率
+回転角=旋转角
+中心=中心
+強さ=强度
+相対位置=相对位置
+色収差設定=色差设置
+色収差=色差
+赤青A=红蓝A
+赤緑A=红绿A
+緑青A=绿蓝A
+赤青B=红蓝B
+赤緑B=红绿B
+緑青B=绿蓝B
+色収差強さ=色差强度
+サイズ固定=固定尺寸
+その他=其他

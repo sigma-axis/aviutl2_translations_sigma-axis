@@ -1,0 +1,70 @@
+################################################################
+# Target: ColorSolid_S (https://github.com/sigma-axis/aviutl2_script_ColorSolid_S)
+# Target Version: v1.00 (for beta 22a)
+# Language: 简体中文
+# Translator(s):
+#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+
+[XYZ色立体@ColorSolid_S]
+サイズ=尺寸
+断面角度=切面角度
+明るさ=亮度
+回転=旋转
+
+[RGB色立体@ColorSolid_S]
+サイズ=尺寸
+明るさ=亮度
+断面角度=切面角度
+回転=旋转
+色空間=色彩空间
+
+[OKLCh色立体@ColorSolid_S]
+サイズ=尺寸
+明るさ=亮度
+断面角度=切面角度
+回転=旋转
+
+[YUV色立体@ColorSolid_S]
+サイズ=尺寸
+明るさ=亮度
+断面角度=切面角度
+回転=旋转
+色空間=色彩空间
+
+[HSV色立体@ColorSolid_S]
+サイズ=尺寸
+明るさ=亮度
+断面角度=切面角度
+色相ずれ=色相偏移
+モデル=模型
+円柱=圆柱
+円錐=圆锥
+六角柱=六棱柱
+六角錐=六棱锥
+
+[HSL色立体@ColorSolid_S]
+サイズ=尺寸
+明るさ=亮度
+断面角度=切面角度
+色相ずれ=色相偏移
+モデル=模型
+円柱=圆柱
+双円錐=双圆锥
+六角柱=六棱柱
+双六角錐=双六棱锥
+
+[色ピッカー@ColorSolid_S]
+色ピッカー@ColorSolid_S=吸色器@ColorSolid_S
+サイズ=尺寸
+明るさ=亮度
+断面角度=切面角度
+純色幅=Pure Color 尺寸
+無彩色幅=Gray 尺寸
+色相ずれ=色相偏移
+モデル=模型
+円=圆
+六角形=六边形
+
+# Disabled to avoid potential conflicts with other translation files.
+# [Effect]
+# 編集補助\色調整=编辑辅助\颜色调整
