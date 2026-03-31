@@ -58,6 +58,9 @@ Currently this repository contains files for the following languages. Note that 
 
 ##  Update History
 
+- **r11** (2026-04-01)
+  - \[English\] Fixed wrong formats in the translation files for [Border_S](https://github.com/sigma-axis/aviutl2_Border_S).
+
 - **r10** (2026-04-01)
   - \[English\] Added support for the filter plugin [Border_S](https://github.com/sigma-axis/aviutl2_Border_S).
 

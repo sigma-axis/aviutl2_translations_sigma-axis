@@ -1,13 +1,12 @@
 ################################################################
 # Target: Border_S (https://github.com/sigma-axis/aviutl2_Border_S)
 # Target Version: v1.00 (for beta 39)
-# Language: <Language Name>
+# Language: English
 # Translator(s):
-#   <Name1>
-#   <Name2> (<Optional URL>)
+#   sigma-axis (https://github.com/sigma-axis)
 
-[縁取りσ@Border_S]
-縁取りσ@Border_S=Border S@Border_S
+[縁取りσ]
+縁取りσ=Border S
 サイズ=Size
 ぼかし=Blur
 縁色=Border Color
@@ -30,8 +29,8 @@
 凹半径=Concave Radius
 膨らみ=Expo
 
-[角丸めσ@Border_S]
-角丸めσ@Border_S=Round Corners S@Border_S
+[角丸めσ]
+角丸めσ=Round Corners S
 半径=Radius
 ぼかし=Blur
 方式=Method
@@ -49,8 +48,8 @@
 縦横比=Aspect
 膨らみ=Expo
 
-[アウトラインσ(Mired)@Border_S]
-アウトラインσ(Mired)@Border_S=Outline S (Mired)@Border_S
+[アウトラインσ]
+アウトラインσ=Outline S 
 距離=Distance
 ライン幅=Line Size
 ぼかし=Blur
