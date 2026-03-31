@@ -1,0 +1,82 @@
+################################################################
+# Target: Border_S (https://github.com/sigma-axis/aviutl2_Border_S)
+# Target Version: v1.00 (for beta 39)
+# Language: <Language Name>
+# Translator(s):
+#   <Name1>
+#   <Name2> (<Optional URL>)
+
+[縁取りσ@Border_S]
+縁取りσ@Border_S=Border S@Border_S
+サイズ=Size
+ぼかし=Blur
+縁色=Border Color
+方式=Method
+2値化=Binarize
+2値化倍精度=Binarize 2x
+2値化スムーズ=Binarize Smooth
+総和=Sum
+最大値=Maximum
+α調整=Alpha Param
+タイプ=Type
+外側縁取り=Outer Border
+内側縁取り=Inner Border
+透明度設定=Transparency Settings
+透明度=Transparency
+前景透明度=Foreground Transparency
+その他=Others
+縦横比=Aspect
+凸半径=Convex Radius
+凹半径=Concave Radius
+膨らみ=Expo
+
+[角丸めσ@Border_S]
+角丸めσ@Border_S=Round Corners S@Border_S
+半径=Radius
+ぼかし=Blur
+方式=Method
+2値化=Binarize
+2値化倍精度=Binarize 2x
+2値化スムーズ=Binarize Smooth
+総和=Sum
+最大値=Maximum
+α調整=Alpha Param
+縁の縮小の設定=Shrink Boundary Settings
+縁の縮小=Shrink Boundary
+サイズ固定=Fixed Size
+その他=Others
+透明度=Transparency
+縦横比=Aspect
+膨らみ=Expo
+
+[アウトラインσ(Mired)@Border_S]
+アウトラインσ(Mired)@Border_S=Outline S (Mired)@Border_S
+距離=Distance
+ライン幅=Line Size
+ぼかし=Blur
+縁色=Border Color
+方式=Method
+2値化=Binarize
+2値化倍精度=Binarize 2x
+2値化スムーズ=Binarize Smooth
+総和=Sum
+最大値=Maximum
+α調整=Alpha Param
+合成=Composition Settings
+ライン配置=Line Placement
+背面=Back
+前面=Front
+ライン透明度=Line Transparency
+内側透明度=Inner Transparency
+元画像透明度=Source Transparency
+その他=Others
+距離縦横比=Aspect of Distance
+凸半径=Convex Radius
+凹半径=Concave Radius
+距離膨らみ=Expo of Distance
+ライン縦横比=Aspect of Line
+ライン膨らみ=Expo of Line
+手順=Process Order
+外側優先=Prefer Outer
+内側優先=Prefer Inner
+速い方=Faster
