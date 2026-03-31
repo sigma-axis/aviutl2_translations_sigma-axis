@@ -6,6 +6,9 @@
 #   <Name1>
 #   <Name2> (<Optional URL>)
 
+################################
+# Filters
+################################
 [縁取りσ]
 縁取りσ=Border S
 サイズ=Size
@@ -80,3 +83,11 @@
 外側優先=Prefer Outer
 内側優先=Prefer Inner
 速い方=Faster
+
+################################
+# Labels
+################################
+[Effect]
+Border_S\装飾=Border_S\Decoration
+Border_S\クリッピング=Border_S\Clipping
+Border_S\加工=Border_S\Process
