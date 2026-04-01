@@ -19,10 +19,11 @@ Currently this repository contains files for the following languages. Note that 
 
 ***If the language you speak is not available or lacking translations, your [contribution](https://github.com/sigma-axis/aviutl2_translations_sigma-axis/blob/main/CONTRIBUTING.md) is always welcome!***
 
-## Supported Scripts
+## Supported Scripts and Filters
 
 1.  [AutoClipping_S](https://github.com/sigma-axis/aviutl2_script_AutoClipping_S)
 1.  [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S)
+1.  [Border_S](https://github.com/sigma-axis/aviutl2_Border_S)
 1.  [ColoredCollar_S](https://github.com/sigma-axis/aviutl2_script_ColoredCollar_S)
 1.  [ColorSolid_S](https://github.com/sigma-axis/aviutl2_script_ColorSolid_S)
 1.  [GroundShadow2_S](https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S)
@@ -57,6 +58,9 @@ Currently this repository contains files for the following languages. Note that 
 1.  Select that language in the language setting menu.
 
 ##  Update History
+
+- **r13** (2026-04-01)
+  - \[简体中文\] Added translations for the filter plugin [Border_S](https://github.com/sigma-axis/aviutl2_Border_S).
 
 - **r12** (2026-04-01)
   - \[English\] Added translations for labels of [Border_S](https://github.com/sigma-axis/aviutl2_Border_S).
