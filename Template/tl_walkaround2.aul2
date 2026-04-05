@@ -1,0 +1,85 @@
+################################################################
+# Target: TL Walkaround 2 (https://github.com/sigma-axis/aviutl2_tl_walkaround2)
+# Target Version: v1.40 (for beta40a)
+# Language: <Language Name>
+# Translator(s):
+#   <Name1>
+#   <Name2> (<Optional URL>)
+
+[Menu]
+TLショトカ移動2=TL Walkaround 2
+
+[Plugin.TLショトカ移動2]
+移動量(%):=Move Amount(%):
+BPM移動分母:=Move N-th BPM Grid:
+範囲選択を抑制=Suppress Selecting Range
+選択オブジェクトの追従=Follow Selected Objects
+長さの調整:=Stretch Object Length:
+秒=Seconds
+フレーム=Frames
+
+左の中間点(レイヤー)=Left Intermediate Point (Layer)
+右の中間点(レイヤー)=Right Intermediate Point (Layer)
+左の境界(レイヤー)=Left Object Boundary (Layer)
+右の境界(レイヤー)=Right Object Boundary (Layer)
+左の中間点(シーン)=Left Intermediate Point (Scene)
+右の中間点(シーン)=Right Intermediate Point (Scene)
+左の境界(シーン)=Left Object Boundary (Scene)
+右の境界(シーン)=Right Object Boundary (Scene)
+
+左へ1ページ移動=Move Left by One Page
+右へ1ページ移動=Move Right by One Page
+左へ一定量移動=Move Left by Certain Aount
+右へ一定量移動=Move Right by Certain Aount
+
+選択オブジェクトへ移動=Move to Selected Object
+選択オブジェクトへ移動(フレームのみ)=Move to Selected Object (Frame)
+選択オブジェクトへ移動(レイヤーのみ)=Move to Selected Object (Layer)
+タイムラインの中央へ移動=Move to Center of Timeline
+
+左へ1ページスクロール=Scroll Left by One Page
+右へ1ページスクロール=Scroll Right by One Page
+左へ一定量スクロール=Scroll Left by Certain Aount
+右へ一定量スクロール=Scroll Right by Certain Aount
+先頭へスクロール=Scroll to First
+最後へスクロール=Scroll to Last
+カーソル位置へスクロール=Scroll to Cursor
+選択オブジェクトへスクロール=Scroll to Selected Object
+
+上へスクロール=Scroll Up
+下へスクロール=Scroll Down
+上へ1ページスクロール=Scroll Up by One Page
+下へ1ページスクロール=Scroll Down by One Page
+最上端へスクロール=Scroll to Top
+最下端へスクロール=Scroll to Bottom
+選択レイヤーへスクロール=Scroll to Selected Layer
+
+現在フレームのオブジェクトを選択(逆順)=Select Objects at Current Frame (Reverse)
+左のオブジェクトを選択=Select Object Left
+右のオブジェクトを選択=Select Object Right
+上のオブジェクトを選択=Select Object Up
+下のオブジェクトを選択=Select Object Down
+上のレイヤーを選択=Select Layer Up
+下のレイヤーを選択=Select Layer Down
+
+左の小節線へ移動(BPM)=Left Measure Point (BPM)
+右の小節線へ移動(BPM)=Right Measure Point (BPM)
+左の拍数線へ移動(BPM)=Left Beat Point (BPM)
+右の拍数線へ移動(BPM)=Right Beat Point (BPM)
+左に1/N拍移動(BPM)=Left N-th Beat Point (BPM)
+右に1/N拍移動(BPM)=Right N-th Beat Point (BPM)
+左にグリッド基準線を移動(BPM)=Move Reference Time Left (BPM)
+右にグリッド基準線を移動(BPM)=Move Reference Time Right (BPM)
+グリッド基準線を現在フレームに(BPM)=Set Reference Time to Cursor (BPM)
+最寄りの小節線を現在フレームに(BPM)=Set Nearest Measure to Cursor (BPM)
+
+左に選択オブジェクトを詰める=Shift Selected Objects Left
+右に選択オブジェクトを詰める=Shift Selected Objects Right
+上に選択オブジェクトを移動=Move Selected Objects Up
+下に選択オブジェクトを移動=Move Selected Objects Down
+
+選択オブジェクトの始点を伸ばす=Extend the Start of Selected Objects
+選択オブジェクトの終点を伸ばす=Extend the End of Selected Objects
+
+カーソル位置を元に戻す=Cursor Undo
+カーソル位置をやり直す=Cusror Redo

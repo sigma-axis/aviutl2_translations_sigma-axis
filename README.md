@@ -1,12 +1,12 @@
 # AviUtl ExEdit2 Language Files for Scripts and Filters by sigma-axis
 
-This repository contains language translation files for AviUtl ExEdit2, which enable names and parameters of scripts I publish on GitHub to be displayed in other languages than Japanese.
+This repository contains language translation files for AviUtl ExEdit2, which enable names, parameters and commands of the scripts and plugins I have published on GitHub to be displayed in other languages than Japanese.
 
-They take effects only to the scripts I wrote, so it is unlikely to conflict with translations from other language files.
+They take effects only to the scripts and plugins I wrote, so it is unlikely to conflict with translations from other language files.
 
-私が GitHub で公開している AviUtl ExEdit2 用のスクリプトの名前やパラメタを，日本語以外の言語で表示する言語ファイルのリポジトリです．
+私が GitHub で公開している AviUtl ExEdit2 用のスクリプトやプラグインの名前やパラメタ，コマンドを，日本語以外の言語で表示する言語ファイルのリポジトリです．
 
-影響範囲は私の作成したスクリプトに限られているため，他の翻訳ファイルとはまず干渉しません．
+影響範囲は私の作成したスクリプトやプラグインに限られているため，他の翻訳ファイルとはまず干渉しません．
 
 [Downloads / ダウンロードはこちら．](https://github.com/sigma-axis/aviutl2_translations_sigma-axis/releases)
 
@@ -19,7 +19,7 @@ Currently this repository contains files for the following languages. Note that 
 
 ***If the language you speak is not available or lacking translations, your [contribution](https://github.com/sigma-axis/aviutl2_translations_sigma-axis/blob/main/CONTRIBUTING.md) is always welcome!***
 
-## Supported Scripts and Filters
+## Supported Scripts and Plugins
 
 1.  [AutoClipping_S](https://github.com/sigma-axis/aviutl2_script_AutoClipping_S)
 1.  [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S)
@@ -35,6 +35,7 @@ Currently this repository contains files for the following languages. Note that 
 1.  [RadRotDirBlur_S](https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S)
 1.  [Resize_S](https://github.com/sigma-axis/aviutl2_script_Resize_S)
 1.  [Tile_S](https://github.com/sigma-axis/aviutl2_script_Tile_S)
+1.  [TL Walkaround 2](https://github.com/sigma-axis/aviutl2_tl_walkaround2)
 1.  [WhiteBalance_S](https://github.com/sigma-axis/aviutl2_script_WhiteBalance_S)
 
 ##  Requirements
@@ -43,7 +44,7 @@ Currently this repository contains files for the following languages. Note that 
 
   http://spring-fragrance.mints.ne.jp/aviutl
 
-  - Confirmed to work on: `beta30a`
+  - Confirmed to work on: `beta40a`
 
 ##  Installation
 
@@ -58,6 +59,9 @@ Currently this repository contains files for the following languages. Note that 
 1.  Select that language in the language setting menu.
 
 ##  Update History
+
+- **r14** (2026-04-05)
+  - \[English\] Added support for the common plugin [TL Walkaround 2](https://github.com/sigma-axis/aviutl2_tl_walkaround2).
 
 - **r13** (2026-04-01)
   - \[简体中文\] Added translations for the filter plugin [Border_S](https://github.com/sigma-axis/aviutl2_Border_S).
