@@ -36,13 +36,18 @@ jobs:
       with:
         submodules: recursive
 
+    - name: Set package version
+      run: |
+        cd assets
+        sed -i 's/\${rev}/${{ github.ref_name }}/g' package.ini
+
     - name: Pack into single file
       run: |
         mkdir pack
         declare -A LANG_ASSET_NAME=${{ env.LANG_ASSET_NAME }}
         for lang in ${!LANG_ASSET_NAME[@]}; do
-          mkdir "pack/$lang"
-          OUT_FILE="pack/$lang/$lang.${{ env.OWNER_NAME }}.aul2"
+          mkdir -p "pack/$lang/Language"
+          OUT_FILE="pack/$lang/Language/$lang.${{ env.OWNER_NAME }}.aul2"
           echo "# $lang.${{ env.OWNER_NAME }}.aul2 ${{ github.ref_name }} ($(TZ='${{ env.TIME_ZONE }}' date +'%Y-%m-%d'))" >> $OUT_FILE
           for file in $lang/*.aul2; do
             echo "" >> $OUT_FILE
@@ -58,13 +63,15 @@ jobs:
         cd pack
         declare -A LANG_ASSET_NAME=${{ env.LANG_ASSET_NAME }}
         for lang in ${!LANG_ASSET_NAME[@]}; do
-          cp ../README.md "$lang/README.md"
-          cp ../LICENSE "$lang/LICENSE"
-          if [ -f "../$lang/README.md" ]; then
-            cp "../$lang/README.md" "$lang/$lang.README.md"
+          mkdir "$lang/${{ env.OWNER_NAME }}"
+          cp ../README.md "$lang/${{ env.OWNER_NAME }}/README.md"
+          cp ../LICENSE "$lang/${{ env.OWNER_NAME }}/LICENSE"
+          cp ../assets/package.ini "$lang/package.ini"
+          if [ -f "../$lang/${{ env.OWNER_NAME }}/README.md" ]; then
+            cp "../$lang/${{ env.OWNER_NAME }}/README.md" "$lang/${{ env.OWNER_NAME }}/$lang.README.md"
           fi
           cd "$lang"
-          zip -r "../../aviutl2-${LANG_ASSET_NAME[$lang]}-${{ env.OWNER_NAME }}-${{ github.ref_name }}.zip" *
+          zip -r "../../aviutl2-${LANG_ASSET_NAME[$lang]}-${{ env.OWNER_NAME }}-${{ github.ref_name }}.au2pkg.zip" *
           cd ..
         done
 
@@ -87,7 +94,7 @@ jobs:
         done
 
     - name: Release
-      uses: softprops/action-gh-release@v2
+      uses: softprops/action-gh-release@v3
       with:
         name: ${{ steps.release-notes.outputs.name }}
         files: '*.zip'

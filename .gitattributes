@@ -1,5 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
+assets/package.ini text eol=crlf working-tree-encoding=utf8
+
 ###############################################################################
 *.aul2 text eol=lf linguist-language=ini working-tree-encoding=utf8

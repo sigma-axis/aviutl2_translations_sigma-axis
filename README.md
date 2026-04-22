@@ -48,17 +48,17 @@ Currently this repository contains files for the following languages. Note that 
 
 ##  Installation
 
-1.  [Download](https://github.com/sigma-axis/aviutl2_translations_sigma-axis/releases) the zip file of the language to install and locate the file `<language name>.sigma-axis.aul2`.
+1.  [Download](https://github.com/sigma-axis/aviutl2_translations_sigma-axis/releases) the `.au2pkg.zip` file with the name of the language to install.
 
-1.  Then either:
-    1.  Copy the file to `Language` folder, then restart AviUtl2.
-        - To find `Language` folder, click in the main menu “Others” :arrow_right: “Application Data” :arrow_right: “Language File Folder”.
-
-    1.  Drag and drop the file to the preview window of AviUtl2. AviUtl2 will automatically restart.
+1.  Then drag and drop the file to the preview window of AviUtl2. AviUtl2 will automatically restart.
 
 1.  Select that language in the language setting menu.
 
 ##  Update History
+
+- **r15** (2026-04-23)
+  - Changed the distribution files to `.au2pkg.zip` format.
+  - \[English\] Updated translation for [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S) to follow v2.00.
 
 - **r14** (2026-04-05)
   - \[English\] Added support for the common plugin [TL Walkaround 2](https://github.com/sigma-axis/aviutl2_tl_walkaround2).
