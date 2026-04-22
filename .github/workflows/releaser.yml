@@ -63,12 +63,12 @@ jobs:
         cd pack
         declare -A LANG_ASSET_NAME=${{ env.LANG_ASSET_NAME }}
         for lang in ${!LANG_ASSET_NAME[@]}; do
-          mkdir "$lang/${{ env.OWNER_NAME }}"
-          cp ../README.md "$lang/${{ env.OWNER_NAME }}/README.md"
-          cp ../LICENSE "$lang/${{ env.OWNER_NAME }}/LICENSE"
+          mkdir "$lang/Language/${{ env.OWNER_NAME }}"
+          cp ../README.md "$lang/Language/${{ env.OWNER_NAME }}/README.md"
+          cp ../LICENSE "$lang/Language/${{ env.OWNER_NAME }}/LICENSE"
           cp ../assets/package.ini "$lang/package.ini"
-          if [ -f "../$lang/${{ env.OWNER_NAME }}/README.md" ]; then
-            cp "../$lang/${{ env.OWNER_NAME }}/README.md" "$lang/${{ env.OWNER_NAME }}/$lang.README.md"
+          if [ -f "../$lang/README.md" ]; then
+            cp "../$lang/README.md" "$lang/Language/${{ env.OWNER_NAME }}/$lang.README.md"
           fi
           cd "$lang"
           zip -r "../../aviutl2-${LANG_ASSET_NAME[$lang]}-${{ env.OWNER_NAME }}-${{ github.ref_name }}.au2pkg.zip" *

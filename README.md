@@ -58,7 +58,7 @@ Currently this repository contains files for the following languages. Note that 
 
 - **r15** (2026-04-23)
   - Changed the distribution files to `.au2pkg.zip` format.
-  - \[English\] Updated translation for [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S) to follow v2.00.
+  - \[English\] Updated translation for [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S) to follow v2.01.
 
 - **r14** (2026-04-05)
   - \[English\] Added support for the common plugin [TL Walkaround 2](https://github.com/sigma-axis/aviutl2_tl_walkaround2).
