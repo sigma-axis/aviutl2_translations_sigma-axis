@@ -1,9 +1,9 @@
-################################################################
-# Target: Tile_S (https://github.com/sigma-axis/aviutl2_script_Tile_S)
-# Target Version: v1.03 (for beta25)
-# Language: English
-# Translator(s):
-#   sigma-axis (https://github.com/sigma-axis)
+;===============================================================
+; Target: Tile_S (https://github.com/sigma-axis/aviutl2_script_Tile_S)
+; Target Version: v1.03 (for beta25)
+; Language: English
+; Translator(s):
+;   sigma-axis (https://github.com/sigma-axis)
 
 [四角タイルσ@Tile_S]
 四角タイルσ@Tile_S=Rectangle Tile S@Tile_S

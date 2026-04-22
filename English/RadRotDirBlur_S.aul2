@@ -1,9 +1,9 @@
-################################################################
-# Target: RadRotDirBlur_S (https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S)
-# Target Version: v1.05 (for beta25)
-# Language: English
-# Translator(s):
-#   sigma-axis (https://github.com/sigma-axis)
+;===============================================================
+; Target: RadRotDirBlur_S (https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S)
+; Target Version: v1.05 (for beta25)
+; Language: English
+; Translator(s):
+;   sigma-axis (https://github.com/sigma-axis)
 
 [RadRotDirBlur_S]
 移動X=Move X

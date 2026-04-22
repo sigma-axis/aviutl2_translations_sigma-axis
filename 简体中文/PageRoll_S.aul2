@@ -1,13 +1,13 @@
-################################################################
-# Target: PageRoll_S (https://github.com/sigma-axis/aviutl2_script_PageRoll_S)
-# Target Version: v1.12 (for beta25)
-# Language: 简体中文
-# Translator(s):
-#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+;===============================================================
+; Target: PageRoll_S (https://github.com/sigma-axis/aviutl2_script_PageRoll_S)
+; Target Version: v1.12 (for beta25)
+; Language: 简体中文
+; Translator(s):
+;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
 
-################################
-# 滤镜 (.anm2)
-################################
+;===============================
+; 滤镜 (.anm2)
+;===============================
 [PageRoll_S]
 PageRoll_S=翻页σ
 距離=距离
@@ -27,9 +27,9 @@ PageRoll_S=翻页σ
 180°反転=180°翻转
 その他=其他
 
-################################
-# 转场 (.scn2)
-################################
+;===============================
+; 转场 (.scn2)
+;===============================
 [PageRoll_S(シーンチェンジ)]
 PageRoll_S(シーンチェンジ)=翻页σ(转场)
 太さ=厚度

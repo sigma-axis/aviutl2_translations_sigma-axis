@@ -1,14 +1,14 @@
-################################################################
-# Target: PageRoll_S (https://github.com/sigma-axis/aviutl2_script_PageRoll_S)
-# Target Version: v1.12 (for beta25)
-# Language: <Language Name>
-# Translator(s):
-#   <Name1>
-#   <Name2> (<Optional URL>)
+;===============================================================
+; Target: PageRoll_S (https://github.com/sigma-axis/aviutl2_script_PageRoll_S)
+; Target Version: v1.12 (for beta25)
+; Language: <Language Name>
+; Translator(s):
+;   <Name1>
+;   <Name2> (<Optional URL>)
 
-################################
-# Filters (.anm2)
-################################
+;===============================
+; Filters (.anm2)
+;===============================
 [PageRoll_S]
 距離=Length
 角度=Angle
@@ -28,9 +28,9 @@
 180°反転=180° Flip
 その他=Others
 
-################################
-# Transitions (.scn2)
-################################
+;===============================
+; Transitions (.scn2)
+;===============================
 [PageRoll_S(シーンチェンジ)]
 PageRoll_S(シーンチェンジ)=PageRoll_S (Transition)
 角度=Angle

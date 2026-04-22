@@ -1,9 +1,9 @@
-################################################################
-# Target: TL Walkaround 2 (https://github.com/sigma-axis/aviutl2_tl_walkaround2)
-# Target Version: v1.40 (for beta40a)
-# Language: English
-# Translator(s):
-#   sigma-axis (https://github.com/sigma-axis)
+;===============================================================
+; Target: TL Walkaround 2 (https://github.com/sigma-axis/aviutl2_tl_walkaround2)
+; Target Version: v1.40 (for beta40a)
+; Language: English
+; Translator(s):
+;   sigma-axis (https://github.com/sigma-axis)
 
 [Menu]
 TLショトカ移動2=TL Walkaround 2

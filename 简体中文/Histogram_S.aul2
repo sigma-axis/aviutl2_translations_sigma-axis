@@ -1,9 +1,9 @@
-################################################################
-# Target: Histogram_S (https://github.com/sigma-axis/aviutl2_script_Histogram_S)
-# Target Version: v1.10 (for beta 30a)
-# Language: 简体中文
-# Translator(s):
-#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+;===============================================================
+; Target: Histogram_S (https://github.com/sigma-axis/aviutl2_script_Histogram_S)
+; Target Version: v1.10 (for beta 30a)
+; Language: 简体中文
+; Translator(s):
+;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
 
 [Histogram_S]
 Histogram_S=直方图σ
@@ -37,6 +37,6 @@ HSL(双円錐)=HSL(双圆锥)
 常に表示=一直显示
 動画出力中は非表示=视频导出时隐藏
 
-# Disabled to avoid potential conflicts with other translation files.
-# [Effect]
-# 編集補助\色調整=编辑辅助\颜色调整
+; Disabled to avoid potential conflicts with other translation files.
+; [Effect]
+; 編集補助\色調整=编辑辅助\颜色调整

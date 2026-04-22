@@ -1,9 +1,9 @@
-################################################################
-# Target: Tile_S (https://github.com/sigma-axis/aviutl2_script_Tile_S)
-# Target Version: v1.03 (for beta25)
-# Language: 简体中文
-# Translator(s):
-#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+;===============================================================
+; Target: Tile_S (https://github.com/sigma-axis/aviutl2_script_Tile_S)
+; Target Version: v1.03 (for beta25)
+; Language: 简体中文
+; Translator(s):
+;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
 
 [四角瓦片σ@Tile_S]
 四角瓦片σ@Tile_S=矩形瓦片σ@Tile_S

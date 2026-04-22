@@ -1,10 +1,10 @@
-################################################################
-# Target: GroundShadow2_S (https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S)
-# Target Version: v1.05 (for beta25)
-# Language: English
-# Translator(s):
-#   sigma-axis (https://github.com/sigma-axis)
-#   voidA1C (https://github.com/voidA1C)
+;===============================================================
+; Target: GroundShadow2_S (https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S)
+; Target Version: v1.05 (for beta25)
+; Language: English
+; Translator(s):
+;   sigma-axis (https://github.com/sigma-axis)
+;   voidA1C (https://github.com/voidA1C)
 
 [GroundShadow2_S]
 地面角度=Ground Angle

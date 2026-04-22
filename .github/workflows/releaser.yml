@@ -48,12 +48,12 @@ jobs:
         for lang in ${!LANG_ASSET_NAME[@]}; do
           mkdir -p "pack/$lang/Language"
           OUT_FILE="pack/$lang/Language/$lang.${{ env.OWNER_NAME }}.aul2"
-          echo "# $lang.${{ env.OWNER_NAME }}.aul2 ${{ github.ref_name }} ($(TZ='${{ env.TIME_ZONE }}' date +'%Y-%m-%d'))" >> $OUT_FILE
+          echo "; $lang.${{ env.OWNER_NAME }}.aul2 ${{ github.ref_name }} ($(TZ='${{ env.TIME_ZONE }}' date +'%Y-%m-%d'))" >> $OUT_FILE
           for file in $lang/*.aul2; do
             echo "" >> $OUT_FILE
-            echo "#--------------------------------------------------------------#" >> $OUT_FILE
-            echo "# $lang/${file/*\//}" >> $OUT_FILE
-            echo "#--------------------------------------------------------------#" >> $OUT_FILE
+            echo ";---------------------------------------------------------------" >> $OUT_FILE
+            echo "; $lang/${file/*\//}" >> $OUT_FILE
+            echo ";---------------------------------------------------------------" >> $OUT_FILE
             cat "$file" >> $OUT_FILE
           done
         done

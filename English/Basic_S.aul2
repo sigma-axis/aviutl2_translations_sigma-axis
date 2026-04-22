@@ -1,13 +1,13 @@
-################################################################
-# Target: Basic_S (https://github.com/sigma-axis/aviutl2_script_Basic_S)
-# Target Version: v2.01 (for beta 42)
-# Language: English
-# Translator(s):
-#   sigma-axis (https://github.com/sigma-axis)
+;===============================================================
+; Target: Basic_S (https://github.com/sigma-axis/aviutl2_script_Basic_S)
+; Target Version: v2.01 (for beta 42)
+; Language: English
+; Translator(s):
+;   sigma-axis (https://github.com/sigma-axis)
 
-################################
-# Filters (.anm2)
-################################
+;===============================
+; Filters (.anm2)
+;===============================
 [四隅丸め@Basic_S]
 四隅丸め@Basic_S=Round Four Corners@Basic_S
 半径=Radius
@@ -625,9 +625,9 @@ Z同期%=Z-Pos Sync %
 描画しない=Suppress Drawing
 その他=Others
 
-################################
-# Objects (.obj2)
-################################
+;===============================
+; Objects (.obj2)
+;===============================
 [角丸矩形@Basic_S]
 角丸矩形@Basic_S=Round Rect@Basic_S
 幅=Width
@@ -728,9 +728,9 @@ Z同期%=Z-Pos Sync %
 キャッシュ名=Cache Name
 その他=Others
 
-################################
-# Easings (.tra2)
-################################
+;===============================
+; Easings (.tra2)
+;===============================
 [全体で時間制御@Basic_S]
 全体で時間制御@Basic_S=Entire Time Control@Basic_S
 
@@ -933,12 +933,12 @@ N次式@Basic_S=Power Ease@Basic_S
 振動回数=Oscillations
 減衰率=Decay
 
-################################
-# Labels
-################################
+;===============================
+; Labels
+;===============================
 [Effect]
 
-# .anm2
+; .anm2
 Basic_S\クリッピング=Basic_S\Clipping
 Basic_S\装飾=Basic_S\Decoration
 Basic_S\加工=Basic_S\Process
@@ -947,10 +947,10 @@ Basic_S\配置=Basic_S\Layout
 Basic_S\変形=Basic_S\Transform
 Basic_S\ぼかし=Basic_S\Blur
 
-# .obj2
+; .obj2
 Basic_S\図形=Basic_S\Shape
 
-# .tra2
+; .tra2
 Basic_S\基本緩急=Basic_S\Common Easing
 Basic_S\コマ落ち=Basic_S\Discrete
 Basic_S\繰り返し=Basic_S\Repeat

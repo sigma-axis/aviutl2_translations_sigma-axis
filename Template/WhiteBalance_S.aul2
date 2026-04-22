@@ -1,10 +1,10 @@
-################################################################
-# Target: WhiteBalance_S (https://github.com/sigma-axis/aviutl2_script_WhiteBalance_S)
-# Target Version: v1.00 (for beta 29)
-# Language: <Language Name>
-# Translator(s):
-#   <Name1>
-#   <Name2> (<Optional URL>)
+;===============================================================
+; Target: WhiteBalance_S (https://github.com/sigma-axis/aviutl2_script_WhiteBalance_S)
+; Target Version: v1.00 (for beta 29)
+; Language: <Language Name>
+; Translator(s):
+;   <Name1>
+;   <Name2> (<Optional URL>)
 
 [ホワイトバランスσ@WhiteBalance_S]
 ホワイトバランスσ@WhiteBalance_S=White Balance S@WhiteBalance_S

@@ -1,13 +1,13 @@
-################################################################
-# Target: Border_S (https://github.com/sigma-axis/aviutl2_Border_S)
-# Target Version: v1.00 (for beta39)
-# Language: 简体中文
-# Translator(s):
-#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+;===============================================================
+; Target: Border_S (https://github.com/sigma-axis/aviutl2_Border_S)
+; Target Version: v1.00 (for beta39)
+; Language: 简体中文
+; Translator(s):
+;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
 
-################################
-# Filters
-################################
+;===============================
+; Filters
+;===============================
 [縁取りσ]
 縁取りσ=描边σ
 サイズ=尺寸
@@ -69,9 +69,9 @@
 内側優先=内侧优先
 速い方=快速
 
-################################
-# Labels
-################################
+;===============================
+; Labels
+;===============================
 [Effect]
 Border_S\装飾=Border_S\装饰
 Border_S\クリッピング=Border_S\裁剪

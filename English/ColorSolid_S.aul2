@@ -1,9 +1,9 @@
-################################################################
-# Target: ColorSolid_S (https://github.com/sigma-axis/aviutl2_script_ColorSolid_S)
-# Target Version: v1.00 (for beta 22a)
-# Language: English
-# Translator(s):
-#   sigma-axis (https://github.com/sigma-axis)
+;===============================================================
+; Target: ColorSolid_S (https://github.com/sigma-axis/aviutl2_script_ColorSolid_S)
+; Target Version: v1.00 (for beta 22a)
+; Language: English
+; Translator(s):
+;   sigma-axis (https://github.com/sigma-axis)
 
 [XYZ色立体@ColorSolid_S]
 XYZ色立体@ColorSolid_S=Color Solid XYZ@ColorSolid_S
@@ -77,6 +77,6 @@ RGB限定=Limit to RGB
 円=Circular
 六角形=Hexagonal
 
-# Disabled to avoid potential conflicts with other translation files.
-# [Effect]
-# 編集補助\色調整=Edit Assist\Color
+; Disabled to avoid potential conflicts with other translation files.
+; [Effect]
+; 編集補助\色調整=Edit Assist\Color

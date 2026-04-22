@@ -1,14 +1,14 @@
-################################################################
-# Target: Border_S (https://github.com/sigma-axis/aviutl2_Border_S)
-# Target Version: v1.00 (for beta 39)
-# Language: <Language Name>
-# Translator(s):
-#   <Name1>
-#   <Name2> (<Optional URL>)
+;===============================================================
+; Target: Border_S (https://github.com/sigma-axis/aviutl2_Border_S)
+; Target Version: v1.00 (for beta 39)
+; Language: <Language Name>
+; Translator(s):
+;   <Name1>
+;   <Name2> (<Optional URL>)
 
-################################
-# Filters
-################################
+;===============================
+; Filters
+;===============================
 [縁取りσ]
 縁取りσ=Border S
 サイズ=Size
@@ -84,9 +84,9 @@
 内側優先=Prefer Inner
 速い方=Faster
 
-################################
-# Labels
-################################
+;===============================
+; Labels
+;===============================
 [Effect]
 Border_S\装飾=Border_S\Decoration
 Border_S\クリッピング=Border_S\Clipping

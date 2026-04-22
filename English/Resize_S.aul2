@@ -1,10 +1,10 @@
-################################################################
-# Target: Resize_S (https://github.com/sigma-axis/aviutl2_script_Resize_S)
-# Target Version: v1.11 (for beta25)
-# Language: English
-# Translator(s):
-#   sigma-axis (https://github.com/sigma-axis)
-#   voidA1C (https://github.com/voidA1C)
+;===============================================================
+; Target: Resize_S (https://github.com/sigma-axis/aviutl2_script_Resize_S)
+; Target Version: v1.11 (for beta25)
+; Language: English
+; Translator(s):
+;   sigma-axis (https://github.com/sigma-axis)
+;   voidA1C (https://github.com/voidA1C)
 
 [リサイズσ@Resize_S]
 リサイズσ@Resize_S=Resize S@Resize_S

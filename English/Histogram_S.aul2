@@ -1,9 +1,9 @@
-################################################################
-# Target: Histogram_S (https://github.com/sigma-axis/aviutl2_script_Histogram_S)
-# Target Version: v1.10 (for beta 30a)
-# Language: English
-# Translator(s):
-#   sigma-axis (https://github.com/sigma-axis)
+;===============================================================
+; Target: Histogram_S (https://github.com/sigma-axis/aviutl2_script_Histogram_S)
+; Target Version: v1.10 (for beta 30a)
+; Language: English
+; Translator(s):
+;   sigma-axis (https://github.com/sigma-axis)
 
 [Histogram_S]
 幅=Width
@@ -38,6 +38,6 @@ HSL(双円錐)=HSL (Biconic)
 常に表示=Always
 動画出力中は非表示=Hide During Output
 
-# Disabled to avoid potential conflicts with other translation files.
-# [Effect]
-# 編集補助\色調整=Edit Assist\Color
+; Disabled to avoid potential conflicts with other translation files.
+; [Effect]
+; 編集補助\色調整=Edit Assist\Color

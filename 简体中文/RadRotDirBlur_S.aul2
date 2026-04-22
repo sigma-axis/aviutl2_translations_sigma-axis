@@ -1,9 +1,9 @@
-################################################################
-# Target: RadRotDirBlur_S (https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S)
-# Target Version: v1.05 (for beta25)
-# Language: 简体中文
-# Translator(s):
-#   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+;===============================================================
+; Target: RadRotDirBlur_S (https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S)
+; Target Version: v1.05 (for beta25)
+; Language: 简体中文
+; Translator(s):
+;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
 
 [RadRotDirBlur_S]
 RadRotDirBlur_S=放射/旋转/直接模糊σ

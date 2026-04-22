@@ -1,14 +1,14 @@
-################################################################
-# Target: PenroseTile_S (https://github.com/sigma-axis/aviutl2_script_PenroseTile_S)
-# Target Version: v1.23 (for beta25)
-# Language: <Language Name>
-# Translator(s):
-#   <Name1>
-#   <Name2> (<Optional URL>)
+;===============================================================
+; Target: PenroseTile_S (https://github.com/sigma-axis/aviutl2_script_PenroseTile_S)
+; Target Version: v1.23 (for beta25)
+; Language: <Language Name>
+; Translator(s):
+;   <Name1>
+;   <Name2> (<Optional URL>)
 
-################################
-# Filters (.anm2)
-################################
+;===============================
+; Filters (.anm2)
+;===============================
 [ペンローズタイル モザイクσ@PenroseTile_S]
 ペンローズタイル モザイクσ@PenroseTile_S=Penrose Tile Mosaic S@PenroseTile_S
 タイル分類=Tiling Type
@@ -89,9 +89,9 @@ Star=Star
 アンチエイリアス=Antialias
 タイル風=Convex
 
-################################
-# Objects (.obj2)
-################################
+;===============================
+; Objects (.obj2)
+;===============================
 [ペンローズタイルσ]
 ペンローズタイルσ=Penrose Tile S
 幅=Width
@@ -123,9 +123,9 @@ Star=Star
 その他=Others
 アンチエイリアス=Antialias
 
-################################
-# Transitions (.scn2)
-################################
+;===============================
+; Transitions (.scn2)
+;===============================
 [ペンローズタイル モザイクフェードσ]
 ペンローズタイル モザイクフェードσ=Penrose Tile Mosaic Fade S
 変化幅=Transition Part
