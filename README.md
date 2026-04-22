@@ -44,7 +44,7 @@ Currently this repository contains files for the following languages. Note that 
 
   http://spring-fragrance.mints.ne.jp/aviutl
 
-  - Confirmed to work on: `beta40a`
+  - Confirmed to work on: `beta42`
 
 ##  Installation
 

@@ -1,6 +1,6 @@
 ################################################################
 # Target: Basic_S (https://github.com/sigma-axis/aviutl2_script_Basic_S)
-# Target Version: v1.80 (for beta 29)
+# Target Version: v2.01 (for beta 42)
 # Language: <Language Name>
 # Translator(s):
 #   <Name1>
@@ -216,15 +216,25 @@ XYZ追加回転@Basic_S=Append Rotation XYZ@Basic_S
 角度=Angle
 傾き%=Slope %
 基準軸=Baseline
+基準軸X1=Baseline X1
+基準軸Y1=Baseline Y1
+基準軸X2=Baseline X2
+基準軸Y2=Baseline Y2
 その他=Others
+互換対応(将来削除予定)=Legacy (Removed in Future)
 
 [XY軸変形@Basic_S]
 XY軸変形@Basic_S=Deform XY-axis@Basic_S
 X軸=X-axis
+X軸移動先X=X-axis Maps to X
+X軸移動先Y=X-axis Maps to Y
 X長さ変更=Stretch Along X
 Y軸=Y-axis
+Y軸移動先X=Y-axis Maps to X
+Y軸移動先Y=Y-axis Maps to Y
 Y長さ変更=Stretch Along Y
 その他=Others
+互換対応(将来削除予定)=Legacy (Removed in Future)
 
 [領域サイズ変更@Basic_S]
 領域サイズ変更@Basic_S=Adjust Area@Basic_S
@@ -266,6 +276,10 @@ Y長さ変更=Stretch Along Y
 ずれX=Offset X
 ずれY=Offset Y
 切り取り線=Cut Line
+切り取り線X1=Cut Line X1
+切り取り線Y1=Cut Line Y1
+切り取り線X2=Cut Line X2
+切り取り線Y2=Cut Line Y2
 切り取り幅=Crop Thickness
 中心の位置を変更=Adjust Center
 余白/重複処理=Blank/Overlap
@@ -276,6 +290,7 @@ Y長さ変更=Stretch Along Y
 引き伸ばし=Stretch
 重複処理=Overlap
 その他=Others
+互換対応(将来削除予定)=Legacy (Removed in Future)
 
 [中抜きクリッピング@Basic_S]
 中抜きクリッピング@Basic_S=Mid-Range Clipping@Basic_S
@@ -294,6 +309,45 @@ Y長さ変更=Stretch Along Y
 補間=Gradation
 引き伸ばし=Stretch
 重複処理=Overlap
+その他=Others
+
+[画像中間ループ@Basic_S]
+画像中間ループ@Basic_S=Mid-Range Loop@Basic_S
+幅=Width
+高さ=Height
+余白設定=Margins
+上余白=Top Margin
+下余白=Bottom Margin
+左余白=Left Margin
+右余白=Right Margin
+オフセット=Offset
+オフセットX=Offset X
+オフセットY=Offset Y
+整列=Alignment
+水平揃え=Horizontal Alignment
+垂直揃え=Vertical Alignment
+ループ水平揃え=Horizontal Loop Alignment
+ループ垂直揃え=Vertical Loop Alignment
+ループ設定=Loop Settings
+幅指定=Width Unit
+高さ指定=Height Unit
+回数=Loop Count
+サイズ(近似)=Closest Size
+サイズ(上限)=Maximum Size
+サイズ(下限)=Minimum Size
+サイズ(境界不連続)=Size (Discontinuous Boundaries)
+サイズ(拡縮あり)=Size (Allow Stretch)
+全体サイズ(近似)=Closest Total Size
+全体サイズ(上限)=Maximum Total Size
+全体サイズ(下限)=Minimum Total Size
+全体サイズ(境界不連続)=Total Size (Discontinuous Boundaries)
+全体サイズ(拡縮あり)=Total Size (Allow Stretch)
+ループX=Loop X
+ループY=Loop Y
+ループ=Loop
+ミラー=Mirror
+ミラー(半ピクセル端)=Mirror (Half Edge)
+引き伸ばし=Stretch
 その他=Others
 
 [小数ぼかし@Basic_S]
@@ -392,6 +446,12 @@ Y長さ変更=Stretch Along Y
 陰影=Shadow
 明暗=Light Dark
 差分=Difference
+追加効果=Extra Filters
+追加のフィルタ効果=Extra Filter Effects
+なし=None
+後続フィルタ=Subsequent Filters
+スクリプト実行=Run Script
+追加スクリプト=Script
 その他=Others
 
 [動画ファイル合成@Basic_S]
@@ -437,6 +497,97 @@ Y長さ変更=Stretch Along Y
 陰影=Shadow
 明暗=Light Dark
 差分=Difference
+追加効果=Extra Filters
+追加のフィルタ効果=Extra Filter Effects
+なし=None
+後続フィルタ=Subsequent Filters
+スクリプト実行=Run Script
+追加スクリプト=Script
+その他=Others
+
+[テキスト合成@Basic_S]
+テキスト合成@Basic_S=Text Composition@Basic_S
+テキスト=Text
+フォント設定=Font Settings
+サイズ=Size
+フォント=Font
+文字色=Text Color
+影・縁色=Shadow/Edge Color
+文字装飾=Text Decoration
+標準文字=Standard Text
+影付き文字=Shadowed Text
+影付き文字(薄)=Shadowed Text (Light)
+縁取り文字=Bordered Text
+縁取り文字(細)=Bordered Text (Thin)
+縁取り文字(太)=Bordered Text (Thick)
+縁取り文字(角)=Bordered Text (Corner)
+太字=Bold
+斜体=Italic
+書式設定=Format Settings
+字間=Character Spacing
+行間=Line Spacing
+表示速度=Display Speed
+文字揃え=Text Alignment
+左寄せ[上]=Left Align [Top]
+中央揃え[上]=Center Align [Top]
+右寄せ[上]=Right Align [Top]
+左寄せ[中]=Left Align [Center]
+中央揃え[中]=Center Align [Center]
+右寄せ[中]=Right Align [Center]
+左寄せ[下]=Left Align [Bottom]
+中央揃え[下]=Center Align [Bottom]
+右寄せ[下]=Right Align [Bottom]
+縦書 上寄[右]=Vertical Top [Right]
+縦書 中央[右]=Vertical Center [Right]
+縦書 下寄[右]=Vertical Bottom [Right]
+縦書 上寄[中]=Vertical Top [Center]
+縦書 中央[中]=Vertical Center [Center]
+縦書 下寄[中]=Vertical Bottom [Center]
+縦書 上寄[左]=Vertical Top [Left]
+縦書 中央[左]=Vertical Center [Left]
+縦書 下寄[左]=Vertical Bottom [Left]
+描画=Drawing
+拡大率=Zoom
+回転=Rotate
+透明度=Transparency
+サイズ固定=Fixed Size
+配置=Placement
+補間なし=No Interpolation
+画像ループ=Image Loop
+なし=None
+横=Horizontally
+縦=Vertically
+縦横=Both
+合成=Composition
+モード=Mode
+前方から合成=Composite from the Front
+前方から合成(クリッピング)=Composite from the Front (Clip)
+後方から合成=Composite from the Back
+後方から合成(クリッピング)=Composite from the Back (Clip)
+アルファ値を乗算=Multiply Alpha
+色情報を上書き=Overwrite color 
+輝度をアルファ値として上書き=Overwrite Luminance as Alpha
+輝度をアルファ値として乗算=Multiply Luminance as Alpha
+合成モード=Blending Mode
+通常=Normal
+加算=Add
+減算=Subtract
+乗算=Multiply
+スクリーン=Screen
+オーバーレイ=Overlay
+比較(明)=Lighter
+比較(暗)=Darker
+輝度=Brightness
+色差=Chroma
+陰影=Shadow
+明暗=Light Dark
+差分=Difference
+追加効果=Extra Filters
+追加のフィルタ効果=Extra Filter Effects
+なし=None
+後続フィルタ=Subsequent Filters
+スクリプト実行=Run Script
+追加スクリプト=Script
 その他=Others
 
 [別レイヤー同期@Basic_S]
@@ -461,6 +612,18 @@ Z同期%=Z-Pos Sync %
 拡大Z同期%=Z-Zoom Sync %
 透明度=Transparency
 透明度同期%=Transparency Sync %
+その他=Others
+
+[バッファをコピー@Basic_S]
+バッファをコピー@Basic_S=Copy Buffers@Basic_S
+コピー元=Source
+コピー先=Destination
+仮想バッファ=Temporal Buffer
+一時キャッシュ=Temporal Cache
+フレームバッファ=FrameBuffer
+このオブジェクト=This Object
+キャッシュ名=Cache Name
+描画しない=Suppress Drawing
 その他=Others
 
 ################################
@@ -556,6 +719,16 @@ Z同期%=Z-Pos Sync %
 透明度の復元=Restore Transparency
 その他=Others
 
+[バッファ読み込み@Basic_S]
+バッファ読み込み@Basic_S=Load Buffer@Basic_S
+バッファ=Buffer
+仮想バッファ=Temporal Buffer
+一時キャッシュ=Temporal Cache
+フレームバッファ=FrameBuffer
+直前オブジェクト=Above Object
+キャッシュ名=Cache Name
+その他=Others
+
 ################################
 # Easings (.tra2)
 ################################
@@ -564,6 +737,14 @@ Z同期%=Z-Pos Sync %
 
 [区間ごとに時間制御@Basic_S]
 区間ごとに時間制御@Basic_S=Piecewise Time Control@Basic_S
+
+[全体で時間制御(回転)@Basic_S]
+全体で時間制御(回転)@Basic_S=Entire Time Control (Rotation)@Basic_S
+1周角度=One Cycle
+
+[区間ごとに時間制御(回転)@Basic_S]
+区間ごとに時間制御(回転)@Basic_S=Piecewise Time Control (Rotation)@Basic_S
+1周角度=One Cycle
 
 [正弦波@Basic_S]
 正弦波@Basic_S=Sine Ease@Basic_S
@@ -599,62 +780,131 @@ N次式@Basic_S=Power Ease@Basic_S
 [コマ落ち反復(秒)@Basic_S]
 コマ落ち反復(秒)@Basic_S=Repeat Discrete (Second)@Basic_S
 周期(秒)=Period (Second)
+周期ずれ%=Initial Phase (%)
+デューティ比%=Duty Cycle (%)
 
 [コマ落ち反復(フレーム)@Basic_S]
 コマ落ち反復(フレーム)@Basic_S=Repeat Discrete (Frame)@Basic_S
 周期(フレーム)=Period (Frame)
+周期ずれ%=Initial Phase (%)
+デューティ比%=Duty Cycle (%)
 
 [コマ落ち反復(Hz)@Basic_S]
 コマ落ち反復(Hz)@Basic_S=Repeat Discrete (Hz)@Basic_S
 周期(Hz)=Period (Hz)
+周期ずれ%=Initial Phase (%)
+デューティ比%=Duty Cycle (%)
 
 [コマ落ち反復(BPM)@Basic_S]
 コマ落ち反復(BPM)@Basic_S=Repeat Discrete (BPM)@Basic_S
 周期(BPM)=Period (BPM)
+周期ずれ%=Initial Phase (%)
+デューティ比%=Duty Cycle (%)
+
+[コマ落ち反復(BPMグリッド)@Basic_S]
+コマ落ち反復(BPMグリッド)@Basic_S=Repeat Discrete (BPM Grid)@Basic_S
+周期(音符数)=Period (Note Length)
+基準のN分音符(0:小節)=N-th Note for Period (0: Measure)
+グリッド1拍のN分音符=N-th Note for Beat of Grid
+周期ずれ%=Initial Phase (%)
+デューティ比%=Duty Cycle (%)
 
 [コマ落ちランダム(秒)@Basic_S]
 コマ落ちランダム(秒)@Basic_S=Random Discrete (Second)@Basic_S
 周期(秒)=Period (Second)
+周期ずれ%=Initial Phase (%)
 
 [コマ落ちランダム(フレーム)@Basic_S]
 コマ落ちランダム(フレーム)@Basic_S=Random Discrete (Frame)@Basic_S
 周期(フレーム)=Period (Frame)
+周期ずれ%=Initial Phase (%)
 
 [コマ落ちランダム(Hz)@Basic_S]
 コマ落ちランダム(Hz)@Basic_S=Random Discrete (Hz)@Basic_S
 周期(Hz)=Period (Hz)
+周期ずれ%=Initial Phase (%)
 
 [コマ落ちランダム(BPM)@Basic_S]
 コマ落ちランダム(BPM)@Basic_S=Random Discrete (BPM)@Basic_S
 周期(BPM)=Period (BPM)
+周期ずれ%=Initial Phase (%)
+
+[コマ落ちランダム(BPMグリッド)@Basic_S]
+コマ落ちランダム(BPMグリッド)@Basic_S=Random Discrete (BPM Grid)@Basic_S
+周期(音符数)=Period (Note Length)
+基準のN分音符(0:小節)=N-th Note for Period (0: Measure)
+グリッド1拍のN分音符=N-th Note for Beat of Grid
+周期ずれ%=Initial Phase (%)
 
 [時間制御繰り返し(秒)@Basic_S]
 時間制御繰り返し(秒)@Basic_S=Repeat Time Control (Second)@Basic_S
 周期(秒)=Period (Second)
+周期ずれ%=Initial Phase (%)
 
 [時間制御繰り返し(フレーム)@Basic_S]
 時間制御繰り返し(フレーム)@Basic_S=Repeat Time Control (Frame)@Basic_S
 周期(フレーム)=Period (Frame)
+周期ずれ%=Initial Phase (%)
 
 [時間制御繰り返し(Hz)@Basic_S]
 時間制御繰り返し(Hz)@Basic_S=Repeat Time Control (Hz)@Basic_S
 周期(Hz)=Period (Hz)
+周期ずれ%=Initial Phase (%)
 
 [時間制御繰り返し(BPM)@Basic_S]
 時間制御繰り返し(BPM)@Basic_S=Repeat Time Control (BPM)@Basic_S
 周期(BPM)=Period (BPM)
+周期ずれ%=Initial Phase (%)
+
+[時間制御繰り返し(BPMグリッド)@Basic_S]
+時間制御繰り返し(BPMグリッド)@Basic_S=Repeat Time Control (BPM Grid)@Basic_S
+周期(音符数)=Period (Note Length)
+基準のN分音符(0:小節)=N-th Note for Period (0: Measure)
+グリッド1拍のN分音符=N-th Note for Beat of Grid
+周期ずれ%=Initial Phase (%)
+
+[時間制御繰り返し往復(秒)@Basic_S]
+時間制御繰り返し往復(秒)@Basic_S=Repeat Back Forth Time Control (Second)@Basic_S
+周期(秒)=Period (Second)
+周期ずれ%=Initial Phase (%)
+
+[時間制御繰り返し往復(フレーム)@Basic_S]
+時間制御繰り返し往復(フレーム)@Basic_S=Repeat Back Forth Time Control (Frame)@Basic_S
+周期(フレーム)=Period (Frame)
+周期ずれ%=Initial Phase (%)
+
+[時間制御繰り返し往復(Hz)@Basic_S]
+時間制御繰り返し往復(Hz)@Basic_S=Repeat Back Forth Time Control (Hz)@Basic_S
+周期(Hz)=Period (Hz)
+周期ずれ%=Initial Phase (%)
+
+[時間制御繰り返し往復(BPM)@Basic_S]
+時間制御繰り返し往復(BPM)@Basic_S=Repeat Back Forth Time Control (BPM)@Basic_S
+周期(BPM)=Period (BPM)
+周期ずれ%=Initial Phase (%)
+
+[時間制御繰り返し往復(BPMグリッド)@Basic_S]
+時間制御繰り返し往復(BPMグリッド)@Basic_S=Repeat Back Forth Time Control (BPM Grid)@Basic_S
+周期(音符数)=Period (Note Length)
+基準のN分音符(0:小節)=N-th Note for Period (0: Measure)
+グリッド1拍のN分音符=N-th Note for Beat of Grid
+周期ずれ%=Initial Phase (%)
 
 [対数補間@Basic_S]
 対数補間@Basic_S=Logarithmic Interpolation@Basic_S
+原点=Origin
 
 [対数補間(全体時間制御)@Basic_S]
 対数補間(全体時間制御)@Basic_S=Logarithmic Interpolation (Entire Time Control)@Basic_S
+原点=Origin
 
 [逆数補間@Basic_S]
 逆数補間@Basic_S=Harmonic Interpolation@Basic_S
+原点=Origin
 
 [逆数補間(全体時間制御)@Basic_S]
 逆数補間(全体時間制御)@Basic_S=Harmonic Interpolation (Entire Time Control)@Basic_S
+原点=Origin
 
 [バウンス@Basic_S]
 バウンス@Basic_S=Bounce Ease@Basic_S
