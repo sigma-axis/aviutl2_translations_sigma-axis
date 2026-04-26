@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Path_S (https://github.com/sigma-axis/aviutl2_script_Path_S)
-; Target Version: v1.12 (for beta25)
+; Target Version: v1.20 (for beta43)
 ; Language: English
 ; Translator(s):
 ;   sigma-axis (https://github.com/sigma-axis)
@@ -95,6 +95,11 @@
 拡大率=Zoom
 回転=Rotate
 アンカー切り替え=Toggle Anchors
+フィルタ設定=Filter Settings
+追加のフィルタ効果=Extra Filter Effects
+後続フィルタ=Subsequent Filters
+スクリプト実行=Run Script
+追加スクリプト=Script
 その他=Others
 ぼかし幅=Edge Blur
 

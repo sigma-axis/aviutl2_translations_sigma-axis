@@ -56,6 +56,10 @@ Currently this repository contains files for the following languages. Note that 
 
 ##  Update History
 
+- **r16** (2026-04-26)
+  - \[English\] Updated translation for [Path_S](https://github.com/sigma-axis/aviutl2_script_Path_S) to follow v1.20.
+  - \[English\] Reworded to match [community English translations](https://github.com/aviutl2/aviutl2_community_translation).
+
 - **r15** (2026-04-23)
   - Changed the distribution files to `.au2pkg.zip` format.
   - \[English\] Updated translation for [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S) to follow v2.01.
