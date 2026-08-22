@@ -57,6 +57,17 @@ Currently this repository contains files for the following languages. Note that 
 
 ##  Update History
 
+- **r50** (2026-08-23)
+
+  - \[Simplified Chinese\] Updated translations for the following scripts and plugins:
+  
+    1.  [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S) v2.83.
+    1.  [Path_S](https://github.com/sigma-axis/aviutl2_script_Path_S) v2.10.
+    1.  [GroundShadow2_S](https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S) v1.31.
+    1.  [Resize_S](https://github.com/sigma-axis/aviutl2_script_Resize_S) v1.30.
+    1.  [Tile_S](https://github.com/sigma-axis/aviutl2_script_Tile_S) v1.30.
+    1.  [TL Walkaround 2](https://github.com/sigma-axis/aviutl2_tl_walkaround2) v2.30.
+
 - **r49** (2026-08-22)
 
   - \[English\] Updated translation for [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S) to follow up v2.83.
