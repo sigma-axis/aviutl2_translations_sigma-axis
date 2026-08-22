@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: GroundShadow2_S (https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S)
-; Target Version: v1.20 (for beta43b)
+; Target Version: v1.31
 ; Language: 简体中文
 ; Translator(s):
 ;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
@@ -10,11 +10,11 @@ GroundShadow2_S=地面阴影σ
 光源傾斜=光源倾斜
 回転=旋转
 配置=分布
-;地面位置を画面基準=Ground Offset Based on Screen
+地面位置を画面基準=以地面位置为画面基准
 カメラ位置=摄像机位置
 カメラ位置X=摄像机位置X
 カメラ位置Y=摄像机位置Y
-;カメラ位置を画面基準=Camera Position Based on Screen
+カメラ位置を画面基準=以摄像机位置为画面基准
 視野幅=视野宽度
 影位置移動=阴影位置移动
 影位置移動X=阴影位置移动X
@@ -47,19 +47,19 @@ GroundShadow2_S=地面阴影σ
 画像最大高さ=图像最大高度
 互換対応(将来削除予定)=兼容支持 (未来移除)
 
-;[Tips.GroundShadow2_S]
-;effect.name=Casts a shadow stereographically onto a ground or wall.
-;地面角度=The angle of the plane where the shadow is projected. Positive: uphill slope, zero: flat, negative: downhill.
-;光源角度=The vertical direction of the light source. Positive: low near to up far, zero: straight forward, negative: up near to low far.
-;光源傾斜=The horizontal direction of the light source. Positive: left near to right far, zero: straight forward, negative: right near to left far.
-;地面位置X=Green anchor line.
-;地面位置Y=Green anchor line.
-;地面位置Z=Green anchor line.
-;カメラ位置X=Blue anchor line.
-;カメラ位置Y=Blue anchor line.
-;光分散=Blur based on distance from the ground. Specify the tangent value of the diffusion angle in percent.
-;境界ぼかし=Blur independent of distance from the ground. Specify in pixels.
-;影の範囲=Draw only shadows near the feet. Specify the range in pixels.
-;先端ぼかし=Blur width at the boundary of "Shadow Range".
-;合成モード=Effective only when "Draw Shadow as Separate Object" is enabled.
-;精度=Sample count for "Light Spread" calculation. The effective value is the maximum square odd number not exceeding the specified value.
+[Tips.GroundShadow2_S]
+effect.name=将阴影立体地投射到地面或墙壁上。
+地面角度=阴影投影面的倾斜角度，正值表示上坡，0表示水平，负值表示下坡。
+光源角度=光源的垂直角度，正值表示从下前方照向上后方，0表示水平，负值表示从上前方照向下后方。
+光源傾斜=光源的水平角度，正值表示从左前方照向右后方，0表示水平，负值表示从右前方照向左后方。
+地面位置X=绿色锚点线。
+地面位置Y=绿色锚点线。
+地面位置Z=绿色锚点线。
+カメラ位置X=蓝色锚点线。
+カメラ位置Y=蓝色锚点线。
+光分散=根据与地面距离产生的模糊，以百分比指定扩散角度的tan值。
+境界ぼかし=不依赖于地面距离的模糊，以像素数指定。
+影の範囲=仅渲染脚边附近的阴影，范围以像素数指定。
+先端ぼかし=“阴影范围”边界部分的模糊宽度
+合成モード=仅在“阴影转为物件”时有效。
+精度=“光分散”计算的采样数。实际有效值为不超过指定值的最大奇数平方数。

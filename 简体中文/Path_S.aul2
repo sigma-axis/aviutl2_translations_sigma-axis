@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Path_S (https://github.com/sigma-axis/aviutl2_script_Path_S)
-; Target Version: v2.00 (for beta52)
+; Target Version: v2.10
 ; Language: 简体中文
 ; Translator(s):
 ;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
@@ -36,10 +36,10 @@
 その他=其他
 ぼかし幅=模糊度
 
-;[Tips.パスマスクσ@Path_S]
-;effect.name=Crops the image to the area enclosed by the path.
-;曲線精度=Maximum sampling interval for polyline approximation, in pixels
-;アンカー切り替え=Switches anchors between for path editing and for moving.
+[Tips.パスマスクσ@Path_S]
+effect.name=用路径围成的范围裁剪图像的滤镜效果。
+曲線精度=折线近似的最大采样间隔，以像素为单位
+アンカー切り替え=切换路径编辑用锚点和移动用锚点。
 
 [パスマスク(ライン)σ@Path_S]
 パスマスク(ライン)σ@Path_S=路径遮罩σ(线条)σ@Path_S
@@ -82,14 +82,14 @@
 その他=其他
 ぼかし幅=模糊度
 
-;[Tips.パスマスク(ライン)σ@Path_S]
-;effect.name=Masks out the image along the line traced by the path.
-;曲線精度=Maximum sampling interval for polyline approximation, in pixels
-;開始位置=Start point of the line drawing range, in % of total path length
-;終了位置=End point of the line drawing range, in % of total path length
-;破線パターン=Write lengths of solid and blank segments alternately, in pixels
-;破線周期補正=Effective only when "Loop" is turned on. Adjusts so the dash pattern completes an integer number of repeats per loop
-;アンカー切り替え=Switches anchors between for path editing and for moving.
+[Tips.パスマスク(ライン)σ@Path_S]
+effect.name=沿路径所经线条裁剪图像的滤镜效果。
+曲線精度=折线近似的最大采样间隔，以像素为单位
+開始位置=线条渲染范围的起始点，以路径总长度的百分比表示
+終了位置=线条渲染范围的结束点，以路径总长度的百分比表示
+破線パターン=交替指定实线部分和空白部分的长度，以像素为单位
+破線周期補正=仅在“拼贴”开启时有效，调整为每圈路径使虚线图案重复整数次
+アンカー切り替え=切换路径编辑用锚点和移动用锚点。
 
 [パス部分フィルタσ@Path_S]
 パス部分フィルタσ@Path_S=路径局部滤镜σ@Path_S
@@ -123,17 +123,17 @@
 その他=其他
 ぼかし幅=模糊度
 
-;[Tips.パス部分フィルタσ@Path_S]
-;effect.name=Applies subsequent filter effects or directly written scripts only to the area enclosed by the path.
-;曲線精度=Maximum sampling interval for polyline approximation, in pixels
-;追加のフィルタ効果=The range of "Subsequent Filters" can be delimited by "Path Partial Filter S Until This."
-;アンカー切り替え=Switches anchors between for path editing and for moving.
+[Tips.パス部分フィルタσ@Path_S]
+effect.name=仅在路径围成的范围内应用后续滤镜效果或直接编写脚本的滤镜效果。
+曲線精度=折线近似的最大采样间隔，以像素为单位
+アンカー切り替え=切换路径编辑用锚点和移动用锚点。
+追加のフィルタ効果=“后续滤镜”的范围可用“路径局部滤镜σ到此为止”来界定。
 
-;[パス部分フィルタσここまで@Path_S]
-;パス部分フィルタσここまで@Path_S=Path Partial Filter S Until This@Path_S
+[パス部分フィルタσここまで@Path_S]
+パス部分フィルタσここまで@Path_S=路径局部滤镜σ到此为止@Path_S
 
-;[Tips.パス部分フィルタσここまで@Path_S]
-;effect.name=Limites the range of "Subsequent Filters" in "Path Partial Filter S".
+[Tips.パス部分フィルタσここまで@Path_S]
+effect.name=指定“路径局部滤镜σ”中“后续滤镜”的范围。
 
 [パスに沿って配置σ@Path_S]
 パスに沿って配置σ@Path_S=沿路径分布σ@Path_S
@@ -158,12 +158,12 @@
 パスの表示=显示路径
 その他=其他
 
-;[Tips.パスに沿って配置σ@Path_S]
-;effect.name=Places objects along the path. Can space out individual objects.\nThe relative coordinates between individual objects are reflected as is without following the path. Use "Zoom Coordinate(Individual)" to the scale 0 before this, so they will be placed them along the path.
-;個別位置ズレ=Offset length between each individual object, in percentage of total path length
-;範囲外=Specifies whether to display objects that do not lie between the start and end of the path.
-;曲線精度=Maximum sampling interval for polyline approximation, in pixels
-;パスの表示=Displays the path shape in the preview window. Automatically disabled during video export.
+[Tips.パスに沿って配置σ@Path_S]
+effect.name=沿路径分布物件的滤镜效果。即使是独立物件也可间隔放置。各物件间的相对坐标不沿路径而直接应用。若在此之前使用“坐标缩放(物件独立化)”设为0倍等，则会沿路径排列。
+個別位置ズレ=独立物件间的位置偏移长度，以路径总长度的百分比表示
+範囲外=指定是否显示不在路径起始点和结束点之间的物件。
+曲線精度=折线近似的最大采样间隔，以像素为单位
+パスの表示=在编辑窗口中显示路径形状。视频输出时自动无效。
 
 ;===============================
 ; 物件 (.obj2)
@@ -214,17 +214,17 @@
 その他=其他
 ぼかし幅=模糊度
 
-;[Tips.パス図形σ@Path_S]
-;effect.name=Draws a line along the path and fills the area inside.
-;曲線精度=Maximum sampling interval for polyline approximation, in pixels
-;開始位置=Start point of the line drawing range, in % of total path length
-;終了位置=End point of the line drawing range, in % of total path length
-;破線パターン=Write lengths of solid and blank segments alternately, in pixels
-;破線周期補正=Effective only when "Loop" is turned on. Adjusts so the dash pattern completes an integer number of repeats per loop
-;ランダム周期=Period along the path direction of random variation, in pixels
-;ランダム振幅=Magnitude of random variation, in pixels
-;ランダム固定端=Excludes the path start and end from random variation.
-;ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+[Tips.パス図形σ@Path_S]
+effect.name=渲染沿路径的线条和填充路径内部的图形物件。
+曲線精度=折线近似的最大采样间隔，以像素为单位
+開始位置=线条渲染范围的起始点，以路径总长度的百分比表示
+終了位置=线条渲染范围的结束点，以路径总长度的百分比表示
+破線パターン=交替指定实线部分和空白部分的长度，以像素为单位
+破線周期補正=仅在“拼贴”开启时有效，调整为每圈路径使虚线图案重复整数次
+ランダム周期=沿路径渲染方向的随机变动周期，以像素为单位
+ランダム振幅=随机变动的大小，以像素为单位
+ランダム固定端=将路径的起始点和结束点排除在随机变动的影响之外。
+ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
 
 [ラインσ@Path_S]
 ラインσ@Path_S=线条σ@Path_S
@@ -262,15 +262,15 @@
 その他=其他
 ぼかし幅=模糊度
 
-;[Tips.ラインσ@Path_S]
-;effect.name=Draws typical kinds of lines or curves, such as wavy lines and zigzag lines.
-;開始位置=Start point of the line drawing range, in % of total path length
-;終了位置=End point of the line drawing range, in % of total path length
-;破線パターン=Write lengths of solid and blank segments alternately, in pixels
-;ランダム周期=Period along the path direction of random variation, in pixels
-;ランダム振幅=Magnitude of random variation, in pixels
-;ランダム固定端=Excludes the path start and end from random variation.
-;ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+[Tips.ラインσ@Path_S]
+effect.name=渲染常见图案的线条形状，如波浪线和折线等的物件。
+開始位置=线条渲染范围的起始点，以路径总长度的百分比表示
+終了位置=线条渲染范围的结束点，以路径总长度的百分比表示
+破線パターン=交替指定实线部分和空白部分的长度，以像素为单位
+ランダム周期=沿路径渲染方向的随机变动周期，以像素为单位
+ランダム振幅=随机变动的大小，以像素为单位
+ランダム固定端=将路径的起始点和结束点排除在随机变动的影响之外。
+ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
 
 [スパイラルσ@Path_S]
 スパイラルσ@Path_S=螺旋σ@Path_S
@@ -307,17 +307,17 @@
 その他=其他
 ぼかし幅=模糊度
 
-;[Tips.スパイラルσ@Path_S]
-;effect.name=Draws lines in a spiral shape.
-;傾き=Positive for counter-clockwise outward / 0 for a half-line / Negative for clockwise outward
-;開始位置=Start point of the line drawing range, in % of total path length
-;終了位置=End point of the line drawing range, in % of total path length
-;曲線精度=Maximum sampling interval for polyline approximation, in pixels
-;破線パターン=Write lengths of solid and blank segments alternately, in pixels
-;ランダム周期=Period along the path direction of random variation, in pixels
-;ランダム振幅=Magnitude of random variation, in pixels
-;ランダム固定端=Excludes the path start and end from random variation.
-;ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+[Tips.スパイラルσ@Path_S]
+effect.name=渲染螺旋形线条的物件。
+傾き=正值向外逆时针 / 0为半直线 / 负值向外顺时针
+開始位置=线条渲染范围的起始点，以路径总长度的百分比表示
+終了位置=线条渲染范围的结束点，以路径总长度的百分比表示
+曲線精度=折线近似的最大采样间隔，以像素为单位
+破線パターン=交替指定实线部分和空白部分的长度，以像素为单位
+ランダム周期=沿路径渲染方向的随机变动周期，以像素为单位
+ランダム振幅=随机变动的大小，以像素为单位
+ランダム固定端=将路径的起始点和结束点排除在随机变动的影响之外。
+ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
 
 [アローσ@Path_S]
 アローσ@Path_S=箭头σ@Path_S
@@ -368,17 +368,17 @@
 その他=其他
 ぼかし幅=模糊度
 
-;[Tips.アローσ@Path_S]
-;effect.name=Draws a line along the path and places arrowhead shapes at the ends.
-;曲線精度=Maximum sampling interval for polyline approximation, in pixels
-;開始位置=Start point of the line drawing range, in % of total path length
-;終了位置=End point of the line drawing range, in % of total path length
-;破線パターン=Write lengths of solid and blank segments alternately, in pixels
-;矢じり幅=Scaling rate of arrowhead width (percentage)
-;ランダム周期=Period along the path direction of random variation, in pixels
-;ランダム振幅=Magnitude of random variation, in pixels
-;ランダム固定端=Excludes the path start and end from random variation.
-;ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+[Tips.アローσ@Path_S]
+effect.name=沿路径渲染线条并放置尖端图形以渲染箭头形状的物件。
+曲線精度=折线近似的最大采样间隔，以像素为单位
+開始位置=线条渲染范围的起点，以路径总长度的百分比表示
+終了位置=线条渲染范围的终点，以路径总长度的百分比表示
+破線パターン=交替指定实线部分和空白部分的长度，以像素为单位
+矢じり幅=箭头宽度的缩放率，以百分比表示
+ランダム周期=沿路径渲染方向的随机变动周期，以像素为单位
+ランダム振幅=随机变动的大小，以像素为单位
+ランダム固定端=将路径的起点和终点排除在随机变动的影响之外。
+ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
 
 [スクウェアσ@Path_S]
 スクウェアσ@Path_S=四边形σ@Path_S
@@ -420,18 +420,18 @@
 その他=其他
 ぼかし幅=模糊度
 
-;[Tips.スクウェアσ@Path_S]
-;effect.name=Draws a rectangle with rounded corners.
-;水平揃え=-100: Right / 0: Center / +100: Left
-;垂直揃え=-100: Bottom / 0: Center / +100: Top
-;丸角縦横比=Positive: Vertically long / Negative: Horizontally long
-;丸角縦横比固定=When adjusting the the corner radius if the size is small compared to the radius, this fixes the aspect ratio of the rounded corners.
-;開始位置=Start point of the line drawing range, in % of total path length
-;終了位置=End point of the line drawing range, in % of total path length
-;破線パターン=Write lengths of solid and blank segments alternately, in pixels
-;ランダム周期=Period along the path direction of random variation, in pixels
-;ランダム振幅=Magnitude of random variation, in pixels
-;ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+[Tips.スクウェアσ@Path_S]
+effect.name=渲染圆角矩形的物件。
+水平揃え=-100: 右对齐 / 0: 居中 / +100: 左对齐
+垂直揃え=-100: 下对齐 / 0: 居中 / +100: 上对齐
+丸角縦横比=正值垂直长 / 负值水平长
+丸角縦横比固定=当尺寸相对于角半径较小时，自动调整并固定圆角的长宽比。
+開始位置=线条渲染范围的起点，以路径总长度的百分比表示
+終了位置=线条渲染范围的终点，以路径总长度的百分比表示
+破線パターン=交替指定实线部分和空白部分的长度，以像素为单位
+ランダム周期=沿路径渲染方向的随机变动周期，以像素为单位
+ランダム振幅=随机变动的大小，以像素为单位
+ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
 
 ;===============================
 ; 标签组

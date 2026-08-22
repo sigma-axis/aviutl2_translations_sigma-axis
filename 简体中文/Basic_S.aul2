@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Basic_S (https://github.com/sigma-axis/aviutl2_script_Basic_S)
-; Target Version: v2.40 (for beta52)
+; Target Version: v2.83
 ; Language: 简体中文
 ; Translator(s):
 ;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
@@ -29,11 +29,11 @@
 ライン幅=线宽
 内側透明度=内侧透明度
 
-;[Tips.四隅丸め@Basic_S]
-;effect.name=Rounds four corners of objects with shapes such as circles.
-;縦横比=Positive: vertically long / Negative: horizontally long
-;縦横比固定=On adjusting Radius when size of object is too small, fixes Aspect Ratio.
-;内側透明度=Inner transparency when Line Width is small enough
+[Tips.四隅丸め@Basic_S]
+effect.name=用圆形等图形对物件的四角进行圆角处理。
+縦横比=正值=垂直长 / 负值=水平长
+縦横比固定=当角半径相对于尺寸过小时，自动调整并固定圆角的长宽比。
+内側透明度=线宽较小时的内部透明度
 
 [背景角丸矩形@Basic_S]
 背景角丸矩形@Basic_S=纯色圆角矩形@Basic_S
@@ -72,14 +72,14 @@
 丸角縦横比固定=固定长宽比
 その他=其他
 
-;[Tips.背景角丸矩形@Basic_S]
-;effect.name=Places a round rectangle to background.
-;クリッピング=How the part out of the background figure is displayed
-;背景色=Inner color when Line Width is small enough
-;背景パターン画像=Pattern image when Line Width is small enough
-;背景透明度=Inner transparency when Line Width is small enough
-;丸角縦横比=Positive: vertically long / Negative: horizontally long
-;丸角縦横比固定=On adjusting Radius when size of object is too small, fixes Aspect Ratio.
+[Tips.背景角丸矩形@Basic_S]
+effect.name=在物件的背景上放置圆角矩形。
+クリッピング=超出背景图形部分的显示方式
+背景色=线宽较小时的内部颜色
+背景パターン画像=线宽较小时的内部图案图像
+背景透明度=线宽较小时的内部透明度
+丸角縦横比=正值=垂直长 / 负值=水平长
+丸角縦横比固定=当物件尺寸过小时，自动调整并固定圆角长宽比
 
 [背景楕円@Basic_S]
 背景楕円@Basic_S=纯色椭圆@Basic_S
@@ -102,14 +102,14 @@
 移動Y=移动Y
 その他=其他
 
-;[Tips.背景楕円@Basic_S]
-;effect.name=Places an ellipse to background.
-;クリッピング=How the part out of the background figure is displayed
-;包含=Adjusts the base size so the original object is contained in the background figure.
-;真円=Forces Height match Width.
-;背景色=Inner color when Line Width is small enough
-;背景パターン画像=Pattern image when Line Width is small enough
-;背景透明度=Inner transparency when Line Width is small enough
+[Tips.背景楕円@Basic_S]
+effect.name=在物件的背景上放置椭圆。
+クリッピング=超出背景图形部分的显示方式
+包含=调整使原物件完全位于背景图形内部
+真円=使宽高一致
+背景色=线宽较小时的内部颜色
+背景パターン画像=线宽较小时的内部图案图像
+背景透明度=线宽较小时的内部透明度
 
 [背景菱形@Basic_S]
 背景菱形@Basic_S=纯色菱形@Basic_S
@@ -131,21 +131,21 @@
 移動Y=移动Y
 その他=其他
 
-;[Tips.背景菱形@Basic_S]
-;effect.name=Places a rhombus to background.
-;クリッピング=How the part out of the background figure is displayed
-;包含=Adjusts the base size so the original object is contained in the background figure.
-;正方形=Forces Height match Width.
-;背景色=Inner color when Line Width is small enough
-;背景パターン画像=Pattern image when Line Width is small enough
-;背景透明度=Inner transparency when Line Width is small enough
+[Tips.背景菱形@Basic_S]
+effect.name=在物件的背景上放置菱形。
+クリッピング=超出背景图形部分的显示方式
+包含=调整使原物件完全位于背景图形内部
+正方形=使宽高一致
+背景色=线宽较小时的内部颜色
+背景パターン画像=线宽较小时的内部图案图像
+背景透明度=线宽较小时的内部透明度
 
 [透明度適用@Basic_S]
 透明度適用@Basic_S=应用透明度@Basic_S
 累積分も適用=应用累积效果
 
-;[Tips.透明度適用@Basic_S]
-;effect.name=Makes each pixel semi-transparent by the specified amount. Also affects filters other than the output.
+[Tips.透明度適用@Basic_S]
+effect.name=将物件的每个像素按指定程度半透明化。此效果也会影响导出滤镜以外的部分。
 
 [透明度二値化@Basic_S]
 透明度二値化@Basic_S=透明度二值化@Basic_S
@@ -153,16 +153,16 @@
 ぼかし幅=模糊宽度
 その他=其他
 
-;[Tips.透明度二値化@Basic_S]
-;effect.name=Binarizes transparency. Useful for clarifying blur boundaries.
-;基準透明度=Pixels more transparent than this threshold become completely transparent.
-;ぼかし幅=Pixels less transparent than the threshold plus the buffer width become completely opaque.
+[Tips.透明度二値化@Basic_S]
+effect.name=将透明度二值化。可用于明确模糊边界。
+基準透明度=低于此基准的透明像素将变为完全透明。
+ぼかし幅=从基准透明度起，不透明度超过该宽度的像素将变为完全不透明。
 
 [色調補正@Basic_S]
 色調補正@Basic_S=色调修正@Basic_S
 明るさ=亮度
 コントラスト=对比度
-;ガンマ=Gamma
+ガンマ=伽马值
 輝度=发光度
 輝度反転=发光度反转
 彩度=色度
@@ -174,15 +174,15 @@ HSL(円柱)=HSL(圆柱)
 HSL(双円錐)=HSL(双圆锥)
 その他=其他
 
-;[Tips.色調補正@Basic_S]
-;effect.name=Color correction that can select color spaces.
-;明るさ=Adds a constant to luminance.
-;コントラスト=Multiplies luminance and chrominance. Gray is the origin.
-;ガンマ=Gamma correction is applied after other color correction settings.
-;輝度=Multiplies luminance. Black is the origin.
-;彩度=Multiplies chrominance. Achromatic is the origin.
-;飽和する=Clamps color components within 0% to 100% (if necessary).
-;色空間=* XYZ(sRGB) is not recommended due to its strong uniqueness.
+[Tips.色調補正@Basic_S]
+effect.name=可选择色彩空间的色调修正。
+明るさ=在亮度上加上常数。
+コントラスト=将亮度和彩度相乘。以灰色为原点。
+ガンマ=在其他设置的色调修正后进行伽马修正。
+輝度=将亮度相乘。以黑色为原点。
+彩度=将色度相乘。以无色为原点。
+飽和する=将颜色分量(必要时)矫正到 0%～100% 的范围内。
+色空間=※ XYZ(sRGB) 独特性较强，不推荐使用。
 
 [色チャンネル入れ替え@Basic_S]
 色チャンネル入れ替え@Basic_S=颜色通道切换@Basic_S
@@ -203,8 +203,8 @@ HSL(双円錐)=HSL(双圆锥)
 その他=其他
 乗算済みα=乘以Alpha
 
-;[Tips.色チャンネル入れ替え@Basic_S]
-;effect.name=Swaps color channels of each pixel. You can also invert each channel or replace it with a constant value.
+[Tips.色チャンネル入れ替え@Basic_S]
+effect.name=可替换各像素的颜色分量，将红、绿、蓝及Alpha值交换为其他分量，也可以对各分量分别进行反转。
 
 [色オーバーフロー修正@Basic_S]
 色オーバーフロー修正@Basic_S=颜色溢出修正@Basic_S
@@ -219,25 +219,24 @@ HSL(双円錐)=HSL(双圆锥)
 最大保証+超過分縮小=最大保证+缩放超出部分
 その他=其他
 
-;[Tips.色オーバーフロー修正@Basic_S]
-;effect.name=Color correction that clamps color components within 0% to 100% if necessary.
+[Tips.色オーバーフロー修正@Basic_S]
+effect.name=将颜色分量(必要时)矫正到 0%～100% 的范围内。
 
 [回転中心@Basic_S]
 回転中心@Basic_S=旋转中心@Basic_S
 
-;[Tips.回転中心@Basic_S]
-;effect.name=Moves the rotation center of the object.
+[Tips.回転中心@Basic_S]
+effect.name=移动物件的旋转中心。
 
 [回転中心アンカー指定@Basic_S]
 回転中心アンカー指定@Basic_S=锚点指定旋转中心@Basic_S
-;アンカー範囲=Anchor Space
-;平面=Plane
-;空間=Space
-;相対指定=Relative
+アンカー範囲=锚点范围
+空間=空间
+相対指定=相对指定
 その他=其他
 
-;[Tips.回転中心アンカー指定@Basic_S]
-;effect.name=Moves the rotation center of the object by manipulating an anchor with mouse. The changed center will only affect subsequent filter effects.
+[Tips.回転中心アンカー指定@Basic_S]
+effect.name=可通过鼠标操作锚点来指定物件的旋转中心。此处更改的旋转中心仅影响后续的滤镜效果。
 
 [上下左右揃え@Basic_S]
 上下左右揃え@Basic_S=四方对齐@Basic_S
@@ -246,11 +245,11 @@ HSL(双円錐)=HSL(双圆锥)
 左右有効=启用左右
 上下有効=启用上下
 
-;[Tips.上下左右揃え@Basic_S]
-;effect.name=Aligns the rotation center of the object to the edges or center of the four sides.
-;左右%=-100: Left / 0: Center / +100: Right
-;上下%=-100: Top / 0: Center / +100: Bottom
-;描画位置を固定=Moves the drawing coordinates as well.
+[Tips.上下左右揃え@Basic_S]
+effect.name=将对象的旋转中心对齐到上下左右的边缘或中央。
+左右%=-100：左对齐 / 0：居中 / +100：右对齐
+上下%=-100：上对齐 / 0：居中 / +100：下对齐
+描画位置を固定=渲染坐标也联结运动
 
 [直角回転@Basic_S]
 直角回転@Basic_S=直角旋转@Basic_S
@@ -264,8 +263,8 @@ HSL(双円錐)=HSL(双圆锥)
 左上軸反転=左上轴翻转
 中心の位置を変更=中心点同步变化
 
-;[Tips.直角回転@Basic_S]
-;effect.name=Rotates the image by 90° increments. You can also flip it vertically or horizontally, or flip along diagonal axes.
+[Tips.直角回転@Basic_S]
+effect.name=以90°为单位旋转图像。也可以上下、左右翻转，或沿斜轴翻转。
 
 [XYZ追加回転@Basic_S]
 XYZ追加回転@Basic_S=XYZ额外旋转@Basic_S
@@ -275,10 +274,10 @@ XYZ追加回転@Basic_S=XYZ额外旋转@Basic_S
 グループ制御=组控制
 その他=其他
 
-;[Tips.XYZ追加回転@Basic_S]
-;effect.name=Rotates around the screen-based X, Y, and Z axes, which are independent of the current orientation of the object.
-;描画する=Projects the rotation result into an image.
-;グループ制御=Only effective when "Rasterize" is turned on. Adjusts the camera position to fit with group control.
+[Tips.XYZ追加回転@Basic_S]
+effect.name=始终以画面为基准进行X、Y、Z轴旋转。
+描画する=将旋转结果投影并图像化。
+グループ制御=仅在“渲染”为 ON 时有效。适配组控制下的摄像机位置。
 
 [任意軸追加回転@Basic_S]
 任意軸追加回転@Basic_S=任意轴额外旋转@Basic_S
@@ -290,10 +289,10 @@ XYZ追加回転@Basic_S=XYZ额外旋转@Basic_S
 グループ制御=组控制
 その他=其他
 
-;[Tips.任意軸追加回転@Basic_S]
-;effect.name=Rotates the object around an axis along the line specified by an anchor.
-;描画する=Projects the rotation result into an image.
-;グループ制御=Only effective when "Rasterize" is turned on. Adjusts the camera position to fit with group control.
+[Tips.任意軸追加回転@Basic_S]
+effect.name=沿锚点指定线条的轴对物件进行立体旋转。
+描画する=将旋转结果投影并图像化。
+グループ制御=仅在“渲染”为 ON 时有效。适配组控制下的摄像机位置。
 
 [傾斜@Basic_S]
 傾斜@Basic_S=倾斜@Basic_S
@@ -306,10 +305,10 @@ XYZ追加回転@Basic_S=XYZ额外旋转@Basic_S
 その他=其他
 互換対応(将来削除予定)=兼容支持 (未来移除)
 
-;[Tips.傾斜@Basic_S]
-;effect.name=Skews the object along the axis specified by an anchor.
-;角度=The tan value is added to "Slope %" before applying.
-;傾き%=The tan value of "Angle" is added before applying.
+[Tips.傾斜@Basic_S]
+effect.name=沿锚点指定的轴进行倾斜变形。
+角度=tan值与“斜度%”相加后应用。
+傾き%=与“角度”的tan值相加后应用。
 
 [XY軸変形@Basic_S]
 XY軸変形@Basic_S=XY轴变形@Basic_S
@@ -325,10 +324,10 @@ Y長さ変更=更改Y长度
 その他=其他
 互換対応(将来削除予定)=兼容支持 (未来移除)
 
-;[Tips.XY軸変形@Basic_S]
-;effect.name=Deforms by manipulating anchors placed along X and Y axes.
-;X長さ変更=Stretches along X-axis.
-;Y長さ変更=Stretches along Y-axis.
+[Tips.XY軸変形@Basic_S]
+effect.name=通过鼠标操作沿X、Y轴方向延伸的锚点进行变形。
+X長さ変更=沿X轴方向缩放。
+Y長さ変更=沿Y轴方向缩放。
 
 [領域サイズ変更@Basic_S]
 領域サイズ変更@Basic_S=区域尺寸调整@Basic_S
@@ -336,8 +335,8 @@ Y長さ変更=更改Y长度
 塗りつぶし=填充
 その他=其他
 
-;[Tips.領域サイズ変更@Basic_S]
-;effect.name=Composite filter of "Expand Area" and "Clipping". Positive values expand the area, and negative values clip it.
+[Tips.領域サイズ変更@Basic_S]
+effect.name=正值扩展区域，负值裁剪区域的复合滤镜。
 
 [領域割合サイズ変更@Basic_S]
 領域割合サイズ変更@Basic_S=区域比例尺寸调整@Basic_S
@@ -345,8 +344,8 @@ Y長さ変更=更改Y长度
 塗りつぶし=填充
 その他=其他
 
-;[Tips.領域割合サイズ変更@Basic_S]
-;effect.name=Expands or clips the area, specified with the ratio of the current size of the object.
+[Tips.領域割合サイズ変更@Basic_S]
+effect.name=根据当前物件尺寸的比例进行区域扩展或裁剪。
 
 [領域サイズ指定@Basic_S]
 領域サイズ指定@Basic_S=区域尺寸指定@Basic_S
@@ -357,19 +356,19 @@ Y長さ変更=更改Y长度
 整列=排列
 水平揃え=水平对齐
 垂直揃え=垂直对齐
-;回転中心を基準=Origins Rotation Center
+回転中心を基準=以旋转中心为基准
 縦横無効化=禁用四方
 幅指定有効=启用宽度指定
 高さ指定有効=启用高度指定
 その他=其他
 反転マスク=反转遮罩
 
-;[Tips.領域サイズ指定@Basic_S]
-;effect.name=Expands or clips the area to result in the specified size.
-;幅=Expands or clips the area around "X" and aligned by "Horizontal Alignment".
-;高さ=Expands or clips the area around "Y" and aligned by "Vertical Alignment".
-;水平揃え=-100: Right / 0: Center / +100: Left
-;垂直揃え=-100: Bottom / 0: Center / +100: Top
+[Tips.領域サイズ指定@Basic_S]
+effect.name=将区域扩展或裁剪到指定的尺寸。
+幅=以“X”为基准，按“水平对齐”指定的范围进行区域扩展或裁剪。
+高さ=以“Y”为基准，按“垂直对齐”指定的范围进行区域扩展或裁剪。
+水平揃え=-100：右对齐 / 0：居中 / +100：左对齐
+垂直揃え=-100：下对齐 / 0：居中 / +100：上对齐
 
 [カットずらし@Basic_S]
 カットずらし@Basic_S=切割偏移@Basic_S
@@ -382,7 +381,7 @@ Y長さ変更=更改Y长度
 切り取り線Y2=切割线Y2
 切り取り幅=切割宽度
 中心の位置を変更=中心点同步变化
-;回転中心を基準=Origins Rotation Center
+;回転中心を基準=以旋转中心为基准
 余白/重複処理=余白/重复处理
 余白処理=余白处理
 補間=插值
@@ -391,11 +390,11 @@ Y長さ変更=更改Y长度
 その他=其他
 互換対応(将来削除予定)=兼容支持 (未来移除)
 
-;[Tips.カットずらし@Basic_S]
-;effect.name=Cuts the object along a line specified by an anchor, and moves to a different place.
-;切り取り幅=Adjusts the range of the process "Blank/Overlap".
-;余白処理=Specifies how to fill the blank areas created by moving.
-;重複処理=Specifies how to fill the overlapping areas created by moving.
+[Tips.カットずらし@Basic_S]
+effect.name=沿锚点指定的线条切割物件并偏移放置。
+切り取り幅=调整“余白/重复处理”的范围。
+余白処理=指定偏移产生的空白区域的填充方式。
+重複処理=指定偏移产生的重叠部分的处理方式。
 
 [中抜きクリッピング@Basic_S]
 中抜きクリッピング@Basic_S=镂空裁剪@Basic_S
@@ -407,7 +406,7 @@ Y長さ変更=更改Y长度
 整列=排列
 水平揃え=水平对齐
 垂直揃え=垂直对齐
-;回転中心を基準=Origins Rotation Center
+回転中心を基準=以旋转中心为基准
 余白/重複処理=余白/重复处理
 余白処理=余白处理
 補間=插值
@@ -415,12 +414,12 @@ Y長さ変更=更改Y长度
 重複処理=重复处理
 その他=其他
 
-;[Tips.中抜きクリッピング@Basic_S]
-;effect.name=Applies clipping to, not the edge, but the middle of the object.
-;幅=Expands or clips the area around "X" and aligned by "Horizontal Alignment".
-;高さ=Expands or clips the area around "Y" and aligned by "Vertical Alignment".
-;水平揃え=-100: Right / 0: Center / +100: Left
-;垂直揃え=-100: Bottom / 0: Center / +100: Top
+[Tips.中抜きクリッピング@Basic_S]
+effect.name=在物件的中部(而非边缘)进行区域扩展或裁剪。
+幅=以“X”为基准，按“水平对齐”指定的范围进行裁剪或扩展。
+高さ=以“Y”为基准，按“垂直对齐”指定的范围进行裁剪或扩展。
+水平揃え=-100：右对齐 / 0：居中 / +100：左对齐
+垂直揃え=-100：下对齐 / 0：居中 / +100：上对齐
 
 [画像中間ループ@Basic_S]
 画像中間ループ@Basic_S=图像中部拼贴@Basic_S
@@ -457,14 +456,14 @@ Y長さ変更=更改Y长度
 引き伸ばし=拉伸
 その他=其他
 
-;[Tips.画像中間ループ@Basic_S]
-;effect.name=Applies image loop to the inner part of the object, the inside of the specified margin.
-;幅=Unit differs based on "Width Unit".
-;高さ=Unit differs based on "Height Unit".
-;水平揃え=-100: Right / 0: Center / +100: Left
-;垂直揃え=-100: Bottom / 0: Center / +100: Top
-;ループ水平揃え=-100: Right / 0: Center / +100: Left
-;ループ垂直揃え=-100: Bottom / 0: Center / +100: Top
+[Tips.画像中間ループ@Basic_S]
+effect.name=仅对距上下左右指定距离的内侧部分应用图像拼贴。
+幅=根据“指定宽度”更改单位。
+高さ=根据“指定高度”更改单位。
+水平揃え=-100：右对齐 / 0：居中 / +100：左对齐
+垂直揃え=-100：下对齐 / 0：居中 / +100：上对齐
+ループ水平揃え=-100：右对齐 / 0：居中 / +100：左对齐
+ループ垂直揃え=-100：下对齐 / 0：居中 / +100：上对齐
 
 [小数ぼかし@Basic_S]
 小数ぼかし@Basic_S=微量模糊@Basic_S
@@ -475,9 +474,9 @@ Y長さ変更=更改Y长度
 ガウス分布=高斯分布
 その他=其他
 
-;[Tips.小数ぼかし@Basic_S]
-;effect.name=Blur filter that can apply a fractional blur radius.
-;縦横比=Positive: Horizontally long / Negative: Vertically long
+[Tips.小数ぼかし@Basic_S]
+effect.name=以像素小数精度进行模糊。
+縦横比=正值=水平长 / 负值=垂直长
 
 [縁取りα@Basic_S]
 縁取りα@Basic_S=描边α@Basic_S
@@ -506,9 +505,9 @@ Y長さ変更=更改Y长度
 補間なし=无插值
 その他=其他
 
-;[Tips.四角縁取り@Basic_S]
-;effect.name=Border with square corners.
-;縦横比=Positive: Vertically long / Negative: Horizontally long
+[Tips.四角縁取り@Basic_S]
+effect.name=角部为直角的描边。
+縦横比=正值=垂直长 / 负值=水平长
 
 [内側シャドウ@Basic_S]
 内側シャドウ@Basic_S=内阴影@Basic_S
@@ -533,8 +532,8 @@ Y長さ変更=更改Y长度
 画像Y=图像Y
 その他=其他
 
-;[Tips.内側シャドウ@Basic_S]
-;effect.name=Draws a shadow of the outer boundary to the object itself.
+[Tips.内側シャドウ@Basic_S]
+effect.name=渲染物件自身外侧落下阴影的效果。
 
 [画像ファイル合成@Basic_S]
 画像ファイル合成@Basic_S=图像文件合成@Basic_S
@@ -578,9 +577,9 @@ Y長さ変更=更改Y长度
 追加スクリプト=追加脚本
 その他=其他
 
-;[Tips.画像ファイル合成@Basic_S]
-;effect.name=Combines the current object with an image file in various ways. Video files cannot be loaded.
-;追加のフィルタ効果=Before composition, filter effects can be applied to the loaded image.
+[Tips.画像ファイル合成@Basic_S]
+effect.name=以多种方式将图像文件混合到当前物件上。无法加载视频文件。
+追加のフィルタ効果=混合前可对加载的图像应用滤镜效果。
 
 [動画ファイル合成@Basic_S]
 動画ファイル合成@Basic_S=视频文件合成@Basic_S
@@ -628,10 +627,10 @@ Y長さ変更=更改Y长度
 追加スクリプト=追加脚本
 その他=其他
 
-;[Tips.動画ファイル合成@Basic_S]
-;effect.name=Combines the current object with a video file in various ways. Image files cannot be loaded.
-;再生速度=The playback position is calculated using the simple formula: elapsed time × playback speed.\nSo changing the playback speed during playback may cause jumps.
-;追加のフィルタ効果=Before composition, filter effects can be applied to the loaded image.
+[Tips.動画ファイル合成@Basic_S]
+effect.name=以多种方式将视频文件混合到当前物件上。无法加载图像文件。
+再生速度=播放位置按“经过时间 × 播放速度”的简单公式计算，因此中途更改速度可能会导致跳跃。
+追加のフィルタ効果=混合前可对加载的图像应用滤镜效果。
 
 [テキスト合成@Basic_S]
 テキスト合成@Basic_S=文本合成@Basic_S
@@ -711,18 +710,18 @@ Y長さ変更=更改Y长度
 追加スクリプト=追加脚本
 その他=其他
 
-;[Tips.テキスト合成@Basic_S]
-;effect.name=Combines the current object with text in various ways, such as overlaying text on the object.
-;追加のフィルタ効果=Before composition, filter effects can be applied to the loaded image.
+[Tips.テキスト合成@Basic_S]
+effect.name=以多种方式将文本混合到物件上，例如在物件上叠加文本。
+追加のフィルタ効果=混合前可对加载的图像应用滤镜效果。
 
 [図形合成@Basic_S]
-;図形合成@Basic_S=Figure Composition@Basic_S
-;図形の種類=Figure Type
+図形合成@Basic_S=图形混合@Basic_S
+図形の種類=图形种类
 サイズ=尺寸
 縦横比=长宽比
 ライン幅=线宽
 色=颜色
-;角を丸くする=Rounded Corners
+角を丸くする=圆角化
 描画=渲染
 拡大率=缩放率
 回転=旋转
@@ -761,11 +760,11 @@ Y長さ変更=更改Y长度
 追加スクリプト=追加脚本
 その他=其他
 
-;[Tips.図形合成@Basic_S]
-;effect.name=Combines the current object with figures or SVG files in various ways.
-;図形の種類=Click the button to select an SVG file.
-;縦横比=Positive: vertically long / Negative: horizontally long
-;追加のフィルタ効果=Before composition, filter effects can be applied to the loaded image.
+[Tips.図形合成@Basic_S]
+effect.name=以多种方式将图形或SVG文件混合到物件上。
+図形の種類=点击按钮也可选择SVG文件。
+縦横比=正值=垂直长 / 负值=水平长
+追加のフィルタ効果=混合前可对加载的图像应用滤镜效果。
 
 [画像バッファ合成@Basic_S]
 画像バッファ合成@Basic_S=图像缓存合成@Basic_S
@@ -814,10 +813,10 @@ Y長さ変更=更改Y长度
 追加スクリプト=追加脚本
 その他=其他
 
-;[Tips.画像バッファ合成@Basic_S]
-;effect.name=Combines the current object with internal buffers such as current object, "Temporal Buffer" or "Temporal Cache" in various ways.
-;キャッシュ名=The part "---" of the cache name "cache:---". Valid only for "Temporal Cache".
-;追加のフィルタ効果=Before composition, filter effects can be applied to the loaded image.
+[Tips.画像バッファ合成@Basic_S]
+effect.name=以多种方式将内部缓存(如当前物件、“虚拟缓存”或“临时缓存”)混合到物件上。
+キャッシュ名=缓存名称“cache:---”中的“---”部分。仅在指定临时缓存时有效。
+追加のフィルタ効果=混合前可对加载的图像应用滤镜效果。
 
 [別レイヤー同期@Basic_S]
 別レイヤー同期@Basic_S=图层同步@Basic_S
@@ -842,8 +841,8 @@ Z同期%=Z同步%
 透明度同期%=透明度同步%
 その他=其他
 
-;[Tips.別レイヤー同期@Basic_S]
-;effect.name=The current object synchronizes its position, rotation, zoom, and transparency with another layer.
+[Tips.別レイヤー同期@Basic_S]
+effect.name=读取并应用另一图层的坐标、旋转角度、缩放率和透明度。
 
 [バッファをコピー@Basic_S]
 バッファをコピー@Basic_S=复制缓存@Basic_S
@@ -857,11 +856,11 @@ Z同期%=Z同步%
 描画しない=无渲染
 その他=其他
 
-;[Tips.バッファをコピー@Basic_S]
-;effect.name=Performs a copy operation between internal buffers, such as the current object, "Temporal Buffer", or "Temporal Cache".
-;src::キャッシュ名=The part "---" of the cache name "cache:---". Valid only for "Temporal Cache".
-;コピー先=When copying to the frame buffer, the source must match the scene size.
-;dst::キャッシュ名=The part "---" of the cache name "cache:---". Valid only for "Temporal Cache".
+[Tips.バッファをコピー@Basic_S]
+effect.name=在内部缓存(如当前物件、“虚拟缓存”或“临时缓存”)间执行复制。
+src::キャッシュ名=缓存名称“cache:---”中的“---”部分。仅在指定临时缓存时有效。
+コピー先=若目标为帧缓存，则源必须与合成尺寸一致。
+dst::キャッシュ名=缓存名称“cache:---”中的“---”部分。仅在指定临时缓存时有效。
 
 [バッファをクリア@Basic_S]
 バッファをクリア@Basic_S=清除缓存@Basic_S
@@ -874,9 +873,9 @@ Z同期%=Z同步%
 色=颜色
 その他=其他
 
-;[Tips.バッファをクリア@Basic_S]
-;effect.name=Clears internal buffers such as the current object or "Temporal Buffer" or "Temporal Cache", and replaced with fully transparent pixels or a single color.
-;キャッシュ名=The part "---" of the cache name "cache:---". Valid only for "Temporal Cache".
+[Tips.バッファをクリア@Basic_S]
+effect.name=初始化内部缓存(如当前物件、“虚拟缓存”或“临时缓存”)，替换为完全透明像素或单一颜色。
+キャッシュ名=缓存名称“cache:---”中的“---”部分。仅在指定临时缓存时有效。
 
 ;===============================
 ; 物件(.obj2)
@@ -910,14 +909,14 @@ Z同期%=Z同步%
 丸角縦横比固定=固定圆角长宽比
 その他=其他
 
-;[Tips.角丸矩形@Basic_S]
-;effect.name=Generates rectangles and round-cornered squares. The width and height can be specified in pixels, and alignment can be set for top, bottom, left, and right.
-;背景色=The internal color when the line width is small
-;背景透明度=The transparency of the internal area when the line width is small
-;水平揃え=-100: Right / 0: Center / +100: Left
-;垂直揃え=-100: Bottom / 0: Center / +100: Top
-;丸角縦横比=Positive: Vertically long / Negative: Horizontally long
-;丸角縦横比固定=When adjusting the corner radius if the size is small compared to the radius, this fixes the aspect ratio of the rounded corners.
+[Tips.角丸矩形@Basic_S]
+effect.name=生成矩形和圆角矩形。宽度和高度可以像素为单位指定，并可设置上下左右对齐。
+背景色=线宽较小时的内部颜色。
+背景透明度=线宽较小时的内部透明度。
+水平揃え=-100：右对齐 / 0：居中 / +100：左对齐
+垂直揃え=-100：下对齐 / 0：居中 / +100：上对齐
+丸角縦横比=正值=垂直长 / 负值=水平长
+丸角縦横比固定=当角半径相对于尺寸过小时，自动调整并固定圆角的长宽比。
 
 [楕円@Basic_S]
 楕円@Basic_S=椭圆@Basic_S
@@ -932,13 +931,13 @@ Z同期%=Z同步%
 垂直揃え=垂直对齐
 その他=其他
 
-;[Tips.楕円@Basic_S]
-;effect.name=Generates ellipses with width and height specified in pixels, and allows alignment settings for top, bottom, left, and right.
-;背景色=The internal color when the line width is small
-;背景透明度=The transparency of the internal area when the line width is small
-;真円=Aligns "Width" and "Height". "Height" will be ignored.
-;水平揃え=-100: Right / 0: Center / +100: Left
-;垂直揃え=-100: Bottom / 0: Center / +100: Top
+[Tips.楕円@Basic_S]
+effect.name=生成宽度和高度可以像素为单位指定的椭圆，并可设置上下左右对齐。
+背景色=线宽较小时的内部颜色。
+背景透明度=线宽较小时的内部透明度。
+真円=使宽高一致，高度设置将被忽略。
+水平揃え=-100：右对齐 / 0：居中 / +100：左对齐
+垂直揃え=-100：下对齐 / 0：居中 / +100：上对齐
 
 [菱形@Basic_S]
 幅=宽度
@@ -952,13 +951,13 @@ Z同期%=Z同步%
 垂直揃え=垂直对齐
 その他=其他
 
-;[Tips.菱形@Basic_S]
-;effect.name=Generates rhombuses with width and height specified in pixels, and allows alignment settings for top, bottom, left, and right.
-;背景色=The internal color when the line width is small
-;背景透明度=The transparency of the internal area when the line width is small
-;正方形=Aligns "Width" and "Height". "Height" will be ignored.
-;水平揃え=-100: Right / 0: Center / +100: Left
-;垂直揃え=-100: Bottom / 0: Center / +100: Top
+[Tips.菱形@Basic_S]
+effect.name=生成宽度和高度可以像素为单位指定的菱形，并可设置上下左右对齐。
+背景色=线宽较小时的内部颜色。
+背景透明度=线宽较小时的内部透明度。
+正方形=使宽高一致，高度设置将被忽略。
+水平揃え=-100：右对齐 / 0：居中 / +100：左对齐
+垂直揃え=-100：下对齐 / 0：居中 / +100：上对齐
 
 [スーパー楕円@Basic_S]
 スーパー楕円@Basic_S=超椭圆@Basic_S
@@ -975,13 +974,13 @@ Z同期%=Z同步%
 垂直揃え=垂直对齐
 その他=其他
 
-;[Tips.スーパー楕円@Basic_S]
-;effect.name=Generates superellipses, including astroids and rhombuses as special cases.
-;背景色=The internal color when the line width is small
-;背景透明度=The transparency of the internal area when the line width is small
-;縦横一致=Aligns "Width" and "Height". "Height" will be ignored.
-;水平揃え=-100: Right / 0: Center / +100: Left
-;垂直揃え=-100: Bottom / 0: Center / +100: Top
+[Tips.スーパー楕円@Basic_S]
+effect.name=生成超椭圆(包括星形线和菱形等特殊形状)。
+背景色=线宽较小时的内部颜色。
+背景透明度=线宽较小时的内部透明度。
+縦横一致=使宽高一致，高度设置将被忽略。
+水平揃え=-100：右对齐 / 0：居中 / +100：左对齐
+垂直揃え=-100：下对齐 / 0：居中 / +100：上对齐
 
 [別レイヤー@Basic_S]
 別レイヤー@Basic_S=不同图层@Basic_S
@@ -996,8 +995,8 @@ Z同期%=Z同步%
 透明度の復元=恢复透明度
 その他=其他
 
-;[Tips.別レイヤー@Basic_S]
-;effect.name=Loads the same image as another layer. Some information such as coordinates and zoom level can be restored to a certain extent.
+[Tips.別レイヤー@Basic_S]
+effect.name=加载与另一图层相同的图像。坐标、缩放率等信息可在一定程度上恢复。
 
 [バッファ読み込み@Basic_S]
 バッファ読み込み@Basic_S=读取缓存@Basic_S
@@ -1009,9 +1008,9 @@ Z同期%=Z同步%
 キャッシュ名=缓存名称
 その他=其他
 
-;[Tips.バッファ読み込み@Basic_S]
-;effect.name=Loads a specified buffer, such as "Temporal Buffer", which is used for "Temporal Buffer Output" or temporary drawing target for various scripts, or "Temporal Cache" which is used for temporary storage.
-;キャッシュ名=The part "---" of the cache name "cache:---". Valid only for "Temporal Cache".
+[Tips.バッファ読み込み@Basic_S]
+effect.name=加载指定的缓存，例如用于“虚拟缓存导出”或各种脚本临时绘制目标的“虚拟缓存”，或用于临时存储的“临时缓存”。
+キャッシュ名=缓存名称“cache:---”中的“---”部分。仅在指定临时缓存时有效。
 
 ;===============================
 ; 缓动(.tra2)
@@ -1050,12 +1049,11 @@ N次式@Basic_S=N次方@Basic_S
 [等速移動@Basic_S]
 等速移動@Basic_S=匀速运动@Basic_S
 単位=Unit
-秒=
 フレーム=帧
 単位時間=单位时间
-;起点=Origin
-;始点=Start Point
-;終点=End Point
+起点=原点
+始点=起始点
+終点=结束点
 
 [等速移動(秒)@Basic_S]
 等速移動(秒)@Basic_S=匀速运动(秒)@Basic_S
@@ -1067,21 +1065,16 @@ N次式@Basic_S=N次方@Basic_S
 
 [コマ落ち反復@Basic_S]
 コマ落ち反復@Basic_S=丢帧重复@Basic_S
-;周期の単位=Unit of Period
-秒=
+周期の単位=周期单位
 フレーム=帧
-;回数=Count
-;BPMグリッド(拍数線)=BPM Grid (Beat)
-;BPMグリッド(小節線)=BPM Grid (Measure)
-周期=
-;周期(倍率)=Period (Multiplier)
-;周期(分母)=Period (Denominator)
+BPMグリッド(拍数線)=BPM网格(节拍线)
+BPMグリッド(小節線)=BPM网格(小节线)
 周期ずれ%=周期偏移(%)
-;周期の起点=Origin of Period
-;始点=Start Point
-;終点=End Point
-;始点近くのグリッド(BPMグリッド)=Nearest Grid at Start (BPM Grid)
-;終点近くのグリッド(BPMグリッド)=Nearest Grid at End (BPM Grid)
+周期の起点=周期原点
+始点=起始点
+終点=结束点
+始点近くのグリッド(BPMグリッド)=起始点附近的网格(BPM网格)
+終点近くのグリッド(BPMグリッド)=结束点附近的网格(BPM网格)
 デューティ比%=负载循环(%)
 
 [コマ落ち反復(秒)@Basic_S]
@@ -1113,28 +1106,22 @@ N次式@Basic_S=N次方@Basic_S
 デューティ比%=负载循环(%)
 
 [コマ落ち反復(回数)@Basic_S]
-;コマ落ち反復(回数)@Basic_S=Repeat Discrete (Count)@Basic_S
-;周期(回数)=Period (Count)
+コマ落ち反復(回数)@Basic_S=丢帧重复(回数)@Basic_S
 周期ずれ%=周期偏移(%)
 デューティ比%=负载循环(%)
 
 [コマ落ちランダム@Basic_S]
 コマ落ちランダム@Basic_S=丢帧随机@Basic_S
-;周期の単位=Unit of Period
-秒=
+周期の単位=周期单位
 フレーム=帧
-;回数=Count
-;BPMグリッド(拍数線)=BPM Grid (Beat)
-;BPMグリッド(小節線)=BPM Grid (Measure)
-周期=
-;周期(倍率)=Period (Multiplier)
-;周期(分母)=Period (Denominator)
+BPMグリッド(拍数線)=BPM网格(节拍数)
+BPMグリッド(小節線)=BPM网格(小节数)
 周期ずれ%=周期偏移(%)
-;周期の起点=Origin of Period
-;始点=Start Point
-;終点=End Point
-;始点近くのグリッド(BPMグリッド)=Nearest Grid at Start (BPM Grid)
-;終点近くのグリッド(BPMグリッド)=Nearest Grid at End (BPM Grid)
+周期の起点=周期原点
+始点=起始点
+終点=结束点
+始点近くのグリッド(BPMグリッド)=起始点附近的网格(BPM网格)
+終点近くのグリッド(BPMグリッド)=结束点附近的网格(BPM网格)
 乱数シード=随机种子
 
 [コマ落ちランダム(秒)@Basic_S]
@@ -1166,56 +1153,44 @@ N次式@Basic_S=N次方@Basic_S
 乱数シード=随机种子
 
 [コマ落ちランダム(回数)@Basic_S]
-;コマ落ちランダム(回数)@Basic_S=Random Discrete (Count)@Basic_S
-;周期(回数)=Period (Count)
+コマ落ちランダム(回数)@Basic_S=丢帧随机(回数)@Basic_S
 周期ずれ%=周期偏移(%)
 乱数シード=随机种子
 
 [コマ落ち時間制御@Basic_S]
-;コマ落ち時間制御@Basic_S=Discrete Time Control@Basic_S
-;周期の単位=Unit of Period
-秒=
+コマ落ち時間制御@Basic_S=丢帧随机时间控制@Basic_S
+周期の単位=周期单位
 フレーム=帧
-;回数=Count
-;BPMグリッド(拍数線)=BPM Grid (Beat)
-;BPMグリッド(小節線)=BPM Grid (Measure)
-周期=
-;周期(倍率)=Period (Multiplier)
-;周期(分母)=Period (Denominator)
+BPMグリッド(拍数線)=BPM网格(节拍数)
+BPMグリッド(小節線)=BPM网格(小节数)
 周期ずれ%=周期偏移(%)
-;周期の起点=Origin of Period
-;始点=Start Point
-;終点=End Point
-;始点近くのグリッド(BPMグリッド)=Nearest Grid at Start (BPM Grid)
-;終点近くのグリッド(BPMグリッド)=Nearest Grid at End (BPM Grid)
-;モード=Mode
-;区間ごとに時間制御=Piecewise Time Control
-;全体で時間制御=Entire Time Control
-;区間ごとに時間制御(回転)=Piecewise Time Control (Rotation)
-;全体で時間制御(回転)=Entire Time Control (Rotation)
-1周角度=
-;サンプル位置%=Sample Position (%)
+周期の起点=周期原点
+始点=起始点
+終点=结束点
+始点近くのグリッド(BPMグリッド)=起始点附近的网格(BPM网格)
+終点近くのグリッド(BPMグリッド)=结束点附近的网格(BPM网格)
+モード=模式
+区間ごとに時間制御=按区间时间控制
+全体で時間制御=整体时间控制
+区間ごとに時間制御(回転)=按区间时间控制(旋转)
+全体で時間制御(回転)=整体时间控制(旋转)
+サンプル位置%=采样位置(%)
 
 [時間制御繰り返し@Basic_S]
 時間制御繰り返し@Basic_S=重复时间控制@Basic_S
-;周期の単位=Unit of Period
-秒=
+周期の単位=周期单位
 フレーム=帧
-;回数=Count
-;BPMグリッド(拍数線)=BPM Grid (Beat)
-;BPMグリッド(小節線)=BPM Grid (Measure)
-周期=
-;周期(倍率)=Period (Multiplier)
-;周期(分母)=Period (Denominator)
+BPMグリッド(拍数線)=BPM网格(节拍数)
+BPMグリッド(小節線)=BPM网格(小节数)
 周期ずれ%=周期偏移(%)
-;周期の起点=Origin of Period
-;始点=Start Point
-;終点=End Point
-;始点近くのグリッド(BPMグリッド)=Nearest Grid at Start (BPM Grid)
-;終点近くのグリッド(BPMグリッド)=Nearest Grid at End (BPM Grid)
-;モード=Mode
-;通常=Normal
-;往復=Back and Forth
+周期の起点=周期原点
+始点=起始点
+終点=结束点
+始点近くのグリッド(BPMグリッド)=起始点附近的网格(BPM网格)
+終点近くのグリッド(BPMグリッド)=结束点附近的网格(BPM网格)
+モード=模式
+通常=正常
+往復=往复
 
 [時間制御繰り返し(秒)@Basic_S]
 時間制御繰り返し(秒)@Basic_S=重复时间控制(秒)@Basic_S
@@ -1241,8 +1216,7 @@ N次式@Basic_S=N次方@Basic_S
 周期ずれ%=周期偏移(%)
 
 [時間制御繰り返し(回数)@Basic_S]
-;時間制御繰り返し(回数)@Basic_S=Repeat Time Control (Count)@Basic_S
-;周期(回数)=Period (Count)
+時間制御繰り返し(回数)@Basic_S=重复时间控制(回数)@Basic_S
 周期ずれ%=周期偏移(%)
 
 [時間制御繰り返し往復(秒)@Basic_S]
@@ -1269,8 +1243,7 @@ N次式@Basic_S=N次方@Basic_S
 周期ずれ%=周期偏移(%)
 
 [時間制御繰り返し往復(回数)@Basic_S]
-;時間制御繰り返し往復(回数)@Basic_S=Repeat Back Forth Time Control (Count)@Basic_S
-;周期(回数)=Period (Count)
+時間制御繰り返し往復(回数)@Basic_S=重复往返时间控制(回数)@Basic_S
 周期ずれ%=周期偏移(%)
 
 [対数補間@Basic_S]
@@ -1317,7 +1290,7 @@ N次式@Basic_S=N次方@Basic_S
 ; Labels
 ;===============================
 [Effect]
-;Basic_S\非推奨=Basic_S\Obsolete
+Basic_S\非推奨=Basic_S\过时
 
 ; .anm2
 Basic_S\クリッピング=Basic_S\裁剪

@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Tile_S (https://github.com/sigma-axis/aviutl2_script_Tile_S)
-; Target Version: v1.20 (for beta51)
+; Target Version: v1.30
 ; Language: 简体中文
 ; Translator(s):
 ;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
@@ -36,14 +36,14 @@
 その他=其他
 アンチエイリアス=抗锯齿
 
-;[Tips.四角タイルσ@Tile_S]
-;effect.name=Pattern of arranged rectangles. Can be colored in four colors.
-;背景サイズ=Fits to the screen size, ignoring the settings of width and height.
-;タイル種類=Reduces the number of tile types to make the pattern simple.
-;マス正方形(幅のみで指定)=Ignores "Tile Height" to make tiles square.
-;ライン幅=Reducing this exposes "Inner Colors".
-;余白幅=Spacing between tiles (horizontal)
-;余白高さ=Spacing between tiles (vertical)
+[Tips.四角タイルσ@Tile_S]
+effect.name=排列长方形的图案样式。可按4种颜色填充。
+背景サイズ=忽略宽度和高度设置，适配合成尺寸。
+タイル種類=减少瓦片种类以简化图案。
+マス正方形(幅のみで指定)=忽略“瓦片高度”，使瓦片成为正方形。
+ライン幅=降低后会显示内部颜色。
+余白幅=瓦片间的间隙大小(水平)
+余白高さ=瓦片间的间隙大小（垂直）
 
 [三角タイルσ@Tile_S]
 三角タイルσ@Tile_S=三角形瓦片σ@Tile_S
@@ -78,12 +78,12 @@
 その他=其他
 アンチエイリアス=抗锯齿
 
-;[Tips.三角タイルσ@Tile_S]
-;effect.name=Pattern of arranged equilateral triangles. Can be colored in six colors.
-;背景サイズ=Fits to the screen size, ignoring the settings of width and height.
-;タイル種類=Reduces the number of tile types to make the pattern simple.
-;ライン幅=Reducing this exposes "Inner Colors".
-;余白幅=Spacing between tiles
+[Tips.三角タイルσ@Tile_S]
+effect.name=排列正三角形的图案样式。可按6种颜色填充。
+背景サイズ=忽略宽度和高度设置，适配合成尺寸。
+タイル種類=减少瓦片种类以简化图案。
+ライン幅=降低后会显示内部颜色。
+余白幅=瓦片间的间隙大小
 
 [六角タイルσ@Tile_S]
 六角タイルσ@Tile_S=六边形瓦片σ@Tile_S
@@ -110,12 +110,12 @@
 その他=其他
 アンチエイリアス=抗锯齿
 
-;[Tips.六角タイルσ@Tile_S]
-;effect.name=Pattern of arranged regular hexagons. Can be colored in three colors.
-;背景サイズ=Fits to the screen size, ignoring the settings of width and height.
-;タイル種類=Reduces the number of tile types to make the pattern simple.
-;ライン幅=Reducing this exposes "Inner Colors".
-;余白幅=Spacing between tiles
+[Tips.六角タイルσ@Tile_S]
+effect.name=排列正六边形的图案样式。可按3种颜色填充。
+背景サイズ=忽略宽度和高度设置，适配合成尺寸。
+タイル種類=减少瓦片种类以简化图案。
+ライン幅=降低后会显示内部颜色。
+余白幅=瓦片间的间隙大小
 
 [菱形タイルσ@Tile_S]
 菱形タイルσ@Tile_S=菱形瓦片σ@Tile_S
@@ -146,9 +146,9 @@
 その他=其他
 アンチエイリアス=抗锯齿
 
-;[Tips.菱形タイルσ@Tile_S]
-;effect.name=Pattern of arranged rhombuses. Can be colored in four colors.
-;背景サイズ=Fits to the screen size, ignoring the settings of width and height.
-;タイル種類=Reduces the number of tile types to make the pattern simple.
-;ライン幅=Reducing this exposes "Inner Colors".
-;余白幅=Spacing between tiles
+[Tips.菱形タイルσ@Tile_S]
+effect.name=排列菱形的图案样式。可按4种颜色填充。
+背景サイズ=忽略宽度和高度设置，适配合成尺寸。
+タイル種類=减少瓦片种类以简化图案。
+ライン幅=降低后会显示内部颜色。
+余白幅=瓦片间的间隙大小

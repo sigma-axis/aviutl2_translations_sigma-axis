@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Resize_S (https://github.com/sigma-axis/aviutl2_script_Resize_S)
-; Target Version: v1.11 (for beta25)
+; Target Version: v1.30
 ; Language: 简体中文
 ; Translator(s):
 ;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
@@ -23,8 +23,8 @@ Hamming=汉明滤波
 中心の位置を変更=中心点同步变化
 その他=其他
 
-;[Tips.リサイズσ@Resize_S]
-;effect.name=Zooming filter that allows to select scaling methods.
+[Tips.リサイズσ@Resize_S]
+effect.name=使用指定算法对图像应用缩放滤镜。
 
 [ボックスリサイズσ@Resize_S]
 ボックスリサイズσ@Resize_S=方框尺寸调整σ@Resize_S
@@ -54,9 +54,9 @@ Hamming=汉明滤波
 余白/クリッピング=余白/裁剪
 その他=其他
 
-;[Tips.ボックスリサイズσ@Resize_S]
-;effect.name=Applies zooming filter to fit a rectangle of the specified size.
-;背景サイズ=Fits to the screen size, ignoring the settings of width and height.
-;水平揃え=Valid only when "Margin/Clipping" is turned on. Adjusts the size of margin/clipping.
-;垂直揃え=Valid only when "Margin/Clipping" is turned on. Adjusts the size of margin/clipping.
-;余白/クリッピング=When the aspect ratios do not match, leaves extra margin or clips out-of-bound part.
+[Tips.ボックスリサイズσ@Resize_S]
+effect.name=应用缩放滤镜以适配指定尺寸的矩形。
+背景サイズ=忽略宽度和高度设置，适配场景尺寸。
+水平揃え=仅在“余白/裁剪”开启时有效。调整余白或裁剪的平衡。
+垂直揃え=仅在“余白/裁剪”开启时有效。调整余白或裁剪的平衡。
+余白/クリッピング=当宽高比不一致时，保留余白或裁剪溢出部分以匹配长宽比。
