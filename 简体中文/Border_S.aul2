@@ -22,6 +22,11 @@
 タイプ=类型
 外側縁取り=外侧描边
 内側縁取り=内侧描边
+;内側塗りつぶし=Inner Fill
+;左端を延伸=Extend Left Edge
+;右端を延伸=Extend Right Edge
+;上端を延伸=Extend Top Edge
+;下端を延伸=Extend Bottom Edge
 透明度設定=透明度设置
 位置調整=位置调整
 移動X=移动X
@@ -43,6 +48,19 @@
 ぼかしの種類=模糊种类
 ガウス分布=高斯分布
 
+;[Tips.縁取りσ]
+;effect.name=Places border effects around the opaque pixels of the object. Compared to the standard Border filter, it offers more flexible settings and is faster.
+;方式=Algorithm used for calculation
+;α調整=Meaning depends on Method
+;inner::左端を延伸=Creates inner border as if the opaque pixels on the edge extend to the outside.
+;inner::右端を延伸=Creates inner border as if the opaque pixels on the edge extend to the outside.
+;inner::上端を延伸=Creates inner border as if the opaque pixels on the edge extend to the outside.
+;inner::下端を延伸=Creates inner border as if the opaque pixels on the edge extend to the outside.
+;縦横比=Positive: vertically long / Negative: horizontally long
+;凸半径=Rounds the outer protruding parts.
+;凹半径=Adds rounded parts to the inner cutouts.
+;膨らみ=Uses superellipse instead of circle.\n-300 ⇒ Cross\n0 ⇒ Rhombus\n+100 ⇒ Circle\n+300 ⇒ Rectangle
+
 [角丸めσ]
 角丸めσ=圆角化σ
 ぼかし=模糊
@@ -60,6 +78,13 @@
 膨らみ=膨胀度
 ぼかしの種類=模糊种类
 ガウス分布=高斯分布
+
+;[Tips.角丸めσ]
+;effect.name=Rounds the corners of the object and/or removes border along the boundary.
+;方式=Algorithm used for calculation
+;α調整=Meaning depends on Method
+;縦横比=Positive: vertically long / Negative: horizontally long
+;膨らみ=Uses superellipse instead of circle.\n-300 ⇒ Cross\n0 ⇒ Rhombus\n+100 ⇒ Circle\n+300 ⇒ Rectangle
 
 [アウトラインσ]
 アウトラインσ=轮廓线σ
@@ -102,6 +127,21 @@
 速い方=快速
 ぼかしの種類=模糊种类
 ガウス分布=高斯分布
+
+;[Tips.アウトラインσ]
+;effect.name=Creates a line of a specified width along the boundary of the object.
+;距離=Distance between the line and the object
+;方式=Algorithm used for calculation
+;α調整=Meaning depends on Method
+;ライン配置=Effective when Source Transparency is less than 100.
+;内側透明度=Transparency of the "hole" part of the outline
+;距離縦横比=Positive: vertically long / Negative: horizontally long
+;凸半径=Rounds the outer protruding parts.
+;凹半径=Adds rounded parts to the inner cutouts.
+;距離膨らみ=Uses superellipse instead of circle.\n-300 ⇒ Cross\n0 ⇒ Rhombus\n+100 ⇒ Circle\n+300 ⇒ Rectangle
+;ライン縦横比=Positive: vertically long / Negative: horizontally long
+;ライン膨らみ=Uses superellipse instead of circle.\n-300 ⇒ Cross\n0 ⇒ Rhombus\n+100 ⇒ Circle\n+300 ⇒ Rectangle
+;手順=Valid when both Convex Radius and Concave Radius are positive.
 
 ;===============================
 ; Labels

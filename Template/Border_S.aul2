@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Border_S (https://github.com/sigma-axis/aviutl2_Border_S)
-; Target Version: v1.20 (for beta48)
+; Target Version: v1.31
 ; Language: <Language Name>
 ; Translator(s):
 ;   <Name1>
@@ -24,6 +24,11 @@
 タイプ=Type
 外側縁取り=Outer Border
 内側縁取り=Inner Border
+内側塗りつぶし=Inner Fill
+左端を延伸=Extend Left Edge
+右端を延伸=Extend Right Edge
+上端を延伸=Extend Top Edge
+下端を延伸=Extend Bottom Edge
 透明度設定=Transparency Settings
 透明度=Transparency
 前景透明度=Foreground Transparency
@@ -50,6 +55,19 @@
 三角分布=Triangular
 ガウス分布=Gaussian
 
+[Tips.縁取りσ]
+effect.name=Places border effects around the opaque pixels of the object. Compared to the standard Border filter, it offers more flexible settings and is faster.
+方式=Algorithm used for calculation
+α調整=Meaning depends on Method
+inner::左端を延伸=Creates inner border as if the opaque pixels on the edge extend to the outside.
+inner::右端を延伸=Creates inner border as if the opaque pixels on the edge extend to the outside.
+inner::上端を延伸=Creates inner border as if the opaque pixels on the edge extend to the outside.
+inner::下端を延伸=Creates inner border as if the opaque pixels on the edge extend to the outside.
+縦横比=Positive: vertically long / Negative: horizontally long
+凸半径=Rounds the outer protruding parts.
+凹半径=Adds rounded parts to the inner cutouts.
+膨らみ=Uses superellipse instead of circle.\n-300 ⇒ Cross\n0 ⇒ Rhombus\n+100 ⇒ Circle\n+300 ⇒ Rectangle
+
 [角丸めσ]
 角丸めσ=Round Corners S
 半径=Radius
@@ -71,6 +89,13 @@
 ぼかしの種類=Blur Type
 三角分布=Triangular
 ガウス分布=Gaussian
+
+[Tips.角丸めσ]
+effect.name=Rounds the corners of the object and/or removes border along the boundary.
+方式=Algorithm used for calculation
+α調整=Meaning depends on Method
+縦横比=Positive: vertically long / Negative: horizontally long
+膨らみ=Uses superellipse instead of circle.\n-300 ⇒ Cross\n0 ⇒ Rhombus\n+100 ⇒ Circle\n+300 ⇒ Rectangle
 
 [アウトラインσ]
 アウトラインσ=Outline S 
@@ -120,6 +145,21 @@
 ぼかしの種類=Blur Type
 三角分布=Triangular
 ガウス分布=Gaussian
+
+[Tips.アウトラインσ]
+effect.name=Creates a line of a specified width along the boundary of the object.
+距離=Distance between the line and the object
+方式=Algorithm used for calculation
+α調整=Meaning depends on Method
+ライン配置=Effective when Source Transparency is less than 100.
+内側透明度=Transparency of the "hole" part of the outline
+距離縦横比=Positive: vertically long / Negative: horizontally long
+凸半径=Rounds the outer protruding parts.
+凹半径=Adds rounded parts to the inner cutouts.
+距離膨らみ=Uses superellipse instead of circle.\n-300 ⇒ Cross\n0 ⇒ Rhombus\n+100 ⇒ Circle\n+300 ⇒ Rectangle
+ライン縦横比=Positive: vertically long / Negative: horizontally long
+ライン膨らみ=Uses superellipse instead of circle.\n-300 ⇒ Cross\n0 ⇒ Rhombus\n+100 ⇒ Circle\n+300 ⇒ Rectangle
+手順=Valid when both Convex Radius and Concave Radius are positive.
 
 ;===============================
 ; Labels
