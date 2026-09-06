@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Path_S (https://github.com/sigma-axis/aviutl2_script_Path_S)
-; Target Version: v2.10
+; Target Version: v2.20
 ; Language: English
 ; Translator(s):
 ;   sigma-axis (https://github.com/sigma-axis)
@@ -20,6 +20,17 @@
 2次ベジェ曲線=Quadratic Bezier
 3次ベジェ曲線=Cubic Bezier
 点リスト=Points
+アンカー基準=Origin of Anchors
+回転中心=Rotation Center
+左上=Top Left
+上=Top
+右上=Top Right
+左=Left
+中央=Center
+右=Right
+左下=Bottom Left
+下=Bottom
+右下=Bottom Right
 曲線精度=Curve Precision
 塗り設定=Fill Settings
 追加幅=Inflation
@@ -56,6 +67,17 @@ effect.name=Crops the image to the area enclosed by the path.
 3次ベジェ曲線=Cubic Bezier
 点リスト=Points
 ループ=Loop
+アンカー基準=Origin of Anchors
+回転中心=Rotation Center
+左上=Top Left
+上=Top
+右上=Top Right
+左=Left
+中央=Center
+右=Right
+左下=Bottom Left
+下=Bottom
+右下=Bottom Right
 曲線精度=Curve Precision
 ライン設定=Line Settings
 開始位置=Line Start
@@ -105,6 +127,17 @@ effect.name=Masks out the image along the line traced by the path.
 2次ベジェ曲線=Quadratic Bezier
 3次ベジェ曲線=Cubic Bezier
 点リスト=Points
+アンカー基準=Origin of Anchors
+回転中心=Rotation Center
+左上=Top Left
+上=Top
+右上=Top Right
+左=Left
+中央=Center
+右=Right
+左下=Bottom Left
+下=Bottom
+右下=Bottom Right
 曲線精度=Curve Precision
 塗り設定=Fill Settings
 追加幅=Inflation
@@ -159,6 +192,17 @@ effect.name=Limites the range of "Subsequent Filters" in "Path Partial Filter S"
 3次ベジェ曲線=Cubic Bezier
 点リスト=Points
 ループ=Loop
+アンカー基準=Origin of Anchors
+回転中心=Rotation Center
+左上=Top Left
+上=Top
+右上=Top Right
+左=Left
+中央=Center
+右=Right
+左下=Bottom Left
+下=Bottom
+右下=Bottom Right
 曲線精度=Curve Precision
 パスの表示=Display Path
 その他=Misc
