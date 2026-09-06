@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: PageRoll_S (https://github.com/sigma-axis/aviutl2_script_PageRoll_S)
-; Target Version: v1.20 (for beta51)
+; Target Version: v1.22
 ; Language: <Language Name>
 ; Translator(s):
 ;   <Name1>
@@ -34,6 +34,14 @@
 180°反転=180° Flip
 その他=Misc
 
+[Tips.PageRoll_S]
+effect.name=Rolls up the image like a page
+角度=Specifies the angle of the direction. Zero is toward up, positive goes clockwise.
+領域外も描画=Extends the drawing area if the rolled portion extends beyond the original image size.
+裏地画像=Uses the original image if not specified.
+キャッシュ名=The part "---" of the cache name "cache:---". Valid only if "Temporal Cache" is selected in "Lining Type".
+
+
 ;===============================
 ; Transitions (.scn2)
 ;===============================
@@ -62,3 +70,8 @@ PageRoll_S(シーンチェンジ)=PageRoll_S (Transition)
 180°反転=180° Flip
 反転=Invert
 その他=Misc
+
+[Tips.PageRoll_S(シーンチェンジ)]
+effect.name=Rolls up the image like a page for scene transitions
+角度=Specifies the angle of the direction. Zero is toward up, positive goes clockwise.
+キャッシュ名=The part "---" of the cache name "cache:---". Valid only if "Temporal Cache" is selected in "Lining".
