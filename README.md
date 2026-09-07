@@ -55,15 +55,15 @@ Currently this repository contains files for the following languages. Note that 
 
 1.  Select the language in the language setting menu.
 
-##  Upcoming Update
+##  Update History
 
-- **r52** (2026-??-??)
+- **r53** (2026-09-07)
 
   - \[English\] Updated translation for [PageRoll_S](https://github.com/sigma-axis/aviutl2_script_PageRoll_S) to follow up v1.22, including tooltips.
 
   - \[English\] Updated translation for [Region_S](https://github.com/sigma-axis/aviutl2_script_Region_S) to follow up v1.10, including tooltips.
 
-##  Update History
+  - \[English\] Updated translation for [RadRotDirBlur_S](https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S) to follow up v1.20, including tooltips.
 
 - **r52** (2026-09-06)
 

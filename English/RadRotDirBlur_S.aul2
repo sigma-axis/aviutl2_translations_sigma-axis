@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: RadRotDirBlur_S (https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S)
-; Target Version: v1.10 (for beta50)
+; Target Version: v1.20
 ; Language: English
 ; Translator(s):
 ;   sigma-axis (https://github.com/sigma-axis)
@@ -12,6 +12,7 @@
 回転角=Rotate
 中心X=Center X
 中心Y=Center Y
+回転中心を基準=Origins Rotation Center
 強さ=Intensity
 相対位置=Relative Position
 色収差設定=Chromatic Aberration Settings
@@ -28,3 +29,14 @@
 精度=Precision
 互換対応(将来削除予定)=Legacy (Removed in Future)
 中心=Center
+
+[Tips.RadRotDirBlur_S]
+effect.name=Blur effect combining radial, rotational, and directional blur.
+移動X=Direction of directional blur
+移動Y=Direction of directional blur
+拡大率=Zoom rate of radial blur
+回転角=Angle of rotational blur
+中心X=Center of radial and rotational blur
+中心Y=Center of radial and rotational blur
+色収差=The correct order in the real world is "Red-Blue". "A" makes transparent pixels darker than "B".
+精度=Number of samples for blur calculations

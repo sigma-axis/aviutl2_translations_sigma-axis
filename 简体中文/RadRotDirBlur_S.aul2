@@ -11,6 +11,7 @@ RadRotDirBlur_S=放射/旋转/直接模糊σ
 移動Y=移动Y
 拡大率=缩放率
 回転角=旋转角
+回転中心を基準=以旋转中心为基准
 強さ=强度
 相対位置=相对位置
 色収差設定=色差设置
@@ -25,3 +26,14 @@ RadRotDirBlur_S=放射/旋转/直接模糊σ
 サイズ固定=固定尺寸
 その他=其他
 互換対応(将来削除予定)=兼容支持 (未来移除)
+
+;[Tips.RadRotDirBlur_S]
+;effect.name=Blur effect combining radial, rotational, and directional blur.
+;移動X=Direction of directional blur
+;移動Y=Direction of directional blur
+;拡大率=Zoom rate of radial blur
+;回転角=Angle of rotational blur
+;中心X=Center of radial and rotational blur
+;中心Y=Center of radial and rotational blur
+;色収差=The correct order in the real world is "Red-Blue". "A" makes transparent pixels darker than "B".
+;精度=Number of samples for blur calculations
