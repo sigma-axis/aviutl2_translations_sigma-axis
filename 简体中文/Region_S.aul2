@@ -46,6 +46,10 @@
 角で隣接扱い=将四角相邻视为连接
 その他=其他
 
+;[Tips.連結成分塗りつぶし@Region_S]
+;effect.name=Anchor points and connected opaque pixels define the area, and can be colored or made transparent.
+;適用する操作=Variables `color`, `intensity` and `keep_luma` are valid in scripts.
+
 [連結成分個別オブジェクト化@Region_S]
 連結成分個別オブジェクト化@Region_S=连接部分物件独立化@Region_S
 個数=个数
@@ -72,6 +76,9 @@
 通常=正常
 小さい=小
 
+;[Tips.連結成分個別オブジェクト化@Region_S]
+;effect.name=Anchor points and connected opaque pixels define the area, splitting it into individual objects.
+;開始遅延="Absolute": T1, T2, T3, ...\n"Relative": [[0] = T1,] T2 - T1, T3 - T2, ...\nRepeats the last number if omitted.
 
 [色領域塗りつぶし@Region_S]
 色領域塗りつぶし@Region_S=填充颜色区域@Region_S
@@ -117,6 +124,10 @@ B範囲補正=B范围修正
 透明ピクセルを連結扱い=透明像素视为连接
 その他=其他
 
+;[Tips.色領域塗りつぶし@Region_S]
+;effect.name=Anchor points and connected pixels of similar color define the area, and can be colored or made transparent.
+;適用する操作=Variables `color`, `intensity` and `keep_luma` are valid in scripts.
+
 [透明領域塗りつぶし@Region_S]
 透明領域塗りつぶし@Region_S=填充透明区域@Region_S
 色=颜色
@@ -156,6 +167,9 @@ B範囲補正=B范围修正
 下端を連結扱い=下端视为连接
 その他=其他
 
+;[Tips.透明領域塗りつぶし@Region_S]
+;effect.name=Anchor points and connected transparent pixels define the area, and can be colored or made opaque.
+
 [穴埋め@Region_S]
 穴埋め@Region_S=填充孔洞@Region_S
 色=颜色
@@ -193,6 +207,9 @@ B範囲補正=B范围修正
 下端を連結扱い=下端视为连接
 その他=其他
 
+;[Tips.穴埋め@Region_S]
+;effect.name=Fills holes in the image, that are transparent pixels not connected to the edges, with a specified color.
+
 [領域クロマキー@Region_S]
 領域クロマキー@Region_S=区域色度键@Region_S
 反転=反转
@@ -215,6 +232,9 @@ B範囲補正=B范围修正
 下端を連結扱い=下端视为连接
 その他=其他
 
+;[Tips.領域クロマキー@Region_S]
+;effect.name=Applies the standard "Chroma Key" effect to a specific area defined by anchor points, rather than to the entire image.
+
 [領域カラーキー@Region_S]
 領域カラーキー@Region_S=区域色键@Region_S
 反転=反转
@@ -234,6 +254,9 @@ B範囲補正=B范围修正
 上端を連結扱い=上端视为连接
 下端を連結扱い=下端视为连接
 その他=其他
+
+;[Tips.領域カラーキー@Region_S]
+;effect.name=Applies the standard "Color Key" effect to a specific area defined by anchor points, rather than to the entire image.
 
 [領域ルミナンスキー@Region_S]
 領域ルミナンスキー@Region_S=区域亮度键@Region_S
@@ -259,6 +282,9 @@ B範囲補正=B范围修正
 上端を連結扱い=上端视为连接
 下端を連結扱い=下端视为连接
 その他=其他
+
+;[Tips.領域ルミナンスキー@Region_S]
+;effect.name=Applies the standard "Luminance Key" effect to a specific area defined by anchor points, rather than to the entire image.
 
 ;===============================
 ; 标签组
