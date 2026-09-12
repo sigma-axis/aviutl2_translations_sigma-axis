@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: GroundShadow2_S (https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S)
-; Target Version: v1.31
+; Target Version: v1.40
 ; Language: <Language Name>
 ; Translator(s):
 ;   <Name1>
@@ -41,6 +41,7 @@
 描画設定=Drawing Settings
 影を別オブジェクトで描画=Draw Shadow as Separate Object
 合成モード=Blend Mode
+元の合成モード=Inherit Blend Mode
 通常=Normal
 加算=Add
 減算=Subtract

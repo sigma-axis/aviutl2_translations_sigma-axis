@@ -45,7 +45,7 @@ Currently this repository contains files for the following languages. Note that 
 
   http://spring-fragrance.mints.ne.jp/aviutl
 
-  - Confirmed to work on: `2.1.8`
+  - Confirmed to work on: `2.1.9`
 
 ##  Installation
 
@@ -54,6 +54,12 @@ Currently this repository contains files for the following languages. Note that 
 1.  Then drag and drop the file to the preview window of AviUtl2. AviUtl2 will automatically restart.
 
 1.  Select the language in the language setting menu.
+
+##  Upcoming Update
+
+- **r54** (2026-??-??)
+
+  - \[English\] Updated translation for [GroundShadow2_S](https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S) to follow up v1.40.
 
 ##  Update History
 
