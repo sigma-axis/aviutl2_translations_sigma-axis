@@ -61,6 +61,8 @@ Currently this repository contains files for the following languages. Note that 
 
   - \[English\] Updated translation for [GroundShadow2_S](https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S) to follow up v1.40.
 
+  - \[English\] Updated translation for [AutoClipping_S](https://github.com/sigma-axis/aviutl2_script_AutoClipping_S) to follow up v1.20, including tooltips.
+
 ##  Update History
 
 - **r53** (2026-09-07)

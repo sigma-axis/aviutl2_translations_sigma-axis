@@ -12,3 +12,6 @@ AutoClipping_S=自动裁剪σ
 
 有効無効=启用/禁用
 その他=其他
+
+;[Tips.AutoClipping_S]
+;effect.name=Clips the object at the four edges so that it fits within the smallest size containing its opaque pixels.
