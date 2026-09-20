@@ -29,6 +29,7 @@ Currently this repository contains files for the following languages. Note that 
 1.  [GroundShadow2_S](https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S)
 1.  [Histogram_S](https://github.com/sigma-axis/aviutl2_script_Histogram_S)
 1.  [Layback](https://github.com/sigma-axis/aviutl2_script_Layback)
+1.  [Lens_S](https://github.com/sigma-axis/aviutl2_script_Lens_S)
 1.  [PageRoll_S](https://github.com/sigma-axis/aviutl2_script_PageRoll_S)
 1.  [Path_S](https://github.com/sigma-axis/aviutl2_script_Path_S)
 1.  [PenroseTile_S](https://github.com/sigma-axis/aviutl2_script_PenroseTile_S)
@@ -62,6 +63,8 @@ Currently this repository contains files for the following languages. Note that 
   - \[English\] Updated translation for [GroundShadow2_S](https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S) to follow up v1.40.
 
   - \[English\] Updated translation for [AutoClipping_S](https://github.com/sigma-axis/aviutl2_script_AutoClipping_S) to follow up v1.20, including tooltips.
+
+  - \[English\] Added support for the script [Lens_S](https://github.com/sigma-axis/aviutl2_script_Lens_S).
 
 ##  Update History
 

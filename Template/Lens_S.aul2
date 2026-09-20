@@ -1,0 +1,118 @@
+;===============================================================
+; Target: Lens_S (https://github.com/sigma-axis/aviutl2_script_Lens_S)
+; Target Version: v1.10
+; Language: <Language Name>
+; Translator(s):
+;   <Name1>
+;   <Name2> (<Optional URL>)
+
+[アクリルσ@Lens_S]
+アクリルσ@Lens_S=Acrylic S@Lens_S
+基準透明度=Base Transparency
+基準色=Base Color
+色設定=Color Settings
+透過輝度=Luma Transparency
+輝度補正=Luma Correction
+透過彩度=Chroma Transparency
+着色=Tint Color
+着色輝度=Tint Luma
+着色彩度=Tint Chroma
+ぼかし設定=Blur Settings
+範囲=Range
+縦横比=Aspect
+光の強さ=Light Intensity
+ノイズ=Noise
+シード=Seed
+ドットサイズ=Dot Size
+背景配置=Background Placement
+移動X=Move X
+移動Y=Move Y
+拡大率=Zoom
+回転=Rotate
+画面基準で配置=Placement Relative to Screen
+その他=Misc
+背景色=Background Color
+
+[Tips.アクリルσ@Lens_S]
+effect.name=Makes transparent parts of objects appear with a frosted glass effect, blurring the background.
+基準透明度=Pixels at this transparency ⇒ Acrylic background\nMore opaque ⇒ Drawn on Acrylic\nMore transparent ⇒ Semi-transparent (Anti-aliasing)
+基準色=Specify when the semi-transparent part is a single color.
+透過輝度=Rate of background luminance take effects
+輝度補正=Adds to background luminance
+透過彩度=Rate of background chroma take effects
+着色=Apply color to the acrylic part.
+着色輝度=Rate of tint luminance take effects
+着色彩度=Rate of tint chroma take effects
+noise::シード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+背景色=Specify when the background has transparent pixels.\nHides the unprocessed background, which is undesired to be exposed.
+
+[レンズσ@Lens_S]
+レンズσ@Lens_S=Lens S@Lens_S
+色設定=Color Settings
+透過輝度=Luma Transparency
+輝度補正=Luma Correction
+透過彩度=Chroma Transparency
+表面輝度=Surface Luma
+表面彩度=Surface Chroma
+形状設定=Lens Shape Settings
+背景距離=Background Distance
+起伏=Undulation
+丸み=Roundness
+輪郭起伏=Boundary Undulation
+輪郭丸み=Boundary Roundness
+輝度起伏=Luma Undulation
+輝度丸み=Luma Roundness
+色境界起伏=Color Edge Undulation
+色境界丸み=Color Edge Roundness
+色境界しきい値=Color Edge Threshold
+平滑化=Smoothing
+形状可視化=Visualize Shape
+屈折設定=Refraction Settings
+屈折率=Refractive Index
+色収差=Chromatic Aberration
+光設定=Light Settings
+光角度=Light Angle
+光沢=Light Power
+ハイライト=Highlight
+シャドウ=Shadow
+光角度を画面基準=Light Angle Relative to Screen
+ぼかし設定=Blur Settings
+範囲=Range
+縦横比=Aspect
+光の強さ=Light Intensity
+ノイズ=Noise
+シード=Seed
+ドットサイズ=Dot Size
+背景配置=Background Placement
+移動X=Move X
+移動Y=Move Y
+拡大率=Zoom
+回転=Rotate
+画面基準で配置=Placement Relative to Screen
+その他=Misc
+背景色=Background Color
+色収差順序=Chromatic Aberration Order
+
+[Tips.レンズσ@Lens_S]
+effect.name=Generates a curved surface from the color and shape of the object, blends the background, and creates a glass block that appears to refract like a lens.
+透過輝度=Rate of background luminance take effects
+輝度補正=Adds to background luminance
+透過彩度=Rate of background chroma take effects
+表面輝度=Rate of source luminance take effects
+表面彩度=Rate of source chroma take effects
+背景距離=Background distance relative to the object
+起伏=Overall lens undulation depth
+丸み=Overall lens curve width
+輪郭起伏=Undulation depth specific to the distance from the boundary of the object
+輪郭丸み=Curve width specific to the distance from the boundary of the object
+輝度起伏=Undulation depth specific to the luminance field
+輝度丸み=Curve width specific to the luminance field
+色境界起伏=Undulation depth specific to the distance from color edges
+色境界丸み=Curve width specific to the distance from color edges
+色境界しきい値=Threshold for detecting distance from color edges
+平滑化=Increase if the shape is jagged.
+色収差=Negative values will reverse the order of colors.
+光角度=0 is from up, positive go clockwise.
+noise::シード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+背景色=Specify when the background has transparent pixels.\nHides the unprocessed background, which is undesired to be exposed.
+色収差順序=RGB is the correct order in the real world.
