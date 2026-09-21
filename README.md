@@ -56,9 +56,9 @@ Currently this repository contains files for the following languages. Note that 
 
 1.  Select the language in the language setting menu.
 
-##  Upcoming Update
+##  Update History
 
-- **r54** (2026-??-??)
+- **r54** (2026-09-21)
 
   - \[English\] Updated translation for [GroundShadow2_S](https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S) to follow up v1.40.
 
@@ -67,8 +67,6 @@ Currently this repository contains files for the following languages. Note that 
   - \[English\] Updated translation for [ColoredCollar_S](https://github.com/sigma-axis/aviutl2_script_ColoredCollar_S) to follor up v2.11, including tooltips.
 
   - \[English\] Added support for the script [Lens_S](https://github.com/sigma-axis/aviutl2_script_Lens_S).
-
-##  Update History
 
 - **r53** (2026-09-07)
 
