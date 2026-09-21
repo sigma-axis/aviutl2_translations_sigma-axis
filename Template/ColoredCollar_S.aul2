@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: ColoredCollar_S (https://github.com/sigma-axis/aviutl2_script_ColoredCollar_S)
-; Target Version: v2.00 (for beta51)
+; Target Version: v2.11
 ; Language: <Language Name>
 ; Translator(s):
 ;   <Name1>
@@ -21,3 +21,9 @@
 前景透明度=Foreground Transparency
 その他=Misc
 錯視軽減=Smooth Gradation
+
+[Tips.ColoredCollar_S]
+effect.name=Creates a colored border around objects, extending their edges and/or applying color gradients based on distance.
+色拡散=When extending the colors of the edges of the object, blur them based on distance.
+縁色外側=Specifying a different color or opacity creates a gradient based on distance.
+錯視軽減=Reduces visually distracting patterns in the distance-based gradient by "Blur" and/or "Outer Color".

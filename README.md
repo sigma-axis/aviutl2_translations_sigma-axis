@@ -64,6 +64,8 @@ Currently this repository contains files for the following languages. Note that 
 
   - \[English\] Updated translation for [AutoClipping_S](https://github.com/sigma-axis/aviutl2_script_AutoClipping_S) to follow up v1.20, including tooltips.
 
+  - \[English\] Updated translation for [ColoredCollar_S](https://github.com/sigma-axis/aviutl2_script_ColoredCollar_S) to follor up v2.11, including tooltips.
+
   - \[English\] Added support for the script [Lens_S](https://github.com/sigma-axis/aviutl2_script_Lens_S).
 
 ##  Update History
