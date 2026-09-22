@@ -277,7 +277,10 @@ XYZ追加回転@Basic_S=XYZ额外旋转@Basic_S
 [Tips.XYZ追加回転@Basic_S]
 effect.name=始终以画面为基准进行X、Y、Z轴旋转。
 描画する=将旋转结果投影并图像化。
-グループ制御=仅在“渲染”为 ON 时有效。适配组控制下的摄像机位置。
+;グループ制御=仅在“渲染”为 ON 时有效。适配组控制下的摄像机位置。
+; NOTE: The content had changed from v2.88 to v2.90, so the translation should be updated accordingly.
+; The next line is the newer one.
+;グループ制御=Only effective when "Rasterize" is turned on. When under group control, its camera position, scaling, and rotation are taken into account.
 
 [任意軸追加回転@Basic_S]
 任意軸追加回転@Basic_S=任意轴额外旋转@Basic_S
@@ -292,7 +295,10 @@ effect.name=始终以画面为基准进行X、Y、Z轴旋转。
 [Tips.任意軸追加回転@Basic_S]
 effect.name=沿锚点指定线条的轴对物件进行立体旋转。
 描画する=将旋转结果投影并图像化。
-グループ制御=仅在“渲染”为 ON 时有效。适配组控制下的摄像机位置。
+;グループ制御=仅在“渲染”为 ON 时有效。适配组控制下的摄像机位置。
+; NOTE: The content had changed from v2.88 to v2.90, so the translation should be updated accordingly.
+; The next line is the newer one.
+;グループ制御=Only effective when "Rasterize" is turned on. When under group control, its camera position, scaling, and rotation are taken into account.
 
 [傾斜@Basic_S]
 傾斜@Basic_S=倾斜@Basic_S
@@ -302,6 +308,7 @@ effect.name=沿锚点指定线条的轴对物件进行立体旋转。
 基準軸Y1=基准轴Y1
 基準軸X2=基准轴X2
 基準軸Y2=基准轴Y2
+回転中心を基準=以旋转中心为基准
 その他=其他
 互換対応(将来削除予定)=兼容支持 (未来移除)
 
@@ -381,7 +388,7 @@ effect.name=将区域扩展或裁剪到指定的尺寸。
 切り取り線Y2=切割线Y2
 切り取り幅=切割宽度
 中心の位置を変更=中心点同步变化
-;回転中心を基準=以旋转中心为基准
+回転中心を基準=以旋转中心为基准
 余白/重複処理=余白/重复处理
 余白処理=余白处理
 補間=插值

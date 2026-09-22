@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Basic_S (https://github.com/sigma-axis/aviutl2_script_Basic_S)
-; Target Version: v2.83
+; Target Version: v2.90
 ; Language: <Language Name>
 ; Translator(s):
 ;   <Name1>
@@ -312,7 +312,7 @@ XYZ追加回転@Basic_S=Append Rotation XYZ@Basic_S
 [Tips.XYZ追加回転@Basic_S]
 effect.name=Rotates around the screen-based X, Y, and Z axes, which are independent of the current orientation of the object.
 描画する=Projects the rotation result into an image.
-グループ制御=Only effective when "Rasterize" is turned on. Adjusts the camera position to fit with group control.
+グループ制御=Only effective when "Rasterize" is turned on. When under group control, its camera position, scaling, and rotation are taken into account.
 
 [任意軸追加回転@Basic_S]
 任意軸追加回転@Basic_S=Append Rotation Any Axis@Basic_S
@@ -328,7 +328,7 @@ effect.name=Rotates around the screen-based X, Y, and Z axes, which are independ
 [Tips.任意軸追加回転@Basic_S]
 effect.name=Rotates the object around an axis along the line specified by an anchor.
 描画する=Projects the rotation result into an image.
-グループ制御=Only effective when "Rasterize" is turned on. Adjusts the camera position to fit with group control.
+グループ制御=Only effective when "Rasterize" is turned on. When under group control, its camera position, scaling, and rotation are taken into account.
 
 [傾斜@Basic_S]
 傾斜@Basic_S=Skew@Basic_S
@@ -339,9 +339,9 @@ effect.name=Rotates the object around an axis along the line specified by an anc
 基準軸Y1=Baseline Y1
 基準軸X2=Baseline X2
 基準軸Y2=Baseline Y2
+回転中心を基準=Origins Rotation Center
 その他=Misc
 互換対応(将来削除予定)=Legacy (Removed in Future)
-回転中心を基準=
 
 [Tips.傾斜@Basic_S]
 effect.name=Skews the object along the axis specified by an anchor.
