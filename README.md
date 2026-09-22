@@ -56,13 +56,13 @@ Currently this repository contains files for the following languages. Note that 
 
 1.  Select the language in the language setting menu.
 
-##  Upcoming Update
+##  Update History
 
-- **r55** (2026-??-??)
+- **r55** (2026-09-22)
 
   - \[English\] Updated translation for [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S) to follow up v2.90.
 
-##  Update History
+  - \[English\] Updated translation for [WhiteBalance_S](https://github.com/sigma-axis/aviutl2_script_WhiteBalance_S) to follow up v1.10, including tooltips.
 
 - **r54** (2026-09-21)
 

@@ -16,12 +16,25 @@
 色空間=色彩空间
 その他=其他
 
+;[Tips.ホワイトバランスσ@WhiteBalance_S]
+;effect.name=Adjust white balance by specifying 2 colors and changing one color to another. You can also specify the multiplier for each color component individually.
+;正規化=Normalize so that the base and destination have the same brightness.
+;色空間=Color space for color conversion calculations
+
 [色温度σ@WhiteBalance_S]
 色温度σ@WhiteBalance_S=色温σ@WhiteBalance_S
+;単位=Unit
 変換元K=变换源K
 変換先K=变换目标K
+;変換元M=Base Mired
+;変換先M=Destination Mired
 色空間=色彩空间
 その他=其他
+
+;[Tips.色温度σ@WhiteBalance_S]
+;effect.name=Adjust white balance of the image by specifying the color temperature.
+;単位=Select the unit of color temperature from Kelvin or Mired.
+;色空間=Color space for color conversion calculations
 
 [色温度σ(Mired)@WhiteBalance_S]
 色温度σ(Mired)@WhiteBalance_S=色温σ(微倒度)@WhiteBalance_S

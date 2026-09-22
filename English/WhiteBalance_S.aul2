@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: WhiteBalance_S (https://github.com/sigma-axis/aviutl2_script_WhiteBalance_S)
-; Target Version: v1.00 (for beta29)
+; Target Version: v1.10
 ; Language: English
 ; Translator(s):
 ;   sigma-axis (https://github.com/sigma-axis)
@@ -19,12 +19,25 @@
 色空間=Color Space
 その他=Misc
 
+[Tips.ホワイトバランスσ@WhiteBalance_S]
+effect.name=Adjust white balance by specifying 2 colors and changing one color to another. You can also specify the multiplier for each color component individually.
+正規化=Normalize so that the base and destination have the same brightness.
+色空間=Color space for color conversion calculations
+
 [色温度σ@WhiteBalance_S]
 色温度σ@WhiteBalance_S=Color Temperature S@WhiteBalance_S
+単位=Unit
 変換元K=Base Kelvin
 変換先K=Destination Kelvin
+変換元M=Base Mired
+変換先M=Destination Mired
 色空間=Color Space
 その他=Misc
+
+[Tips.色温度σ@WhiteBalance_S]
+effect.name=Adjust white balance of the image by specifying the color temperature.
+単位=Select the unit of color temperature from Kelvin or Mired.
+色空間=Color space for color conversion calculations
 
 [色温度σ(Mired)@WhiteBalance_S]
 色温度σ(Mired)@WhiteBalance_S=Color Temperature S (Mired)@WhiteBalance_S
