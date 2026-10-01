@@ -47,7 +47,7 @@ Currently this repository contains files for the following languages. Note that 
 
   http://spring-fragrance.mints.ne.jp/aviutl
 
-  - Confirmed to work on: `2.1.10`
+  - Confirmed to work on: `2.1.11a`
 
 ##  Installation
 
@@ -57,15 +57,13 @@ Currently this repository contains files for the following languages. Note that 
 
 1.  Select the language in the language setting menu.
 
-##  Upcoming Update
+##  Update History
 
-- **r56** (2026-??-??)
+- **r56** (2026-10-01)
 
   - \[English\] Added support for the script [SceneChangeKit_S](https://github.com/sigma-axis/aviutl2_script_SceneChangeKit_S).
 
   - \[English\] Updated translation for [Path_S](https://github.com/sigma-axis/aviutl2_script_Path_S) to follow up v2.30.
-
-##  Update History
 
 - **r55** (2026-09-22)
 
