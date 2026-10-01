@@ -63,6 +63,8 @@ Currently this repository contains files for the following languages. Note that 
 
   - \[English\] Added support for the script [SceneChangeKit_S](https://github.com/sigma-axis/aviutl2_script_SceneChangeKit_S).
 
+  - \[English\] Updated translation for [Path_S](https://github.com/sigma-axis/aviutl2_script_Path_S) to follow up v2.30.
+
 ##  Update History
 
 - **r55** (2026-09-22)

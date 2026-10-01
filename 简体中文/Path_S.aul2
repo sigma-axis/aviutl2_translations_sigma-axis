@@ -38,6 +38,13 @@
 内側=内侧
 内側反転=内侧反转
 奇偶反転=奇偶反转
+;塗り境界設定=Fill Boundary Settings
+ぼかし幅=模糊度
+;ディザリング=Dithering
+なし=无
+;ノイズシード=Noise Seed
+;ディザ強さ=Dither Intensity
+;ドットサイズ=Dot Size
 配置=分布
 移動X=移动X
 移動Y=移动Y
@@ -45,12 +52,12 @@
 回転=旋转
 アンカー切り替え=切换锚点
 その他=其他
-ぼかし幅=模糊度
 
 [Tips.パスマスクσ@Path_S]
 effect.name=用路径围成的范围裁剪图像的滤镜效果。
 曲線精度=折线近似的最大采样间隔，以像素为单位
 アンカー切り替え=切换路径编辑用锚点和移动用锚点。
+;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [パスマスク(ライン)σ@Path_S]
 パスマスク(ライン)σ@Path_S=路径遮罩σ(线条)σ@Path_S
@@ -84,6 +91,7 @@ effect.name=用路径围成的范围裁剪图像的滤镜效果。
 端の形状=末端形状
 円=圆
 四角=四边形
+;リボン=Ribbon
 線結合の形状=联结点形状
 ラウンド=圆角
 ベベル=斜面
@@ -95,6 +103,13 @@ effect.name=用路径围成的范围裁剪图像的滤镜效果。
 破線パターン=虚线图案
 破線周期補正=修正虚线周期
 破線位置=虚线位置
+;ライン境界設定=Line Boundary Settings
+ぼかし幅=模糊度
+;ディザリング=Dithering
+なし=无
+;ノイズシード=Noise Seed
+;ディザ強さ=Dither Intensity
+;ドットサイズ=Dot Size
 配置=分布
 移動X=移动X
 移動Y=移动Y
@@ -102,7 +117,6 @@ effect.name=用路径围成的范围裁剪图像的滤镜效果。
 回転=旋转
 アンカー切り替え=切换锚点
 その他=其他
-ぼかし幅=模糊度
 
 [Tips.パスマスク(ライン)σ@Path_S]
 effect.name=沿路径所经线条裁剪图像的滤镜效果。
@@ -112,6 +126,7 @@ effect.name=沿路径所经线条裁剪图像的滤镜效果。
 破線パターン=交替指定实线部分和空白部分的长度，以像素为单位
 破線周期補正=仅在“拼贴”开启时有效，调整为每圈路径使虚线图案重复整数次
 アンカー切り替え=切换路径编辑用锚点和移动用锚点。
+;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [パス部分フィルタσ@Path_S]
 パス部分フィルタσ@Path_S=路径局部滤镜σ@Path_S
@@ -142,6 +157,13 @@ effect.name=沿路径所经线条裁剪图像的滤镜效果。
 内側=内侧
 内側反転=内侧反转
 奇偶反転=奇偶反转
+;塗り境界設定=Fill Boundary Settings
+ぼかし幅=模糊度
+;ディザリング=Dithering
+なし=无
+;ノイズシード=Noise Seed
+;ディザ強さ=Dither Intensity
+;ドットサイズ=Dot Size
 配置=分布
 移動X=移动X
 移動Y=移动Y
@@ -154,13 +176,13 @@ effect.name=沿路径所经线条裁剪图像的滤镜效果。
 スクリプト実行=运行脚本
 追加スクリプト=追加脚本
 その他=其他
-ぼかし幅=模糊度
 
 [Tips.パス部分フィルタσ@Path_S]
 effect.name=仅在路径围成的范围内应用后续滤镜效果或直接编写脚本的滤镜效果。
 曲線精度=折线近似的最大采样间隔，以像素为单位
 アンカー切り替え=切换路径编辑用锚点和移动用锚点。
 追加のフィルタ効果=“后续滤镜”的范围可用“路径局部滤镜σ到此为止”来界定。
+;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [パス部分フィルタσここまで@Path_S]
 パス部分フィルタσここまで@Path_S=路径局部滤镜σ到此为止@Path_S
@@ -234,6 +256,7 @@ effect.name=沿路径分布物件的滤镜效果。即使是独立物件也可�
 端の形状=末端形状
 円=圆
 四角=四边形
+リボン=Ribbon
 線結合の形状=联结点形状
 ラウンド=圆角
 ベベル=斜面
@@ -245,6 +268,14 @@ effect.name=沿路径分布物件的滤镜效果。即使是独立物件也可�
 破線パターン=虚线图案
 破線周期補正=修正虚线周期
 破線位置=虚线位置
+;ライン境界設定=Line Boundary Settings
+ぼかし幅=模糊度
+;ディザリング=Dithering
+なし=无
+;ノイズシード=Noise Seed
+;ディザ強さ=Dither Intensity
+;ドットサイズ=Dot Size
+;塗り境界設定=Fill Boundary Settings
 塗り設定=填充设置
 塗り追加幅=填充 附加宽度
 塗り透明度=填充透明度
@@ -256,7 +287,6 @@ effect.name=沿路径分布物件的滤镜效果。即使是独立物件也可�
 ランダム固定端=随机固定末端
 ランダムシード=随机种子
 その他=其他
-ぼかし幅=模糊度
 
 [Tips.パス図形σ@Path_S]
 effect.name=渲染沿路径的线条和填充路径内部的图形物件。
@@ -269,6 +299,8 @@ effect.name=渲染沿路径的线条和填充路径内部的图形物件。
 ランダム振幅=随机变动的大小，以像素为单位
 ランダム固定端=将路径的起始点和结束点排除在随机变动的影响之外。
 ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
+;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+;fill::dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [ラインσ@Path_S]
 ラインσ@Path_S=线条σ@Path_S
@@ -288,6 +320,7 @@ effect.name=渲染沿路径的线条和填充路径内部的图形物件。
 端の形状=末端形状
 円=圆
 四角=四边形
+;リボン=Ribbon
 線結合の形状=联结点形状
 ラウンド=圆角
 ベベル=斜面
@@ -298,13 +331,19 @@ effect.name=渲染沿路径的线条和填充路径内部的图形物件。
 マイター限界=斜接阈值
 破線パターン=虚线图案
 破線位置=虚线位置
+;ライン境界設定=Line Boundary Settings
+ぼかし幅=模糊度
+;ディザリング=Dithering
+なし=无
+;ノイズシード=Noise Seed
+;ディザ強さ=Dither Intensity
+;ドットサイズ=Dot Size
 ランダム変化=随机变化
 ランダム周期=随机周期
 ランダム振幅=随机振幅
 ランダム固定端=随机固定末端
 ランダムシード=随机种子
 その他=其他
-ぼかし幅=模糊度
 
 [Tips.ラインσ@Path_S]
 effect.name=渲染常见图案的线条形状，如波浪线和折线等的物件。
@@ -315,6 +354,7 @@ effect.name=渲染常见图案的线条形状，如波浪线和折线等的物�
 ランダム振幅=随机变动的大小，以像素为单位
 ランダム固定端=将路径的起始点和结束点排除在随机变动的影响之外。
 ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
+;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [スパイラルσ@Path_S]
 スパイラルσ@Path_S=螺旋σ@Path_S
@@ -340,16 +380,23 @@ effect.name=渲染常见图案的线条形状，如波浪线和折线等的物�
 端の形状=末端形状
 円=圆
 四角=四边形
+;リボン=Ribbon
 曲線精度=曲线精度
 破線パターン=虚线图案
 破線位置=虚线位置
+;ライン境界設定=Line Boundary Settings
+ぼかし幅=模糊度
+;ディザリング=Dithering
+なし=无
+;ノイズシード=Noise Seed
+;ディザ強さ=Dither Intensity
+;ドットサイズ=Dot Size
 ランダム変化=随机变化
 ランダム周期=随机周期
 ランダム振幅=随机振幅
 ランダム固定端=随机固定末端
 ランダムシード=随机种子
 その他=其他
-ぼかし幅=模糊度
 
 [Tips.スパイラルσ@Path_S]
 effect.name=渲染螺旋形线条的物件。
@@ -362,6 +409,7 @@ effect.name=渲染螺旋形线条的物件。
 ランダム振幅=随机变动的大小，以像素为单位
 ランダム固定端=将路径的起始点和结束点排除在随机变动的影响之外。
 ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
+;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [アローσ@Path_S]
 アローσ@Path_S=箭头σ@Path_S
@@ -383,6 +431,7 @@ effect.name=渲染螺旋形线条的物件。
 端の形状=末端形状
 円=圆
 四角=四边形
+;リボン=Ribbon
 線結合の形状=联结点形状
 ラウンド=圆角
 ベベル=斜面
@@ -393,6 +442,12 @@ effect.name=渲染螺旋形线条的物件。
 マイター限界=斜接阈值
 破線パターン=虚线图案
 破線位置=虚线位置
+;ライン境界設定=Line Boundary Settings
+ぼかし幅=模糊度
+;ディザリング=Dithering
+;ノイズシード=Noise Seed
+;ディザ強さ=Dither Intensity
+;ドットサイズ=Dot Size
 矢じり設定=箭头设置
 矢じり配置=箭头分布
 なし=无
@@ -410,7 +465,6 @@ effect.name=渲染螺旋形线条的物件。
 ランダム固定端=随机固定末端
 ランダムシード=随机种子
 その他=其他
-ぼかし幅=模糊度
 
 [Tips.アローσ@Path_S]
 effect.name=沿路径渲染线条并放置尖端图形以渲染箭头形状的物件。
@@ -423,6 +477,7 @@ effect.name=沿路径渲染线条并放置尖端图形以渲染箭头形状的�
 ランダム振幅=随机变动的大小，以像素为单位
 ランダム固定端=将路径的起点和终点排除在随机变动的影响之外。
 ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
+;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [スクウェアσ@Path_S]
 スクウェアσ@Path_S=四边形σ@Path_S
@@ -445,6 +500,7 @@ effect.name=沿路径渲染线条并放置尖端图形以渲染箭头形状的�
 端の形状=末端形状
 円=圆
 四角=四边形
+;リボン=Ribbon
 線結合の形状=联结点形状
 ラウンド=圆角
 ベベル=斜面
@@ -454,6 +510,14 @@ effect.name=沿路径渲染线条并放置尖端图形以渲染箭头形状的�
 ブランク+ベベル=空白+斜面
 破線パターン=虚线图案
 破線位置=虚线位置
+;ライン境界設定=Line Boundary Settings
+ぼかし幅=模糊度
+;ディザリング=Dithering
+なし=无
+;ノイズシード=Noise Seed
+;ディザ強さ=Dither Intensity
+;ドットサイズ=Dot Size
+;塗り境界設定=Fill Boundary Settings
 塗り設定=填充设置
 塗り追加幅=填充 附加宽度
 塗り透明度=填充透明度
@@ -462,7 +526,6 @@ effect.name=沿路径渲染线条并放置尖端图形以渲染箭头形状的�
 ランダム振幅=随机振幅
 ランダムシード=随机种子
 その他=其他
-ぼかし幅=模糊度
 
 [Tips.スクウェアσ@Path_S]
 effect.name=渲染圆角矩形的物件。
@@ -476,6 +539,8 @@ effect.name=渲染圆角矩形的物件。
 ランダム周期=沿路径渲染方向的随机变动周期，以像素为单位
 ランダム振幅=随机变动的大小，以像素为单位
 ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
+;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+;fill::dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 ;===============================
 ; 标签组

@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Path_S (https://github.com/sigma-axis/aviutl2_script_Path_S)
-; Target Version: v2.20
+; Target Version: v2.30
 ; Language: <Language Name>
 ; Translator(s):
 ;   <Name1>
@@ -40,6 +40,13 @@
 奇偶=Even Odd
 内側反転=Inner Inverted
 奇偶反転=Even Odd Inverted
+塗り境界設定=Fill Boundary Settings
+ぼかし幅=Edge Blur
+ディザリング=Dithering
+なし=None
+ノイズシード=Noise Seed
+ディザ強さ=Dither Intensity
+ドットサイズ=Dot Size
 配置=Placement
 移動X=Offset X
 移動Y=Offset Y
@@ -47,12 +54,12 @@
 回転=Rotate
 アンカー切り替え=Toggle Anchors
 その他=Misc
-ぼかし幅=Edge Blur
 
 [Tips.パスマスクσ@Path_S]
 effect.name=Crops the image to the area enclosed by the path.
 曲線精度=Maximum sampling interval for polyline approximation, in pixels
 アンカー切り替え=Switches anchors between for path editing and for moving.
+dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [パスマスク(ライン)σ@Path_S]
 パスマスク(ライン)σ@Path_S=Path Mask S (Line)σ@Path_S
@@ -88,6 +95,7 @@ effect.name=Crops the image to the area enclosed by the path.
 四角=Square
 平坦=Flat
 三角=Triangle
+リボン=Ribbon
 線結合の形状=Line Joint
 ラウンド=Round
 ベベル=Bevel
@@ -99,6 +107,13 @@ effect.name=Crops the image to the area enclosed by the path.
 破線パターン=Dash Pattern
 破線周期補正=Adjust Dash Period
 破線位置=Dash Offset
+ライン境界設定=Line Boundary Settings
+ぼかし幅=Edge Blur
+ディザリング=Dithering
+なし=None
+ノイズシード=Noise Seed
+ディザ強さ=Dither Intensity
+ドットサイズ=Dot Size
 配置=Placement
 移動X=Offset X
 移動Y=Offset Y
@@ -106,7 +121,6 @@ effect.name=Crops the image to the area enclosed by the path.
 回転=Rotate
 アンカー切り替え=Toggle Anchors
 その他=Misc
-ぼかし幅=Edge Blur
 
 [Tips.パスマスク(ライン)σ@Path_S]
 effect.name=Masks out the image along the line traced by the path.
@@ -116,6 +130,7 @@ effect.name=Masks out the image along the line traced by the path.
 破線パターン=Write lengths of solid and blank segments alternately, in pixels
 破線周期補正=Effective only when "Loop" is turned on. Adjusts so the dash pattern completes an integer number of repeats per loop
 アンカー切り替え=Switches anchors between for path editing and for moving.
+dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [パス部分フィルタσ@Path_S]
 パス部分フィルタσ@Path_S=Path Partial Filter S@Path_S
@@ -147,6 +162,13 @@ effect.name=Masks out the image along the line traced by the path.
 奇偶=Even Odd
 内側反転=Inner Inverted
 奇偶反転=Even Odd Inverted
+塗り境界設定=Fill Boundary Settings
+ぼかし幅=Edge Blur
+ディザリング=Dithering
+なし=None
+ノイズシード=Noise Seed
+ディザ強さ=Dither Intensity
+ドットサイズ=Dot Size
 配置=Placement
 移動X=Offset X
 移動Y=Offset Y
@@ -159,13 +181,13 @@ effect.name=Masks out the image along the line traced by the path.
 スクリプト実行=Run Script
 追加スクリプト=Script
 その他=Misc
-ぼかし幅=Edge Blur
 
 [Tips.パス部分フィルタσ@Path_S]
 effect.name=Applies subsequent filter effects or directly written scripts only to the area enclosed by the path.
 曲線精度=Maximum sampling interval for polyline approximation, in pixels
 追加のフィルタ効果=The range of "Subsequent Filters" can be delimited by "Path Partial Filter S Until This."
 アンカー切り替え=Switches anchors between for path editing and for moving.
+dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [パス部分フィルタσここまで@Path_S]
 パス部分フィルタσここまで@Path_S=Path Partial Filter S Until This@Path_S
@@ -242,6 +264,7 @@ effect.name=Places objects along the path. Can space out individual objects.\nTh
 四角=Square
 平坦=Flat
 三角=Triangle
+リボン=Ribbon
 線結合の形状=Line Joint
 ラウンド=Round
 ベベル=Bevel
@@ -253,6 +276,14 @@ effect.name=Places objects along the path. Can space out individual objects.\nTh
 破線パターン=Dash Pattern
 破線周期補正=Adjust Dash Period
 破線位置=Dash Offset
+ライン境界設定=Line Boundary Settings
+ぼかし幅=Edge Blur
+ディザリング=Dithering
+なし=None
+ノイズシード=Noise Seed
+ディザ強さ=Dither Intensity
+ドットサイズ=Dot Size
+塗り境界設定=Fill Boundary Settings
 塗り設定=Fill Settings
 塗り追加幅=Fill Inflation
 塗り透明度=Fill Transparency
@@ -265,7 +296,6 @@ effect.name=Places objects along the path. Can space out individual objects.\nTh
 ランダム固定端=Disable Random at Ends
 ランダムシード=Random Seed
 その他=Misc
-ぼかし幅=Edge Blur
 
 [Tips.パス図形σ@Path_S]
 effect.name=Draws a line along the path and fills the area inside.
@@ -278,6 +308,8 @@ effect.name=Draws a line along the path and fills the area inside.
 ランダム振幅=Magnitude of random variation, in pixels
 ランダム固定端=Excludes the path start and end from random variation.
 ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+fill::dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [ラインσ@Path_S]
 ラインσ@Path_S=Line S@Path_S
@@ -305,6 +337,7 @@ effect.name=Draws a line along the path and fills the area inside.
 四角=Square
 平坦=Flat
 三角=Triangle
+リボン=Ribbon
 線結合の形状=Line Joint
 ラウンド=Round
 ベベル=Bevel
@@ -315,13 +348,19 @@ effect.name=Draws a line along the path and fills the area inside.
 マイター限界=Miter Limit
 破線パターン=Dash Pattern
 破線位置=Dash Offset
+ライン境界設定=Line Boundary Settings
+ぼかし幅=Edge Blur
+ディザリング=Dithering
+なし=None
+ノイズシード=Noise Seed
+ディザ強さ=Dither Intensity
+ドットサイズ=Dot Size
 ランダム変化=Random Deformation
 ランダム周期=Random Period
 ランダム振幅=Random Offset
 ランダム固定端=Disable Random at Ends
 ランダムシード=Random Seed
 その他=Misc
-ぼかし幅=Edge Blur
 
 [Tips.ラインσ@Path_S]
 effect.name=Draws typical kinds of lines or curves, such as wavy lines and zigzag lines.
@@ -332,6 +371,7 @@ effect.name=Draws typical kinds of lines or curves, such as wavy lines and zigza
 ランダム振幅=Magnitude of random variation, in pixels
 ランダム固定端=Excludes the path start and end from random variation.
 ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [スパイラルσ@Path_S]
 スパイラルσ@Path_S=Spiral S@Path_S
@@ -359,16 +399,23 @@ effect.name=Draws typical kinds of lines or curves, such as wavy lines and zigza
 四角=Square
 平坦=Flat
 三角=Triangle
+リボン=Ribbon
 曲線精度=Curve Precision
 破線パターン=Dash Pattern
 破線位置=Dash Offset
+ライン境界設定=Line Boundary Settings
+ぼかし幅=Edge Blur
+ディザリング=Dithering
+なし=None
+ノイズシード=Noise Seed
+ディザ強さ=Dither Intensity
+ドットサイズ=Dot Size
 ランダム変化=Random Deformation
 ランダム周期=Random Period
 ランダム振幅=Random Offset
 ランダム固定端=Disable Random at Ends
 ランダムシード=Random Seed
 その他=Misc
-ぼかし幅=Edge Blur
 
 [Tips.スパイラルσ@Path_S]
 effect.name=Draws lines in a spiral shape.
@@ -381,6 +428,7 @@ effect.name=Draws lines in a spiral shape.
 ランダム振幅=Magnitude of random variation, in pixels
 ランダム固定端=Excludes the path start and end from random variation.
 ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [アローσ@Path_S]
 アローσ@Path_S=Arrow S@Path_S
@@ -404,6 +452,7 @@ effect.name=Draws lines in a spiral shape.
 四角=Square
 平坦=Flat
 三角=Triangle
+リボン=Ribbon
 線結合の形状=Line Joint
 ラウンド=Round
 ベベル=Bevel
@@ -414,6 +463,12 @@ effect.name=Draws lines in a spiral shape.
 マイター限界=Miter Limit
 破線パターン=Dash Pattern
 破線位置=Dash Offset
+ライン境界設定=Line Boundary Settings
+ぼかし幅=Edge Blur
+ディザリング=Dithering
+ノイズシード=Noise Seed
+ディザ強さ=Dither Intensity
+ドットサイズ=Dot Size
 矢じり設定=Arrowhead Settings
 矢じり配置=Head Arrangement
 なし=None
@@ -431,7 +486,6 @@ effect.name=Draws lines in a spiral shape.
 ランダム固定端=Disable Random at Ends
 ランダムシード=Random Seed
 その他=Misc
-ぼかし幅=Edge Blur
 
 [Tips.アローσ@Path_S]
 effect.name=Draws a line along the path and places arrowhead shapes at the ends.
@@ -444,6 +498,7 @@ effect.name=Draws a line along the path and places arrowhead shapes at the ends.
 ランダム振幅=Magnitude of random variation, in pixels
 ランダム固定端=Excludes the path start and end from random variation.
 ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [スクウェアσ@Path_S]
 スクウェアσ@Path_S=Square S@Path_S
@@ -472,6 +527,7 @@ effect.name=Draws a line along the path and places arrowhead shapes at the ends.
 四角=Square
 平坦=Flat
 三角=Triangle
+リボン=Ribbon
 線結合の形状=Line Joint
 ラウンド=Round
 ベベル=Bevel
@@ -481,6 +537,14 @@ effect.name=Draws a line along the path and places arrowhead shapes at the ends.
 ブランク+ベベル=Blank / Bevel
 破線パターン=Dash Pattern
 破線位置=Dash Offset
+ライン境界設定=Line Boundary Settings
+ぼかし幅=Edge Blur
+ディザリング=Dithering
+なし=None
+ノイズシード=Noise Seed
+ディザ強さ=Dither Intensity
+ドットサイズ=Dot Size
+塗り境界設定=Fill Boundary Settings
 塗り設定=Fill Settings
 塗り追加幅=Fill Inflation
 塗り透明度=Fill Transparency
@@ -489,7 +553,6 @@ effect.name=Draws a line along the path and places arrowhead shapes at the ends.
 ランダム振幅=Random Offset
 ランダムシード=Random Seed
 その他=Misc
-ぼかし幅=Edge Blur
 
 [Tips.スクウェアσ@Path_S]
 effect.name=Draws a rectangle with rounded corners.
@@ -503,6 +566,8 @@ effect.name=Draws a rectangle with rounded corners.
 ランダム周期=Period along the path direction of random variation, in pixels
 ランダム振幅=Magnitude of random variation, in pixels
 ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+fill::dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 ;===============================
 ; Labels
