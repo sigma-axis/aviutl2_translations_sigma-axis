@@ -36,6 +36,7 @@ Currently this repository contains files for the following languages. Note that 
 1.  [RadRotDirBlur_S](https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S)
 1.  [Region_S](https://github.com/sigma-axis/aviutl2_script_Region_S)
 1.  [Resize_S](https://github.com/sigma-axis/aviutl2_script_Resize_S)
+1.  [SceneChangeKit_S](https://github.com/sigma-axis/aviutl2_script_SceneChangeKit_S)
 1.  [Tile_S](https://github.com/sigma-axis/aviutl2_script_Tile_S)
 1.  [TL Walkaround 2](https://github.com/sigma-axis/aviutl2_tl_walkaround2)
 1.  [WhiteBalance_S](https://github.com/sigma-axis/aviutl2_script_WhiteBalance_S)
@@ -55,6 +56,12 @@ Currently this repository contains files for the following languages. Note that 
 1.  Then drag and drop the file to the preview window of AviUtl2. AviUtl2 will automatically restart.
 
 1.  Select the language in the language setting menu.
+
+##  Upcoming Update
+
+- **r56** (2026-??-??)
+
+  - \[English\] Added support for the script [SceneChangeKit_S](https://github.com/sigma-axis/aviutl2_script_SceneChangeKit_S).
 
 ##  Update History
 

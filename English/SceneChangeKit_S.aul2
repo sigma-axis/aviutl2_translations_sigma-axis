@@ -1,0 +1,28 @@
+;===============================================================
+; Target: SceneChangeKit_S (https://github.com/sigma-axis/aviutl2_script_SceneChangeKit_S)
+; Target Version: v1.00
+; Language: English
+; Translator(s):
+;   sigma-axis (https://github.com/sigma-axis)
+
+[自作シーンチェンジ@SceneChangeKit_S]
+自作シーンチェンジ@SceneChangeKit_S=Self-Made Transition@SceneChangeKit_S
+フレームバッファをクリア=Clear Frame Buffer
+背景色=Background Color
+
+[Tips.自作シーンチェンジ@SceneChangeKit_S]
+effect.name=Create your own scene transitions by arranging objects on the timeline.\nPlace the "Old Scene" and "New Scene" objects on the layers below.
+
+[前シーン@SceneChangeKit_S]
+前シーン@SceneChangeKit_S=Old Scene@SceneChangeKit_S
+アルファチャンネルを維持=Keep Alpha Channel
+
+[Tips.前シーン@SceneChangeKit_S]
+effect.name=Apply filters and animations to this object so it gradually becomes hidden.
+
+[次シーン@SceneChangeKit_S]
+次シーン@SceneChangeKit_S=New Scene@SceneChangeKit_S
+アルファチャンネルを維持=Keep Alpha Channel
+
+[Tips.次シーン@SceneChangeKit_S]
+effect.name=Apply filters and animations to this object so it gradually appears.
