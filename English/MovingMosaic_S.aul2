@@ -1,0 +1,19 @@
+;===============================================================
+; Target: MovingMosaic_S (https://github.com/sigma-axis/aviutl2_script_MovingMosaic_S)
+; Target Version: v1.00
+; Language: English
+; Translator(s):
+;   sigma-axis (https://github.com/sigma-axis)
+
+[MovingMosaic_S]
+サイズ=Size
+シード=Seed
+タイル風=Tile
+追加設定=Additional Settings
+縦横比=Aspect
+その他=Misc
+
+[Tips.MovingMosaic_S]
+effect.name=Mosaic effect that appears to move by sampling colors from random positions within each tile.
+シード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+縦横比=Positive: vertically long / Negative: horizontally long

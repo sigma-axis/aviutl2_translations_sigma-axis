@@ -30,6 +30,7 @@ Currently this repository contains files for the following languages. Note that 
 1.  [Histogram_S](https://github.com/sigma-axis/aviutl2_script_Histogram_S)
 1.  [Layback](https://github.com/sigma-axis/aviutl2_script_Layback)
 1.  [Lens_S](https://github.com/sigma-axis/aviutl2_script_Lens_S)
+1.  [MovingMosaic_S](https://github.com/sigma-axis/aviutl2_script_MovingMosaic_S)
 1.  [PageRoll_S](https://github.com/sigma-axis/aviutl2_script_PageRoll_S)
 1.  [Path_S](https://github.com/sigma-axis/aviutl2_script_Path_S)
 1.  [PenroseTile_S](https://github.com/sigma-axis/aviutl2_script_PenroseTile_S)
@@ -56,6 +57,12 @@ Currently this repository contains files for the following languages. Note that 
 1.  Then drag and drop the file to the preview window of AviUtl2. AviUtl2 will automatically restart.
 
 1.  Select the language in the language setting menu.
+
+##  Upcoming Update
+
+- **r57** (2026-??-??)
+
+  - \[English\] Added support for the script [MovingMosaic_S](https://github.com/sigma-axis/aviutl2_script_MovingMosaic_S).
 
 ##  Update History
 
