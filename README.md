@@ -64,6 +64,10 @@ Currently this repository contains files for the following languages. Note that 
 
   - \[English\] Added support for the script [MovingMosaic_S](https://github.com/sigma-axis/aviutl2_script_MovingMosaic_S).
 
+  - \[English\] Updated translation for [Path_S](https://github.com/sigma-axis/aviutl2_script_Path_S) to follow up v2.40.
+
+  - \[English\] Changed some wordings in [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S).
+
 ##  Update History
 
 - **r56** (2026-10-01)

@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Path_S (https://github.com/sigma-axis/aviutl2_script_Path_S)
-; Target Version: v2.30
+; Target Version: v2.40
 ; Language: English
 ; Translator(s):
 ;   sigma-axis (https://github.com/sigma-axis)
@@ -52,13 +52,33 @@
 拡大率=Zoom
 回転=Rotate
 アンカー切り替え=Toggle Anchors
+スナップ設定=Snap Settings
+グリッド=Grid
+横のみ=Horizontally
+縦のみ=Vertically
+縦横=Both
+間隔X=Interval X
+間隔Y=Interval Y
+グリッド表示=Show Grid
+隣との角度=Angle from Adjacent
+制御点の角度=Angle of Control Points
+隣の制御点=Adjacent Control Point
+角度=Angle
+長さ=Length
+角度と長さ=Angle and Length
+スナップ距離=Snap Distance
 その他=Misc
 
 [Tips.パスマスクσ@Path_S]
 effect.name=Crops the image to the area enclosed by the path.
 曲線精度=Maximum sampling interval for polyline approximation, in pixels
-アンカー切り替え=Switches anchors between for path editing and for moving.
+ディザリング=Applies dithering within the edge blur range.
 dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+アンカー切り替え=Switches anchors between for path editing and for moving.
+snap::グリッド=Snaps to grid. Takes effect to points other than control points.
+snap::隣との角度=Snaps by the angle from the previous point. Takes effect to points other than control points.
+snap::制御点の角度=Snaps by the angle of the control point. Takes effect only to control points.
+snap::隣の制御点=Snaps to match the angle and length of the adjacent control point.
 
 [パスマスク(ライン)σ@Path_S]
 パスマスク(ライン)σ@Path_S=Path Mask S (Line)σ@Path_S
@@ -119,6 +139,21 @@ dither::ノイズシード=Non-negative values generate different random for dif
 拡大率=Zoom
 回転=Rotate
 アンカー切り替え=Toggle Anchors
+スナップ設定=Snap Settings
+グリッド=Grid
+横のみ=Horizontally
+縦のみ=Vertically
+縦横=Both
+間隔X=Interval X
+間隔Y=Interval Y
+グリッド表示=Show Grid
+隣との角度=Angle from Adjacent
+制御点の角度=Angle of Control Points
+隣の制御点=Adjacent Control Point
+角度=Angle
+長さ=Length
+角度と長さ=Angle and Length
+スナップ距離=Snap Distance
 その他=Misc
 
 [Tips.パスマスク(ライン)σ@Path_S]
@@ -128,8 +163,13 @@ effect.name=Masks out the image along the line traced by the path.
 終了位置=End point of the line drawing range, in % of total path length
 破線パターン=Write lengths of solid and blank segments alternately, in pixels
 破線周期補正=Effective only when "Loop" is turned on. Adjusts so the dash pattern completes an integer number of repeats per loop
-アンカー切り替え=Switches anchors between for path editing and for moving.
+ディザリング=Applies dithering within the edge blur range.
 dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+アンカー切り替え=Switches anchors between for path editing and for moving.
+snap::グリッド=Snaps to grid. Takes effect to points other than control points.
+snap::隣との角度=Snaps by the angle from the previous point. Takes effect to points other than control points.
+snap::制御点の角度=Snaps by the angle of the control point. Takes effect only to control points.
+snap::隣の制御点=Snaps to match the angle and length of the adjacent control point.
 
 [パス部分フィルタσ@Path_S]
 パス部分フィルタσ@Path_S=Path Partial Filter S@Path_S
@@ -175,18 +215,38 @@ dither::ノイズシード=Non-negative values generate different random for dif
 回転=Rotate
 アンカー切り替え=Toggle Anchors
 フィルタ設定=Filter Settings
-追加のフィルタ効果=Extra Filter Effects
+追加のフィルタ効果=Additional Filter Effects
 後続フィルタ=Subsequent Filters
 スクリプト実行=Run Script
 追加スクリプト=Script
+スナップ設定=Snap Settings
+グリッド=Grid
+横のみ=Horizontally
+縦のみ=Vertically
+縦横=Both
+間隔X=Interval X
+間隔Y=Interval Y
+グリッド表示=Show Grid
+隣との角度=Angle from Adjacent
+制御点の角度=Angle of Control Points
+隣の制御点=Adjacent Control Point
+角度=Angle
+長さ=Length
+角度と長さ=Angle and Length
+スナップ距離=Snap Distance
 その他=Misc
 
 [Tips.パス部分フィルタσ@Path_S]
 effect.name=Applies subsequent filter effects or directly written scripts only to the area enclosed by the path.
 曲線精度=Maximum sampling interval for polyline approximation, in pixels
-追加のフィルタ効果=The range of "Subsequent Filters" can be delimited by "Path Partial Filter S Until This."
-アンカー切り替え=Switches anchors between for path editing and for moving.
+追加のフィルタ効果=The range of "Subsequent Filters" can be delimited by "Addional Filters Until This."
+ディザリング=Applies dithering within the edge blur range.
 dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+アンカー切り替え=Switches anchors between for path editing and for moving.
+snap::グリッド=Snaps to grid. Takes effect to points other than control points.
+snap::隣との角度=Snaps by the angle from the previous point. Takes effect to points other than control points.
+snap::制御点の角度=Snaps by the angle of the control point. Takes effect only to control points.
+snap::隣の制御点=Snaps to match the angle and length of the adjacent control point.
 
 [パス部分フィルタσここまで@Path_S]
 パス部分フィルタσここまで@Path_S=Path Partial Filter S Until This@Path_S
@@ -227,6 +287,22 @@ effect.name=Limites the range of "Subsequent Filters" in "Path Partial Filter S"
 右下=Bottom Right
 曲線精度=Curve Precision
 パスの表示=Display Path
+スナップ設定=Snap Settings
+グリッド=Grid
+なし=None
+横のみ=Horizontally
+縦のみ=Vertically
+縦横=Both
+間隔X=Interval X
+間隔Y=Interval Y
+グリッド表示=Show Grid
+隣との角度=Angle from Adjacent
+制御点の角度=Angle of Control Points
+隣の制御点=Adjacent Control Point
+角度=Angle
+長さ=Length
+角度と長さ=Angle and Length
+スナップ距離=Snap Distance
 その他=Misc
 
 [Tips.パスに沿って配置σ@Path_S]
@@ -235,6 +311,106 @@ effect.name=Places objects along the path. Can space out individual objects.\nTh
 範囲外=Specifies whether to display objects that do not lie between the start and end of the path.
 曲線精度=Maximum sampling interval for polyline approximation, in pixels
 パスの表示=Displays the path shape in the preview window. Automatically disabled during video export.
+snap::グリッド=Snaps to grid. Takes effect to points other than control points.
+snap::隣との角度=Snaps by the angle from the previous point. Takes effect to points other than control points.
+snap::制御点の角度=Snaps by the angle of the control point. Takes effect only to control points.
+snap::隣の制御点=Snaps to match the angle and length of the adjacent control point.
+
+[輪郭パスσ@Path_S]
+輪郭パスσ@Path_S=Boundary Path S@Path_S
+対象=Selection
+1個=Single
+複数=Multiple
+全て=All
+対象個数=Number of Selections
+点リスト=Points
+アンカー基準=Origin of Anchors
+回転中心=Rotation Center
+左上=Top Left
+上=Top
+右上=Top Right
+左=Left
+中央=Center
+右=Right
+左下=Bottom Left
+下=Bottom
+右下=Bottom Right
+ライン幅=Line Width
+色=Color
+境界設定=Boundary Settings
+αしきい値=Threshold (α)
+角で隣接扱い=Connect at Corners
+境界精度=Boundary Precision
+時計回りに揃える=Correct to Clockwise
+ライン設定=Line Settings
+開始位置=Line Start
+終了位置=Line Finish
+端の形状=Line End Cap
+円=Round
+四角=Square
+平坦=Flat
+三角=Triangle
+リボン=Ribbon
+破線パターン=Dash Pattern
+破線位置=Dash Offset
+ライン境界設定=Line Boundary Settings
+ぼかし幅=Edge Blur
+ディザリング=Dithering
+なし=None
+ノイズシード=Noise Seed
+ディザ強さ=Dither Intensity
+ドットサイズ=Dot Size
+移動X=Offset X
+移動Y=Offset Y
+回転=Rotate
+ランダム変化=Random Deformation
+ランダム周期=Random Period
+ランダム振幅=Random Offset
+ランダムシード=Random Seed
+合成=Composition Settings
+モード=Mode
+前方から合成=Composite from the Front
+後方から合成=Composite from the Back
+合成モード=Blend Mode
+通常=Normal
+加算=Add
+減算=Subtract
+乗算=Multiply
+スクリーン=Screen
+オーバーレイ=Overlay
+比較(明)=Lighten
+比較(暗)=Darken
+輝度=Luminance
+色差=Color Difference
+陰影=Shading
+明暗=Light/Dark
+差分=Difference
+ライン透明度=Line Transparency
+元画像透明度=Source Transparency
+フィルタ設定=Filter Settings
+追加のフィルタ効果=Additional Filter Effects
+後続フィルタ=Subsequent Filters
+スクリプト実行=Run Script
+追加スクリプト=Script
+その他=Misc
+
+[Tips.輪郭パスσ@Path_S]
+effect.name=Draw paths along the boundary of the area selected by anchors.
+開始位置=Start point of the line drawing range, in % of total path length
+終了位置=End point of the line drawing range, in % of total path length
+破線パターン=Write lengths of solid and blank segments alternately, in pixels
+ディザリング=Applies dithering within the edge blur range.
+dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+ランダム周期=Period along the path direction of random variation, in pixels
+ランダム振幅=Magnitude of random variation, in pixels
+ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+追加のフィルタ効果=The range of "Subsequent Filters" can be delimited by "Addional Filters Until This."
+
+[追加フィルタここまで@Path_S]
+追加フィルタここまで@Path_S=Addional Filters Until This@Path_S
+
+[Tips.追加フィルタここまで@Path_S]
+effect.name=Limites the range of "Subsequent Filters".
 
 ;===============================
 ; Objects (.obj2)
@@ -282,6 +458,9 @@ effect.name=Places objects along the path. Can space out individual objects.\nTh
 ノイズシード=Noise Seed
 ディザ強さ=Dither Intensity
 ドットサイズ=Dot Size
+移動X=Offset X
+移動Y=Offset Y
+回転=Rotate
 塗り境界設定=Fill Boundary Settings
 塗り設定=Fill Settings
 塗り追加幅=Fill Inflation
@@ -294,6 +473,21 @@ effect.name=Places objects along the path. Can space out individual objects.\nTh
 ランダム振幅=Random Offset
 ランダム固定端=Disable Random at Ends
 ランダムシード=Random Seed
+スナップ設定=Snap Settings
+グリッド=Grid
+横のみ=Horizontally
+縦のみ=Vertically
+縦横=Both
+間隔X=Interval X
+間隔Y=Interval Y
+グリッド表示=Show Grid
+隣との角度=Angle from Adjacent
+制御点の角度=Angle of Control Points
+隣の制御点=Adjacent Control Point
+角度=Angle
+長さ=Length
+角度と長さ=Angle and Length
+スナップ距離=Snap Distance
 その他=Misc
 
 [Tips.パス図形σ@Path_S]
@@ -307,8 +501,14 @@ effect.name=Draws a line along the path and fills the area inside.
 ランダム振幅=Magnitude of random variation, in pixels
 ランダム固定端=Excludes the path start and end from random variation.
 ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+ディザリング=Applies dithering within the edge blur range.
 dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+fill::ディザリング=Applies dithering within the edge blur range.
 fill::dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+snap::グリッド=Snaps to grid. Takes effect to points other than control points.
+snap::隣との角度=Snaps by the angle from the previous point. Takes effect to points other than control points.
+snap::制御点の角度=Snaps by the angle of the control point. Takes effect only to control points.
+snap::隣の制御点=Snaps to match the angle and length of the adjacent control point.
 
 [ラインσ@Path_S]
 ラインσ@Path_S=Line S@Path_S
@@ -354,6 +554,9 @@ fill::dither::ノイズシード=Non-negative values generate different random f
 ノイズシード=Noise Seed
 ディザ強さ=Dither Intensity
 ドットサイズ=Dot Size
+移動X=Offset X
+移動Y=Offset Y
+回転=Rotate
 ランダム変化=Random Deformation
 ランダム周期=Random Period
 ランダム振幅=Random Offset
@@ -370,6 +573,7 @@ effect.name=Draws typical kinds of lines or curves, such as wavy lines and zigza
 ランダム振幅=Magnitude of random variation, in pixels
 ランダム固定端=Excludes the path start and end from random variation.
 ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+ディザリング=Applies dithering within the edge blur range.
 dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [スパイラルσ@Path_S]
@@ -409,6 +613,8 @@ dither::ノイズシード=Non-negative values generate different random for dif
 ノイズシード=Noise Seed
 ディザ強さ=Dither Intensity
 ドットサイズ=Dot Size
+移動X=Offset X
+移動Y=Offset Y
 ランダム変化=Random Deformation
 ランダム周期=Random Period
 ランダム振幅=Random Offset
@@ -427,6 +633,7 @@ effect.name=Draws lines in a spiral shape.
 ランダム振幅=Magnitude of random variation, in pixels
 ランダム固定端=Excludes the path start and end from random variation.
 ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+ディザリング=Applies dithering within the edge blur range.
 dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [アローσ@Path_S]
@@ -468,6 +675,9 @@ dither::ノイズシード=Non-negative values generate different random for dif
 ノイズシード=Noise Seed
 ディザ強さ=Dither Intensity
 ドットサイズ=Dot Size
+移動X=Offset X
+移動Y=Offset Y
+回転=Rotate
 矢じり設定=Arrowhead Settings
 矢じり配置=Head Arrangement
 なし=None
@@ -484,6 +694,21 @@ dither::ノイズシード=Non-negative values generate different random for dif
 ランダム振幅=Random Offset
 ランダム固定端=Disable Random at Ends
 ランダムシード=Random Seed
+スナップ設定=Snap Settings
+グリッド=Grid
+横のみ=Horizontally
+縦のみ=Vertically
+縦横=Both
+間隔X=Interval X
+間隔Y=Interval Y
+グリッド表示=Show Grid
+隣との角度=Angle from Adjacent
+制御点の角度=Angle of Control Points
+隣の制御点=Adjacent Control Point
+角度=Angle
+長さ=Length
+角度と長さ=Angle and Length
+スナップ距離=Snap Distance
 その他=Misc
 
 [Tips.アローσ@Path_S]
@@ -497,7 +722,12 @@ effect.name=Draws a line along the path and places arrowhead shapes at the ends.
 ランダム振幅=Magnitude of random variation, in pixels
 ランダム固定端=Excludes the path start and end from random variation.
 ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+ディザリング=Applies dithering within the edge blur range.
 dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+snap::グリッド=Snaps to grid. Takes effect to points other than control points.
+snap::隣との角度=Snaps by the angle from the previous point. Takes effect to points other than control points.
+snap::制御点の角度=Snaps by the angle of the control point. Takes effect only to control points.
+snap::隣の制御点=Snaps to match the angle and length of the adjacent control point.
 
 [スクウェアσ@Path_S]
 スクウェアσ@Path_S=Square S@Path_S
@@ -543,6 +773,9 @@ dither::ノイズシード=Non-negative values generate different random for dif
 ノイズシード=Noise Seed
 ディザ強さ=Dither Intensity
 ドットサイズ=Dot Size
+移動X=Offset X
+移動Y=Offset Y
+回転=Rotate
 塗り境界設定=Fill Boundary Settings
 塗り設定=Fill Settings
 塗り追加幅=Fill Inflation
@@ -565,7 +798,9 @@ effect.name=Draws a rectangle with rounded corners.
 ランダム周期=Period along the path direction of random variation, in pixels
 ランダム振幅=Magnitude of random variation, in pixels
 ランダムシード=If positive, the same seed yields different randomness for different objects.\nIf negative, the same seed yields identical randomness across objects.
+ディザリング=Applies dithering within the edge blur range.
 dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+fill::ディザリング=Applies dithering within the edge blur range.
 fill::dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 ;===============================
@@ -577,6 +812,7 @@ fill::dither::ノイズシード=Non-negative values generate different random f
 Path_S\クリッピング=Path_S\Clipping
 Path_S\加工=Path_S\Modify
 Path_S\配置=Path_S\Placement
+Path_S\装飾=Path_S\Decoration
 
 ; .obj2
 Path_S\図形=Path_S\Figures

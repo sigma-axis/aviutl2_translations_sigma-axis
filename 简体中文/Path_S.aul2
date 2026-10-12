@@ -51,13 +51,33 @@
 拡大率=缩放率
 回転=旋转
 アンカー切り替え=切换锚点
+;スナップ設定=Snap Settings
+;グリッド=Grid
+;横のみ=Horizontally
+;縦のみ=Vertically
+;縦横=Both
+;間隔X=Interval X
+;間隔Y=Interval Y
+;グリッド表示=Show Grid
+;隣との角度=Angle from Adjacent
+;制御点の角度=Angle of Control Points
+;隣の制御点=Adjacent Control Point
+;角度=Angle
+;長さ=Length
+;角度と長さ=Angle and Length
+;スナップ距離=Snap Distance
 その他=其他
 
 [Tips.パスマスクσ@Path_S]
 effect.name=用路径围成的范围裁剪图像的滤镜效果。
 曲線精度=折线近似的最大采样间隔，以像素为单位
-アンカー切り替え=切换路径编辑用锚点和移动用锚点。
+;ディザリング=Applies dithering within the edge blur range.
 ;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+アンカー切り替え=切换路径编辑用锚点和移动用锚点。
+;snap::グリッド=Snaps to grid. Takes effect to points other than control points.
+;snap::隣との角度=Snaps by the angle from the previous point. Takes effect to points other than control points.
+;snap::制御点の角度=Snaps by the angle of the control point. Takes effect only to control points.
+;snap::隣の制御点=Snaps to match the angle and length of the adjacent control point.
 
 [パスマスク(ライン)σ@Path_S]
 パスマスク(ライン)σ@Path_S=路径遮罩σ(线条)σ@Path_S
@@ -116,6 +136,21 @@ effect.name=用路径围成的范围裁剪图像的滤镜效果。
 拡大率=缩放率
 回転=旋转
 アンカー切り替え=切换锚点
+;スナップ設定=Snap Settings
+;グリッド=Grid
+;横のみ=Horizontally
+;縦のみ=Vertically
+;縦横=Both
+;間隔X=Interval X
+;間隔Y=Interval Y
+;グリッド表示=Show Grid
+;隣との角度=Angle from Adjacent
+;制御点の角度=Angle of Control Points
+;隣の制御点=Adjacent Control Point
+;角度=Angle
+;長さ=Length
+;角度と長さ=Angle and Length
+;スナップ距離=Snap Distance
 その他=其他
 
 [Tips.パスマスク(ライン)σ@Path_S]
@@ -125,8 +160,13 @@ effect.name=沿路径所经线条裁剪图像的滤镜效果。
 終了位置=线条渲染范围的结束点，以路径总长度的百分比表示
 破線パターン=交替指定实线部分和空白部分的长度，以像素为单位
 破線周期補正=仅在“拼贴”开启时有效，调整为每圈路径使虚线图案重复整数次
-アンカー切り替え=切换路径编辑用锚点和移动用锚点。
+;ディザリング=Applies dithering within the edge blur range.
 ;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+アンカー切り替え=切换路径编辑用锚点和移动用锚点。
+;snap::グリッド=Snaps to grid. Takes effect to points other than control points.
+;snap::隣との角度=Snaps by the angle from the previous point. Takes effect to points other than control points.
+;snap::制御点の角度=Snaps by the angle of the control point. Takes effect only to control points.
+;snap::隣の制御点=Snaps to match the angle and length of the adjacent control point.
 
 [パス部分フィルタσ@Path_S]
 パス部分フィルタσ@Path_S=路径局部滤镜σ@Path_S
@@ -175,14 +215,38 @@ effect.name=沿路径所经线条裁剪图像的滤镜效果。
 後続フィルタ=后续滤镜
 スクリプト実行=运行脚本
 追加スクリプト=追加脚本
+;スナップ設定=Snap Settings
+;グリッド=Grid
+;横のみ=Horizontally
+;縦のみ=Vertically
+;縦横=Both
+;間隔X=Interval X
+;間隔Y=Interval Y
+;グリッド表示=Show Grid
+;隣との角度=Angle from Adjacent
+;制御点の角度=Angle of Control Points
+;隣の制御点=Adjacent Control Point
+;角度=Angle
+;長さ=Length
+;角度と長さ=Angle and Length
+;スナップ距離=Snap Distance
 その他=其他
 
 [Tips.パス部分フィルタσ@Path_S]
 effect.name=仅在路径围成的范围内应用后续滤镜效果或直接编写脚本的滤镜效果。
 曲線精度=折线近似的最大采样间隔，以像素为单位
 アンカー切り替え=切换路径编辑用锚点和移动用锚点。
-追加のフィルタ効果=“后续滤镜”的范围可用“路径局部滤镜σ到此为止”来界定。
+
+; NOTE: The following tooltip text for "追加のフィルタ効果" has changed from v2.30 to v2.40. The translation should be changed accordingly.
+;追加のフィルタ効果=The range of "Subsequent Filters" can be delimited by "Addional Filters Until This."
+;追加のフィルタ効果=“后续滤镜”的范围可用“路径局部滤镜σ到此为止”来界定。
+
+;ディザリング=Applies dithering within the edge blur range.
 ;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+;snap::グリッド=Snaps to grid. Takes effect to points other than control points.
+;snap::隣との角度=Snaps by the angle from the previous point. Takes effect to points other than control points.
+;snap::制御点の角度=Snaps by the angle of the control point. Takes effect only to control points.
+;snap::隣の制御点=Snaps to match the angle and length of the adjacent control point.
 
 [パス部分フィルタσここまで@Path_S]
 パス部分フィルタσここまで@Path_S=路径局部滤镜σ到此为止@Path_S
@@ -222,6 +286,22 @@ effect.name=指定“路径局部滤镜σ”中“后续滤镜”的范围。
 ;右下=Bottom Right
 曲線精度=曲线精度
 パスの表示=显示路径
+;スナップ設定=Snap Settings
+;グリッド=Grid
+なし=无
+;横のみ=Horizontally
+;縦のみ=Vertically
+;縦横=Both
+;間隔X=Interval X
+;間隔Y=Interval Y
+;グリッド表示=Show Grid
+;隣との角度=Angle from Adjacent
+;制御点の角度=Angle of Control Points
+;隣の制御点=Adjacent Control Point
+;角度=Angle
+;長さ=Length
+;角度と長さ=Angle and Length
+;スナップ距離=Snap Distance
 その他=其他
 
 [Tips.パスに沿って配置σ@Path_S]
@@ -230,6 +310,104 @@ effect.name=沿路径分布物件的滤镜效果。即使是独立物件也可�
 範囲外=指定是否显示不在路径起始点和结束点之间的物件。
 曲線精度=折线近似的最大采样间隔，以像素为单位
 パスの表示=在编辑窗口中显示路径形状。视频输出时自动无效。
+;snap::グリッド=Snaps to grid. Takes effect to points other than control points.
+;snap::隣との角度=Snaps by the angle from the previous point. Takes effect to points other than control points.
+;snap::制御点の角度=Snaps by the angle of the control point. Takes effect only to control points.
+;snap::隣の制御点=Snaps to match the angle and length of the adjacent control point.
+
+[輪郭パスσ@Path_S]
+;輪郭パスσ@Path_S=Boundary Path S@Path_S
+;対象=Selection
+;1個=Single
+;複数=Multiple
+;全て=All
+;対象個数=Number of Selections
+点リスト=点列表
+;アンカー基準=Origin of Anchors
+;回転中心=Rotation Center
+;左上=Top Left
+;上=Top
+;右上=Top Right
+;左=Left
+;中央=Center
+;右=Right
+;左下=Bottom Left
+;下=Bottom
+;右下=Bottom Right
+ライン幅=线条宽度
+色=颜色
+;境界設定=Boundary Settings
+αしきい値=Alpha阈值
+角で隣接扱い=邻角视为连接
+;境界精度=Boundary Precision
+;時計回りに揃える=Correct to Clockwise
+ライン設定=线条设置
+開始位置=起始位置
+終了位置=结束位置
+端の形状=末端形状
+円=圆
+四角=四边形
+;平坦=Flat
+;三角=Triangle
+;リボン=Ribbon
+破線パターン=虚线图案
+破線位置=虚线位置
+;ライン境界設定=Line Boundary Settings
+ぼかし幅=模糊度
+;ディザリング=Dithering
+なし=无
+;ノイズシード=Noise Seed
+;ディザ強さ=Dither Intensity
+;ドットサイズ=Dot Size
+移動X=移动X
+移動Y=移动Y
+回転=旋转
+ランダム変化=随机变化
+ランダム周期=随机周期
+ランダム振幅=随机振幅
+ランダムシード=随机种子
+;合成=Composition Settings
+;モード=Mode
+前方から合成=从前方合成
+後方から合成=从后方合成
+合成モード=混合模式
+通常=正常
+加算=相加
+減算=相减
+乗算=相乘
+スクリーン=滤色
+オーバーレイ=覆盖
+比較(明)=对比(明)
+比較(暗)=对比(暗)
+輝度=亮度
+陰影=阴影
+差分=反差
+ライン透明度=线条透明度
+元画像透明度=源图像透明度
+フィルタ設定=滤镜设置
+追加のフィルタ効果=追加滤镜效果
+後続フィルタ=后续滤镜
+スクリプト実行=运行脚本
+追加スクリプト=追加脚本
+その他=其他
+
+[Tips.輪郭パスσ@Path_S]
+;effect.name=Draw paths along the boundary of the area selected by anchors.
+開始位置=线条渲染范围的起始点，以路径总长度的百分比表示
+終了位置=线条渲染范围的结束点，以路径总长度的百分比表示
+破線パターン=交替指定实线部分和空白部分的长度，以像素为单位
+;ディザリング=Applies dithering within the edge blur range.
+;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+ランダム周期=沿路径渲染方向的随机变动周期，以像素为单位
+ランダム振幅=随机变动的大小，以像素为单位
+ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
+;追加のフィルタ効果=The range of "Subsequent Filters" can be delimited by "Addional Filters Until This."
+
+;[追加フィルタここまで@Path_S]
+;追加フィルタここまで@Path_S=Addional Filters Until This@Path_S
+
+;[Tips.追加フィルタここまで@Path_S]
+;effect.name=Limites the range of "Subsequent Filters".
 
 ;===============================
 ; 物件 (.obj2)
@@ -275,6 +453,9 @@ effect.name=沿路径分布物件的滤镜效果。即使是独立物件也可�
 ;ノイズシード=Noise Seed
 ;ディザ強さ=Dither Intensity
 ;ドットサイズ=Dot Size
+移動X=移动X
+移動Y=移动Y
+回転=旋转
 ;塗り境界設定=Fill Boundary Settings
 塗り設定=填充设置
 塗り追加幅=填充 附加宽度
@@ -286,6 +467,21 @@ effect.name=沿路径分布物件的滤镜效果。即使是独立物件也可�
 ランダム振幅=随机振幅
 ランダム固定端=随机固定末端
 ランダムシード=随机种子
+;スナップ設定=Snap Settings
+;グリッド=Grid
+;横のみ=Horizontally
+;縦のみ=Vertically
+;縦横=Both
+;間隔X=Interval X
+;間隔Y=Interval Y
+;グリッド表示=Show Grid
+;隣との角度=Angle from Adjacent
+;制御点の角度=Angle of Control Points
+;隣の制御点=Adjacent Control Point
+;角度=Angle
+;長さ=Length
+;角度と長さ=Angle and Length
+;スナップ距離=Snap Distance
 その他=其他
 
 [Tips.パス図形σ@Path_S]
@@ -299,8 +495,14 @@ effect.name=渲染沿路径的线条和填充路径内部的图形物件。
 ランダム振幅=随机变动的大小，以像素为单位
 ランダム固定端=将路径的起始点和结束点排除在随机变动的影响之外。
 ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
+;ディザリング=Applies dithering within the edge blur range.
 ;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+;fill::ディザリング=Applies dithering within the edge blur range.
 ;fill::dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+;snap::グリッド=Snaps to grid. Takes effect to points other than control points.
+;snap::隣との角度=Snaps by the angle from the previous point. Takes effect to points other than control points.
+;snap::制御点の角度=Snaps by the angle of the control point. Takes effect only to control points.
+;snap::隣の制御点=Snaps to match the angle and length of the adjacent control point.
 
 [ラインσ@Path_S]
 ラインσ@Path_S=线条σ@Path_S
@@ -338,6 +540,9 @@ effect.name=渲染沿路径的线条和填充路径内部的图形物件。
 ;ノイズシード=Noise Seed
 ;ディザ強さ=Dither Intensity
 ;ドットサイズ=Dot Size
+移動X=移动X
+移動Y=移动Y
+回転=旋转
 ランダム変化=随机变化
 ランダム周期=随机周期
 ランダム振幅=随机振幅
@@ -354,6 +559,7 @@ effect.name=渲染常见图案的线条形状，如波浪线和折线等的物�
 ランダム振幅=随机变动的大小，以像素为单位
 ランダム固定端=将路径的起始点和结束点排除在随机变动的影响之外。
 ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
+;ディザリング=Applies dithering within the edge blur range.
 ;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [スパイラルσ@Path_S]
@@ -391,6 +597,8 @@ effect.name=渲染常见图案的线条形状，如波浪线和折线等的物�
 ;ノイズシード=Noise Seed
 ;ディザ強さ=Dither Intensity
 ;ドットサイズ=Dot Size
+移動X=移动X
+移動Y=移动Y
 ランダム変化=随机变化
 ランダム周期=随机周期
 ランダム振幅=随机振幅
@@ -409,6 +617,7 @@ effect.name=渲染螺旋形线条的物件。
 ランダム振幅=随机变动的大小，以像素为单位
 ランダム固定端=将路径的起始点和结束点排除在随机变动的影响之外。
 ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
+;ディザリング=Applies dithering within the edge blur range.
 ;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 [アローσ@Path_S]
@@ -448,6 +657,9 @@ effect.name=渲染螺旋形线条的物件。
 ;ノイズシード=Noise Seed
 ;ディザ強さ=Dither Intensity
 ;ドットサイズ=Dot Size
+移動X=移动X
+移動Y=移动Y
+回転=旋转
 矢じり設定=箭头设置
 矢じり配置=箭头分布
 なし=无
@@ -464,6 +676,21 @@ effect.name=渲染螺旋形线条的物件。
 ランダム振幅=随机振幅
 ランダム固定端=随机固定末端
 ランダムシード=随机种子
+;スナップ設定=Snap Settings
+;グリッド=Grid
+;横のみ=Horizontally
+;縦のみ=Vertically
+;縦横=Both
+;間隔X=Interval X
+;間隔Y=Interval Y
+;グリッド表示=Show Grid
+;隣との角度=Angle from Adjacent
+;制御点の角度=Angle of Control Points
+;隣の制御点=Adjacent Control Point
+;角度=Angle
+;長さ=Length
+;角度と長さ=Angle and Length
+;スナップ距離=Snap Distance
 その他=其他
 
 [Tips.アローσ@Path_S]
@@ -477,7 +704,12 @@ effect.name=沿路径渲染线条并放置尖端图形以渲染箭头形状的�
 ランダム振幅=随机变动的大小，以像素为单位
 ランダム固定端=将路径的起点和终点排除在随机变动的影响之外。
 ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
+;ディザリング=Applies dithering within the edge blur range.
 ;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+;snap::グリッド=Snaps to grid. Takes effect to points other than control points.
+;snap::隣との角度=Snaps by the angle from the previous point. Takes effect to points other than control points.
+;snap::制御点の角度=Snaps by the angle of the control point. Takes effect only to control points.
+;snap::隣の制御点=Snaps to match the angle and length of the adjacent control point.
 
 [スクウェアσ@Path_S]
 スクウェアσ@Path_S=四边形σ@Path_S
@@ -517,6 +749,9 @@ effect.name=沿路径渲染线条并放置尖端图形以渲染箭头形状的�
 ;ノイズシード=Noise Seed
 ;ディザ強さ=Dither Intensity
 ;ドットサイズ=Dot Size
+移動X=移动X
+移動Y=移动Y
+回転=旋转
 ;塗り境界設定=Fill Boundary Settings
 塗り設定=填充设置
 塗り追加幅=填充 附加宽度
@@ -539,7 +774,9 @@ effect.name=渲染圆角矩形的物件。
 ランダム周期=沿路径渲染方向的随机变动周期，以像素为单位
 ランダム振幅=随机变动的大小，以像素为单位
 ランダムシード=正数时，相同种子在不同物件上产生不同随机数；负数时，相同种子在不同物件上也产生相同随机数。
+;ディザリング=Applies dithering within the edge blur range.
 ;dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
+;fill::ディザリング=Applies dithering within the edge blur range.
 ;fill::dither::ノイズシード=Non-negative values generate different random for different objects even with the same seed.\nNegative values generate the same random for the same object with the same seed.
 
 ;===============================
@@ -551,6 +788,7 @@ effect.name=渲染圆角矩形的物件。
 Path_S\クリッピング=Path_S\裁剪
 Path_S\加工=Path_S\处理
 Path_S\配置=Path_S\分布
+;Path_S\装飾=Path_S\Decoration
 
 ; .obj2
 Path_S\図形=Path_S\图形
