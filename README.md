@@ -48,7 +48,7 @@ Currently this repository contains files for the following languages. Note that 
 
   http://spring-fragrance.mints.ne.jp/aviutl
 
-  - Confirmed to work on: `2.1.11a`
+  - Confirmed to work on: `2.1.13`
 
 ##  Installation
 
@@ -58,17 +58,15 @@ Currently this repository contains files for the following languages. Note that 
 
 1.  Select the language in the language setting menu.
 
-##  Upcoming Update
+##  Update History
 
-- **r57** (2026-??-??)
+- **r57** (2026-10-12)
 
   - \[English\] Added support for the script [MovingMosaic_S](https://github.com/sigma-axis/aviutl2_script_MovingMosaic_S).
 
   - \[English\] Updated translation for [Path_S](https://github.com/sigma-axis/aviutl2_script_Path_S) to follow up v2.40.
 
   - \[English\] Changed some wordings in [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S).
-
-##  Update History
 
 - **r56** (2026-10-01)
 
