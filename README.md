@@ -28,6 +28,7 @@ Currently this repository contains files for the following languages. Note that 
 1.  [ColorSolid_S](https://github.com/sigma-axis/aviutl2_script_ColorSolid_S)
 1.  [GroundShadow2_S](https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S)
 1.  [Histogram_S](https://github.com/sigma-axis/aviutl2_script_Histogram_S)
+1.  [InlineScene_S](https://github.com/sigma-axis/aviutl2_InlineScene_S)
 1.  [Layback](https://github.com/sigma-axis/aviutl2_script_Layback)
 1.  [Lens_S](https://github.com/sigma-axis/aviutl2_script_Lens_S)
 1.  [MovingMosaic_S](https://github.com/sigma-axis/aviutl2_script_MovingMosaic_S)
@@ -62,7 +63,7 @@ Currently this repository contains files for the following languages. Note that 
 
 - **r58** (2026-??-??)
 
-  - \[Simplified Chinese\] Added or updated translations for the following scripts and plugins, including tooltips:
+  - \[Simplified Chinese\] Added or updated translations for the following scripts and plugins, including tooltips (Thanks to @nsYW !):
   
     1.  Updated [AutoClipping_S](https://github.com/sigma-axis/aviutl2_script_AutoClipping_S) v1.20.
     1.  Updated [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S) v2.90.
@@ -77,6 +78,8 @@ Currently this repository contains files for the following languages. Note that 
     1.  Updated [Region_S](https://github.com/sigma-axis/aviutl2_script_Region_S) v1.10.
     1.  Added [SceneChangeKit_S](https://github.com/sigma-axis/aviutl2_script_SceneChangeKit_S) v1.00.
     1.  Updated [WhiteBalance_S](https://github.com/sigma-axis/aviutl2_script_WhiteBalance_S) v1.10.
+
+  - \[English\] Added support for the plugin [InlineScene_S](https://github.com/sigma-axis/aviutl2_InlineScene_S).
 
 ##  Update History
 

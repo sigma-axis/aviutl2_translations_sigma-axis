@@ -1,0 +1,150 @@
+;===============================================================
+; Target: InlineScene_S (https://github.com/sigma-axis/aviutl2_InlineScene_S)
+; Target Version: v1.00
+; Language: English
+; Translator(s):
+;   sigma-axis (https://github.com/sigma-axis)
+
+[Plugin.InlineScene_S.Message]
+指定された名前のキャッシュが見つかりません！=The cache of the given name was not found!
+指定された名前のキャッシュは削除されています．キャッシュサイズが上限に達した可能性があります．\n設定ファイル "system.conf" 内の "TemporaryImageCacheSize" を増やしてみてください．=The cache of the given name was deleted, probably due to the cap of the total cache size.\nTry increasing "TemporaryImageCacheSize" in the setting file "system.conf".
+指定された名前のキャッシュは削除されています．キャッシュサイズが上限に達しました．\n設定 → プラグイン設定 → InlineScene_S から "キャッシュの総ドット数" を増やしてみてください．=The cache of the given name was deleted, due to the cap of the total cache size.\nVisit "Settings → Plugin Settings → InlineScene_S" and try increasing "Maximum total pixels of cache".
+復元用のフレームバッファのキャッシュに予期せぬ変更が加えられていました！=The cache for restoring the framebuffer was unexpectedly modified!
+Inline Scene が開始していない状態で終了しようとしました！=Tried to close an Inline Scene before any of them opened!
+Inline Scene が正しく閉じられませんでした！=Some Inline Scenes were not closed properly!
+Inline Scene の開始終了は，個別オブジェクトには適用しないでください！=Do not open or close Inline Scenes within individual objects!
+Inline Scene の開始終了は，カメラ制御下には配置しないでください！=Do not open or close Inline Scenes under camera controls!
+Inline Scene の開始終了は，"クリッピングオブジェクト" や "上のオブジェクトでクリッピング" を適用したり，その影響下に配置しないでください！=Do not open or close Inline Scenes with "Clipping Objects" or "Clip with the object above" applied, and/or under the effect of those objects!
+
+; The next words are pieces of error messages.
+; They are used like the following form, indicating where errors might be caused from:
+; > [InlineScene_Sここから / 画像] 場所: 31 F (0.50 s) / Layer 3 (Root), 検出箇所: 32 F (0.52 s) / Layer 3 (Root).
+; > [InlineScene_S読み出し / 音声] キャッシュ名: "scene1", 場所: 61 F (1.00 s) / Layer 7 (Root).
+
+キャッシュ名=Cache name
+場所=Position at
+検出箇所=Detected at
+画像=Video
+音声=Audio
+
+[Plugin.InlineScene_S.Settings]
+InlineScene_S の設定=InlineScene_S Settings
+長期キャッシュの保持期間 (分)=Long-term cache expiration duration (minutes)
+長期キャッシュの総ドット数=Maximum total pixels of long-term cache
+
+[InlineScene_Sここから]
+InlineScene_Sここから=InlineScene_S Begin
+
+[Tips.InlineScene_Sここから]
+effect.name=Layers below this point will behave as if they were in a separate scene.\nSpecify the end of the scene with "InlineScene_S End". Nesting is also possible.
+
+[InlineScene_Sこのオブジェクトから]
+InlineScene_Sこのオブジェクトから=InlineScene_S Begin from this Object
+
+[Tips.InlineScene_Sこのオブジェクトから]
+effect.name=Layers starting from this object and below will behave as if they were in a separate scene.\nSpecify the end of the scene with "InlineScene_S End". Nesting is also possible.
+
+[InlineScene_Sここまで]
+InlineScene_Sここまで=InlineScene_S End
+オブジェクトとして表示・再生=Draw/Play as Object
+モード=Mode
+一時キャッシュ=Temporary Cache
+長期キャッシュ=Long-Term Cache
+保存名=Cache Name
+余白除去=Remove Margin
+除去する=Yes
+除去しない=No
+上下左右個別に指定=Specify Individually
+左=Left
+右=Right
+上=Top
+下=Bottom
+追加余白=Additional Padding
+
+[Tips.InlineScene_Sここまで]
+effect.name=Specifies the end of the Inline Scene.\nInline Scene can be saved and used via "InlineScene_S Load from Cache", or displayed directly on this object.
+モード="Temporary Cache" is only valid per scene and is discarded every time the frame is rendered.\n"Long-term Cache" is effective for all scenes and can also be used in other frames.\nThere is no difference between the two for audio.
+保存名=The name to use for "InlineScene_S Load from Cache".\nIf it is an image in "Temporary Cache", it can also be accessed from the script via obj.copybuffer(_, "cache:<Cache Name>").
+pad::上=Adds padding when positive, clips when negative.
+pad::下=Adds padding when positive, clips when negative.
+pad::左=Adds padding when positive, clips when negative.
+pad::右=Adds padding when positive, clips when negative.
+
+[InlineScene_S次へ]
+InlineScene_S次へ=InlineScene_S Next
+モード=Mode
+一時キャッシュ=Temporary Cache
+長期キャッシュ=Long-Term Cache
+保存名=Cache Name
+余白除去=Remove Margin
+除去する=Yes
+除去しない=No
+上下左右個別に指定=Specify Individually
+左=Left
+右=Right
+上=Top
+下=Bottom
+追加余白=Additional Padding
+
+[Tips.InlineScene_S次へ]
+effect.name=Specifies the end of the Inline Scene and saves it, then starts a new Inline Scene.\nThe saved Inline Scene can be used via "InlineScene_S Load from Cache".
+モード="Temporary Cache" is only valid per scene and is discarded every time the frame is rendered.\n"Long-term Cache" is effective for all scenes and can also be used in other frames.\nThere is no difference between the two for audio.
+保存名=The name to use for "InlineScene_S Load from Cache".\nIf it is an image in "Temporary Cache", it can also be accessed from the script via obj.copybuffer(_, "cache:<Cache Name>").
+pad::上=Adds padding when positive, clips when negative.
+pad::下=Adds padding when positive, clips when negative.
+pad::左=Adds padding when positive, clips when negative.
+pad::右=Adds padding when positive, clips when negative.
+
+[InlineScene_Sこのオブジェクトで次へ]
+InlineScene_Sこのオブジェクトで次へ=InlineScene_S Next from this Object
+モード=Mode
+一時キャッシュ=Temporary Cache
+長期キャッシュ=Long-Term Cache
+保存名=Cache Name
+余白除去=Remove Margin
+除去する=Yes
+除去しない=No
+上下左右個別に指定=Specify Individually
+左=Left
+右=Right
+上=Top
+下=Bottom
+追加余白=Additional Padding
+
+[Tips.InlineScene_Sこのオブジェクトで次へ]
+effect.name=Specifies the end of the Inline Scene and saves it, then starts a new Inline Scene from this object.\nThe saved Inline Scene can be used via "InlineScene_S Load from Cache".
+モード="Temporary Cache" is only valid per scene and is discarded every time the frame is rendered.\n"Long-term Cache" is effective for all scenes and can also be used in other frames.\nThere is no difference between the two for audio.
+保存名=The name to use for "InlineScene_S Load from Cache".\nIf it is an image in "Temporary Cache", it can also be accessed from the script via obj.copybuffer(_, "cache:<Cache Name>").
+pad::上=Adds padding when positive, clips when negative.
+pad::下=Adds padding when positive, clips when negative.
+pad::左=Adds padding when positive, clips when negative.
+pad::右=Adds padding when positive, clips when negative.
+
+[InlineScene_S読み出し]
+InlineScene_S読み出し=InlineScene_S Load from Cache
+モード=Mode
+一時キャッシュ=Temporary Cache
+長期キャッシュ=Long-Term Cache
+保存名=Cache Name
+位置や回転も復元=Restore Position/Scaling/Rotation
+回転の合成=Composose Rotation
+音量設定も復元=Restore Sound Volume
+
+[Tips.InlineScene_S読み出し]
+effect.name=Loads images or audio saved with "InlineScene_S End", "InlineScene_S Save as Cache" or such.\nPosition, scaling, rotation, and sound volume information can also be restored.
+モード="Temporary Cache" is only valid per scene and is discarded every time the frame is rendered.\n"Long-term Cache" is effective for all scenes and can also be used in other frames.\nThere is no difference between the two for audio.
+保存名=The name specified in such as "InlineScene_S End".\nIf it is an image in "Temporary Cache", it can also be accessed from the script via obj.copybuffer(_, "cache:<Cache Name>").
+回転の合成=Restores the rotation angle so that the rotation is applied in the order of the saved rotation from "InlineScene_S Save as Cache" and the rotation from the output filter.
+
+[InlineScene_S単品保存]
+InlineScene_S単品保存=InlineScene_S Save as Cache
+モード=Mode
+一時キャッシュ=Temporary Cache
+長期キャッシュ=Long-Term Cache
+保存名=Cache Name
+表示・再生しない=Suppress Draw/Play
+
+[Tips.InlineScene_S単品保存]
+effect.name=Saves the image or audio of the current object and its position, scaling, rotation, and sound volume information.\nThe saved information can be restored with "InlineScene_S Load from Cache".
+モード="Temporary Cache" is only valid per scene and is discarded every time the frame is rendered.\n"Long-term Cache" is effective for all scenes and can also be used in other frames.\nThere is no difference between the two for audio.
+保存名=The name to use for "InlineScene_S Load from Cache".\nIf it is an image in "Temporary Cache", it can also be accessed from the script via obj.copybuffer(_, "cache:<Cache Name>").
