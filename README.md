@@ -59,9 +59,9 @@ Currently this repository contains files for the following languages. Note that 
 
 1.  Select the language in the language setting menu.
 
-##  Upcoming Update
+##  Update History
 
-- **r58** (2026-??-??)
+- **r58** (2026-11-09)
 
   - \[Simplified Chinese\] Added or updated translations for the following scripts and plugins, including tooltips (Thanks to @nsYW !):
   
@@ -80,8 +80,6 @@ Currently this repository contains files for the following languages. Note that 
     1.  Updated [WhiteBalance_S](https://github.com/sigma-axis/aviutl2_script_WhiteBalance_S) v1.10.
 
   - \[English\] Added support for the plugin [InlineScene_S](https://github.com/sigma-axis/aviutl2_InlineScene_S).
-
-##  Update History
 
 - **r57** (2026-10-12)
 
