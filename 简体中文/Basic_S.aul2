@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Basic_S (https://github.com/sigma-axis/aviutl2_script_Basic_S)
-; Target Version: v2.83
+; Target Version: v2.90
 ; Language: 简体中文
 ; Translator(s):
 ;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
@@ -275,12 +275,9 @@ XYZ追加回転@Basic_S=XYZ额外旋转@Basic_S
 その他=其他
 
 [Tips.XYZ追加回転@Basic_S]
-effect.name=始终以画面为基准进行X、Y、Z轴旋转。
-描画する=将旋转结果投影并图像化。
-;グループ制御=仅在“渲染”为 ON 时有效。适配组控制下的摄像机位置。
-; NOTE: The content had changed from v2.88 to v2.90, so the translation should be updated accordingly.
-; The next line is the newer one.
-;グループ制御=Only effective when "Rasterize" is turned on. When under group control, its camera position, scaling, and rotation are taken into account.
+effect.name=围绕基于屏幕的X、Y、Z轴旋转，这些轴独立于物件当前的朝向。
+描画する=将旋转结果投影到图像中。
+グループ制御=仅在开启“渲染”时有效。在组控制下，会考虑其摄像机位置、缩放和旋转。
 
 [任意軸追加回転@Basic_S]
 任意軸追加回転@Basic_S=任意轴额外旋转@Basic_S
@@ -293,12 +290,9 @@ effect.name=始终以画面为基准进行X、Y、Z轴旋转。
 その他=其他
 
 [Tips.任意軸追加回転@Basic_S]
-effect.name=沿锚点指定线条的轴对物件进行立体旋转。
-描画する=将旋转结果投影并图像化。
-;グループ制御=仅在“渲染”为 ON 时有效。适配组控制下的摄像机位置。
-; NOTE: The content had changed from v2.88 to v2.90, so the translation should be updated accordingly.
-; The next line is the newer one.
-;グループ制御=Only effective when "Rasterize" is turned on. When under group control, its camera position, scaling, and rotation are taken into account.
+effect.name=沿锚点指定线条的轴对物件进行旋转。
+描画する=将旋转结果投影到图像中。
+グループ制御=仅在开启“渲染”时有效。在组控制下，会考虑其摄像机位置、缩放和旋转。
 
 [傾斜@Basic_S]
 傾斜@Basic_S=倾斜@Basic_S

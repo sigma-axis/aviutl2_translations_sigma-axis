@@ -1,0 +1,28 @@
+;===============================================================
+; Target: SceneChangeKit_S (https://github.com/sigma-axis/aviutl2_script_SceneChangeKit_S)
+; Target Version: v1.00
+; Language: 简体中文
+; Translator(s):
+;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
+
+[自作シーンチェンジ@SceneChangeKit_S]
+自作シーンチェンジ@SceneChangeKit_S=自定义转场效果@SceneChangeKit_S
+フレームバッファをクリア=清除帧缓存
+背景色=背景颜色
+
+[Tips.自作シーンチェンジ@SceneChangeKit_S]
+effect.name=通过在时间轴上排列物件来创建自定义转场效果。\n将“前场景”和“次场景”物件放置在下方图层上。
+
+[前シーン@SceneChangeKit_S]
+前シーン@SceneChangeKit_S=前合成@SceneChangeKit_S
+アルファチャンネルを維持=保持Alpha通道
+
+[Tips.前シーン@SceneChangeKit_S]
+effect.name=对此物件应用滤镜和动画，使其逐渐变为隐藏状态。
+
+[次シーン@SceneChangeKit_S]
+次シーン@SceneChangeKit_S=后合成@SceneChangeKit_S
+アルファチャンネルを維持=保持Alpha通道
+
+[Tips.次シーン@SceneChangeKit_S]
+effect.name=对此物件应用滤镜和动画，使其逐渐显现。

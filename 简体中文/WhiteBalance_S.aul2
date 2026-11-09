@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: WhiteBalance_S (https://github.com/sigma-axis/aviutl2_script_WhiteBalance_S)
-; Target Version: v1.00 (for beta29)
+; Target Version: v1.10
 ; Language: 简体中文
 ; Translator(s):
 ;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
@@ -16,25 +16,25 @@
 色空間=色彩空间
 その他=其他
 
-;[Tips.ホワイトバランスσ@WhiteBalance_S]
-;effect.name=Adjust white balance by specifying 2 colors and changing one color to another. You can also specify the multiplier for each color component individually.
-;正規化=Normalize so that the base and destination have the same brightness.
-;色空間=Color space for color conversion calculations
+[Tips.ホワイトバランスσ@WhiteBalance_S]
+effect.name=通过指定2种颜色并将其中一种颜色改为另一种来调整白平衡。也可以分别指定每个颜色分量的乘数。
+正規化=进行归一化，使基准颜色和目标颜色具有相同的亮度。
+色空間=用于颜色转换计算的色彩空间。
 
 [色温度σ@WhiteBalance_S]
 色温度σ@WhiteBalance_S=色温σ@WhiteBalance_S
-;単位=Unit
+単位=单位
 変換元K=变换源K
 変換先K=变换目标K
-;変換元M=Base Mired
-;変換先M=Destination Mired
+変換元M=变换元M
+変換先M=变换目标M
 色空間=色彩空间
 その他=其他
 
-;[Tips.色温度σ@WhiteBalance_S]
-;effect.name=Adjust white balance of the image by specifying the color temperature.
-;単位=Select the unit of color temperature from Kelvin or Mired.
-;色空間=Color space for color conversion calculations
+[Tips.色温度σ@WhiteBalance_S]
+effect.name=通过指定色温来调整图像的白平衡。
+単位=从开尔文或迈尔德中选择色温的单位。
+色空間=用于颜色转换计算的色彩空间。
 
 [色温度σ(Mired)@WhiteBalance_S]
 色温度σ(Mired)@WhiteBalance_S=色温σ(微倒度)@WhiteBalance_S

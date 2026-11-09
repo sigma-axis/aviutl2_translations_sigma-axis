@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Region_S (https://github.com/sigma-axis/aviutl2_script_Region_S)
-; Target Version: v1.00 (for beta47)
+; Target Version: v1.10
 ; Language: 简体中文
 ; Translator(s):
 ;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
@@ -46,9 +46,9 @@
 角で隣接扱い=将四角相邻视为连接
 その他=其他
 
-;[Tips.連結成分塗りつぶし@Region_S]
-;effect.name=Anchor points and connected opaque pixels define the area, and can be colored or made transparent.
-;適用する操作=Variables `color`, `intensity` and `keep_luma` are valid in scripts.
+[Tips.連結成分塗りつぶし@Region_S]
+effect.name=锚点和相连的不透明像素定义区域，并可对该区域着色或使其透明。
+適用する操作=在脚本中，变量'color'、'intensity'和'keep_luma'有效。
 
 [連結成分個別オブジェクト化@Region_S]
 連結成分個別オブジェクト化@Region_S=连接部分物件独立化@Region_S
@@ -76,9 +76,9 @@
 通常=正常
 小さい=小
 
-;[Tips.連結成分個別オブジェクト化@Region_S]
-;effect.name=Anchor points and connected opaque pixels define the area, splitting it into individual objects.
-;開始遅延="Absolute": T1, T2, T3, ...\n"Relative": [[0] = T1,] T2 - T1, T3 - T2, ...\nRepeats the last number if omitted.
+[Tips.連結成分個別オブジェクト化@Region_S]
+effect.name=锚点和相连的不透明像素定义区域，并将该区域分割为独立化物件。
+開始遅延="Absolute": T1, T2, T3, ...\n"Relative": [[0] = T1,] T2 - T1, T3 - T2, ...\n若省略，则重复最后一个数值。
 
 [色領域塗りつぶし@Region_S]
 色領域塗りつぶし@Region_S=填充颜色区域@Region_S
@@ -124,9 +124,9 @@ B範囲補正=B范围修正
 透明ピクセルを連結扱い=透明像素视为连接
 その他=其他
 
-;[Tips.色領域塗りつぶし@Region_S]
-;effect.name=Anchor points and connected pixels of similar color define the area, and can be colored or made transparent.
-;適用する操作=Variables `color`, `intensity` and `keep_luma` are valid in scripts.
+[Tips.色領域塗りつぶし@Region_S]
+effect.name=锚点和相连的不透明像素定义区域，并可对该区域着色或使其透明。
+適用する操作=在脚本中，变量'color'、'intensity'和'keep_luma'有效。
 
 [透明領域塗りつぶし@Region_S]
 透明領域塗りつぶし@Region_S=填充透明区域@Region_S
@@ -167,8 +167,8 @@ B範囲補正=B范围修正
 下端を連結扱い=下端视为连接
 その他=其他
 
-;[Tips.透明領域塗りつぶし@Region_S]
-;effect.name=Anchor points and connected transparent pixels define the area, and can be colored or made opaque.
+[Tips.透明領域塗りつぶし@Region_S]
+effect.name=锚点和相连的透明像素定义区域，并可对该区域着色或使其不透明。
 
 [穴埋め@Region_S]
 穴埋め@Region_S=填充孔洞@Region_S
@@ -207,8 +207,8 @@ B範囲補正=B范围修正
 下端を連結扱い=下端视为连接
 その他=其他
 
-;[Tips.穴埋め@Region_S]
-;effect.name=Fills holes in the image, that are transparent pixels not connected to the edges, with a specified color.
+[Tips.穴埋め@Region_S]
+effect.name=填充图像中的孔洞（即未与边缘相连的透明像素），使用指定颜色进行填充。
 
 [領域クロマキー@Region_S]
 領域クロマキー@Region_S=区域色度键@Region_S
@@ -232,8 +232,8 @@ B範囲補正=B范围修正
 下端を連結扱い=下端视为连接
 その他=其他
 
-;[Tips.領域クロマキー@Region_S]
-;effect.name=Applies the standard "Chroma Key" effect to a specific area defined by anchor points, rather than to the entire image.
+[Tips.領域クロマキー@Region_S]
+effect.name=将标准“色度键”效果应用于由锚点指定的特定区域，而不是应用于整个图像。
 
 [領域カラーキー@Region_S]
 領域カラーキー@Region_S=区域色键@Region_S
@@ -255,8 +255,8 @@ B範囲補正=B范围修正
 下端を連結扱い=下端视为连接
 その他=其他
 
-;[Tips.領域カラーキー@Region_S]
-;effect.name=Applies the standard "Color Key" effect to a specific area defined by anchor points, rather than to the entire image.
+[Tips.領域カラーキー@Region_S]
+effect.name=将标准“色键”效果应用于由锚点指定的特定区域，而不是应用于整个图像。
 
 [領域ルミナンスキー@Region_S]
 領域ルミナンスキー@Region_S=区域亮度键@Region_S
@@ -283,8 +283,8 @@ B範囲補正=B范围修正
 下端を連結扱い=下端视为连接
 その他=其他
 
-;[Tips.領域ルミナンスキー@Region_S]
-;effect.name=Applies the standard "Luminance Key" effect to a specific area defined by anchor points, rather than to the entire image.
+[Tips.領域ルミナンスキー@Region_S]
+effect.name=将标准“亮度键”效果应用于由锚点指定的特定区域，而不是应用于整个图像。
 
 ;===============================
 ; 标签组

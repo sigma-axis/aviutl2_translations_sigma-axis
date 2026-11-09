@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Border_S (https://github.com/sigma-axis/aviutl2_Border_S)
-; Target Version: v1.20 (for beta48)
+; Target Version: v1.31
 ; Language: 简体中文
 ; Translator(s):
 ;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
@@ -22,11 +22,11 @@
 タイプ=类型
 外側縁取り=外侧描边
 内側縁取り=内侧描边
-;内側塗りつぶし=Inner Fill
-;左端を延伸=Extend Left Edge
-;右端を延伸=Extend Right Edge
-;上端を延伸=Extend Top Edge
-;下端を延伸=Extend Bottom Edge
+内側塗りつぶし=内侧填充
+左端を延伸=延伸左端
+右端を延伸=延伸右端
+上端を延伸=延伸上端
+下端を延伸=延伸下端
 透明度設定=透明度设置
 位置調整=位置调整
 移動X=移动X
@@ -48,18 +48,18 @@
 ぼかしの種類=模糊种类
 ガウス分布=高斯分布
 
-;[Tips.縁取りσ]
-;effect.name=Places border effects around the opaque pixels of the object. Compared to the standard Border filter, it offers more flexible settings and is faster.
-;方式=Algorithm used for calculation
-;α調整=Meaning depends on Method
-;inner::左端を延伸=Creates inner border as if the opaque pixels on the edge extend to the outside.
-;inner::右端を延伸=Creates inner border as if the opaque pixels on the edge extend to the outside.
-;inner::上端を延伸=Creates inner border as if the opaque pixels on the edge extend to the outside.
-;inner::下端を延伸=Creates inner border as if the opaque pixels on the edge extend to the outside.
-;縦横比=Positive: vertically long / Negative: horizontally long
-;凸半径=Rounds the outer protruding parts.
-;凹半径=Adds rounded parts to the inner cutouts.
-;膨らみ=Uses superellipse instead of circle.\n-300 ⇒ Cross\n0 ⇒ Rhombus\n+100 ⇒ Circle\n+300 ⇒ Rectangle
+[Tips.縁取りσ]
+effect.name=在物件的不透明像素周围放置描边效果。与标准描边滤镜相比，它提供更灵活的设置，且速度更快。
+方式=用于计算的算法
+α調整=含义取决于“方式”
+inner::左端を延伸=创建内侧边框，如同边缘的不透明像素向外延伸。
+inner::右端を延伸=创建内侧边框，如同边缘的不透明像素向外延伸。
+inner::上端を延伸=创建内侧边框，如同边缘的不透明像素向外延伸。
+inner::下端を延伸=创建内侧边框，如同边缘的不透明像素向外延伸。
+縦横比=正值：纵向长 / 负值：横向长
+凸半径=使外部凸出部分变圆。
+凹半径=为内部缺口添加圆角部分。
+膨らみ=使用超椭圆而非圆形。\n-300 ⇒ 十字形\n0 ⇒ 菱形\n+100 ⇒ 圆形\n+300 ⇒ 矩形
 
 [角丸めσ]
 角丸めσ=圆角化σ
@@ -79,12 +79,12 @@
 ぼかしの種類=模糊种类
 ガウス分布=高斯分布
 
-;[Tips.角丸めσ]
-;effect.name=Rounds the corners of the object and/or removes border along the boundary.
-;方式=Algorithm used for calculation
-;α調整=Meaning depends on Method
-;縦横比=Positive: vertically long / Negative: horizontally long
-;膨らみ=Uses superellipse instead of circle.\n-300 ⇒ Cross\n0 ⇒ Rhombus\n+100 ⇒ Circle\n+300 ⇒ Rectangle
+[Tips.角丸めσ]
+effect.name=将物件的角变圆和/或沿边界去除边框。
+方式=用于计算的算法
+α調整=含义取决于“方式”
+縦横比=正值：纵向长 / 负值：横向长
+膨らみ=使用超椭圆而非圆形。\n-300 ⇒ 十字形\n0 ⇒ 菱形\n+100 ⇒ 圆形\n+300 ⇒ 矩形
 
 [アウトラインσ]
 アウトラインσ=轮廓线σ
@@ -128,20 +128,20 @@
 ぼかしの種類=模糊种类
 ガウス分布=高斯分布
 
-;[Tips.アウトラインσ]
-;effect.name=Creates a line of a specified width along the boundary of the object.
-;距離=Distance between the line and the object
-;方式=Algorithm used for calculation
-;α調整=Meaning depends on Method
-;ライン配置=Effective when Source Transparency is less than 100.
-;内側透明度=Transparency of the "hole" part of the outline
-;距離縦横比=Positive: vertically long / Negative: horizontally long
-;凸半径=Rounds the outer protruding parts.
-;凹半径=Adds rounded parts to the inner cutouts.
-;距離膨らみ=Uses superellipse instead of circle.\n-300 ⇒ Cross\n0 ⇒ Rhombus\n+100 ⇒ Circle\n+300 ⇒ Rectangle
-;ライン縦横比=Positive: vertically long / Negative: horizontally long
-;ライン膨らみ=Uses superellipse instead of circle.\n-300 ⇒ Cross\n0 ⇒ Rhombus\n+100 ⇒ Circle\n+300 ⇒ Rectangle
-;手順=Valid when both Convex Radius and Concave Radius are positive.
+[Tips.アウトラインσ]
+effect.name=沿物件的边界创建指定宽度的线条。
+距離=线条与物件之间的距离
+方式=用于计算的算法
+α調整=含义取决于“方式”
+ライン配置=当“源透明度”小于100时有效。
+内側透明度=轮廓“孔洞”部分的透明度
+距離縦横比=正值：纵向长 / 负值：横向长
+凸半径=使外部凸出部分变圆。
+凹半径=为内部缺口添加圆角部分。
+距離膨らみ=使用超椭圆而非圆形。\n-300 ⇒ 十字形\n0 ⇒ 菱形\n+100 ⇒ 圆形\n+300 ⇒ 矩形
+ライン縦横比=正值：纵向长 / 负值：横向长
+ライン膨らみ=使用超椭圆而非圆形。\n-300 ⇒ 十字形\n0 ⇒ 菱形\n+100 ⇒ 圆形\n+300 ⇒ 矩形
+手順=当“凸半径”和“凹半径”均为正值时有效。
 
 ;===============================
 ; Labels

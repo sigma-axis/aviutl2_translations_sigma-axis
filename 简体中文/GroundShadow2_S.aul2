@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: GroundShadow2_S (https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S)
-; Target Version: v1.31
+; Target Version: v1.40
 ; Language: 简体中文
 ; Translator(s):
 ;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
@@ -31,7 +31,7 @@ GroundShadow2_S=地面阴影σ
 描画設定=渲染设置
 影を別オブジェクトで描画=阴影转为物件
 合成モード=混合模式
-;元の合成モード=Inherit Blend Mode
+元の合成モード=元混合模式
 通常=正常
 加算=相加
 減算=相减

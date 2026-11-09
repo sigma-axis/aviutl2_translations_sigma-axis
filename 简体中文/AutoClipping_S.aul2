@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: AutoClipping_S (https://github.com/sigma-axis/aviutl2_script_AutoClipping_S)
-; Target Version: v1.13 (for beta22)
+; Target Version: v1.20
 ; Language: 简体中文
 ; Translator(s):
 ;   正电子海(Nsyw) (https://space.bilibili.com/3631925)
@@ -13,5 +13,5 @@ AutoClipping_S=自动裁剪σ
 有効無効=启用/禁用
 その他=其他
 
-;[Tips.AutoClipping_S]
-;effect.name=Clips the object at the four edges so that it fits within the smallest size containing its opaque pixels.
+[Tips.AutoClipping_S]
+effect.name=沿四条边裁剪物件，使其适配到能够包含其不透明像素的最小尺寸。
