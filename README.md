@@ -48,7 +48,7 @@ Currently this repository contains files for the following languages. Note that 
 
   http://spring-fragrance.mints.ne.jp/aviutl
 
-  - Confirmed to work on: `2.1.13`
+  - Confirmed to work on: `2.1.17`
 
 ##  Installation
 
@@ -57,6 +57,26 @@ Currently this repository contains files for the following languages. Note that 
 1.  Then drag and drop the file to the preview window of AviUtl2. AviUtl2 will automatically restart.
 
 1.  Select the language in the language setting menu.
+
+##  Upcoming Update
+
+- **r58** (2026-??-??)
+
+  - \[Simplified Chinese\] Added or updated translations for the following scripts and plugins, including tooltips:
+  
+    1.  Updated [AutoClipping_S](https://github.com/sigma-axis/aviutl2_script_AutoClipping_S) v1.20.
+    1.  Updated [Basic_S](https://github.com/sigma-axis/aviutl2_script_Basic_S) v2.90.
+    1.  Updated [Border_S](https://github.com/sigma-axis/aviutl2_Border_S) v1.31.
+    1.  Updated [ColoredCollar_S](https://github.com/sigma-axis/aviutl2_script_ColoredCollar_S) v2.11.
+    1.  Updated [GroundShadow2_S](https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S) v1.40.
+    1.  Added [Lens_S](https://github.com/sigma-axis/aviutl2_script_Lens_S) v1.10.
+    1.  Added [MovingMosaic_S](https://github.com/sigma-axis/aviutl2_script_MovingMosaic_S) v1.00.
+    1.  Updated [PageRoll_S](https://github.com/sigma-axis/aviutl2_script_PageRoll_S) v1.22.
+    1.  Updated [Path_S](https://github.com/sigma-axis/aviutl2_script_Path_S) v2.40.
+    1.  Updated [RadRotDirBlur_S](https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S) v1.20.
+    1.  Updated [Region_S](https://github.com/sigma-axis/aviutl2_script_Region_S) v1.10.
+    1.  Added [SceneChangeKit_S](https://github.com/sigma-axis/aviutl2_script_SceneChangeKit_S) v1.00.
+    1.  Updated [WhiteBalance_S](https://github.com/sigma-axis/aviutl2_script_WhiteBalance_S) v1.10.
 
 ##  Update History
 
