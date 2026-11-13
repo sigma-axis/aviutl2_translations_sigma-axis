@@ -61,6 +61,10 @@ Currently this repository contains files for the following languages. Note that 
 
 ##  Update History
 
+- **r59** (2026-11-13)
+
+  - \[English\] Updated translation for [InlineScene_S](https://github.com/sigma-axis/aviutl2_InlineScene_S) to follow up v1.10.
+
 - **r58** (2026-11-09)
 
   - \[Simplified Chinese\] Added or updated translations for the following scripts and plugins, including tooltips (Thanks to @nsYW !):

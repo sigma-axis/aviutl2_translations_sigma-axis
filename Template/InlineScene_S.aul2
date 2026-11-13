@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: InlineScene_S (https://github.com/sigma-axis/aviutl2_InlineScene_S)
-; Target Version: v1.00
+; Target Version: v1.10
 ; Language: <Language Name>
 ; Translator(s):
 ;   <Name1>
@@ -31,6 +31,9 @@ Inline Scene の開始終了は，"クリッピングオブジェクト" や "�
 [Plugin.InlineScene_S.Settings]
 InlineScene_S の設定=InlineScene_S Settings
 長期キャッシュの保持期間 (分)=Long-term cache expiration duration (minutes)
+長期キャッシュの保存先=Long-term cache storage location
+GPU メモリ=GPU Memory
+CPU メモリ=CPU Memory
 長期キャッシュの総ドット数=Maximum total pixels of long-term cache
 
 [InlineScene_Sここから]
