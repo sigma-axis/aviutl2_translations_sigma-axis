@@ -1,6 +1,6 @@
 ;===============================================================
 ; Target: Path_S (https://github.com/sigma-axis/aviutl2_script_Path_S)
-; Target Version: v2.40
+; Target Version: v2.50
 ; Language: <Language Name>
 ; Translator(s):
 ;   <Name1>
@@ -690,6 +690,7 @@ dither::ノイズシード=Non-negative values generate different random for dif
 矢じり中心=Head Center
 矢じり角度=Head Angle
 矢じり位置=Head Position
+始点矢じりを別設定=Different Arrowhead at Start
 ランダム変化=Random Deformation
 ランダム周期=Random Period
 ランダム振幅=Random Offset
@@ -719,6 +720,7 @@ effect.name=Draws a line along the path and places arrowhead shapes at the ends.
 終了位置=End point of the line drawing range, in % of total path length
 破線パターン=Write lengths of solid and blank segments alternately, in pixels
 矢じり幅=Scaling rate of arrowhead width (percentage)
+alt::矢じり幅=Scaling rate of arrowhead width (percentage)
 ランダム周期=Period along the path direction of random variation, in pixels
 ランダム振幅=Magnitude of random variation, in pixels
 ランダム固定端=Excludes the path start and end from random variation.
